@@ -10,16 +10,18 @@ dotenv.config();
 const app: Express = express();
 app.use(cors());
 app.use(express.json());
-app.use("/api/v1",router)
+app.use("/api/v1", router);
 
 app.get("/", (req: Request, res: Response) => {
   res.status(status.OK).json({
-    message: "",
+    message: "Hello World!",
   });
 });
 
 app.use(notFound);
 app.use(globalErrorHandler);
 
-
 export default app;
+
+
+

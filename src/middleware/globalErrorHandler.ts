@@ -8,12 +8,7 @@ import { JsonWebTokenError, TokenExpiredError } from "jsonwebtoken";
 import { config } from "../config";
 import status from "http-status";
 import { ZodError } from "zod";
-const globalErrorHandler = (
-  err: any,
-  req: Request,
-  res: Response,
-  next: NextFunction
-) => {
+const globalErrorHandler = (err: any, req: Request, res: Response, next: NextFunction) => {
   let statusCode = 500;
   let message = "Something went wrong!";
   let errorMessages: ErrorMessages[] = [
@@ -24,13 +19,13 @@ const globalErrorHandler = (
   ];
 
   if (err instanceof ZodError) {
-      statusCode = 400;
-      message = "Validation error";
-      errorMessages = err.issues.map((e: any) => ({
-        path: e.path.join("."),
-        message: e.message,
-      }));
-    }
+    statusCode = 400;
+    message = "Validation error";
+    errorMessages = err.issues.map((e: any) => ({
+      path: e.path.join("."),
+      message: e.message,
+    }));
+  }
   // ✅ Prisma known request errors
   else if (err instanceof PrismaClientKnownRequestError) {
     // Duplicate (unique constraint failed)
@@ -43,7 +38,7 @@ const globalErrorHandler = (
           message,
         },
       ];
-    } 
+    }
 
     // Foreign key constraint failed
     else if (err.code === "P2003") {
@@ -94,10 +89,7 @@ const globalErrorHandler = (
     ];
   }
   // ✅ If error is a token error
-  else if (
-    err instanceof TokenExpiredError ||
-    err instanceof JsonWebTokenError
-  ) {
+  else if (err instanceof TokenExpiredError || err instanceof JsonWebTokenError) {
     statusCode = 401;
     message = "Unauthorized";
     errorMessages = [
