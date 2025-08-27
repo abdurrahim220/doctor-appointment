@@ -1,7 +1,9 @@
+import { IPost } from "../post/post.interface";
+
 export interface IUser {
-  id: number;
+  id?: number;
   name: string;
   email: string;
   password: string;
-  //   post: IPost[];
+  posts?: IPost[];
 }

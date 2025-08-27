@@ -19,10 +19,16 @@ const createUser = async (payload: IUser) => {
 
 const getAllUser = async (page: number, limit: number) => {
   const skip = (page - 1) * limit;
-  const [users, count] = await prisma.$transaction([
+  const [users, count] = await Promise.all([
     prisma.user.findMany({
       skip,
       take: limit,
+      select: {
+        id: true,
+        name: true,
+        email: true,
+        posts: true,
+      },
     }),
     prisma.user.count(),
   ]);
@@ -39,7 +45,7 @@ const getAllUser = async (page: number, limit: number) => {
 const getUserById = async (id: string) => {
   const user = await prisma.user.findUnique({
     where: {
-      id,
+      id: parseInt(id),
     },
   });
   return user;
@@ -50,7 +56,7 @@ const updateUser = async (id: string, payload: IUser) => {
   const hashedPassword = await bcrypt.hash(password, 10);
   const user = await prisma.user.update({
     where: {
-      id,
+      id: parseInt(id),
     },
     data: {
       name,
@@ -64,7 +70,7 @@ const updateUser = async (id: string, payload: IUser) => {
 const deleteUser = async (id: string) => {
   const user = await prisma.user.delete({
     where: {
-      id,
+      id: parseInt(id),
     },
   });
   return user;

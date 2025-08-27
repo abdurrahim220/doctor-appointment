@@ -1,22 +1,25 @@
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
-
+import globals from "globals";
 export default tseslint.config(
   eslint.configs.recommended,
   tseslint.configs.recommended,
   {
     languageOptions: {
       globals: {
-        ...global.node,
-        ...global.browser,
+        ...globals.node,
+        ...globals.es2021,
       },
+      parserOptions:{
+        project: './tsconfig.json',
+      }
     },
   },
   {
     rules: {
       eqeqeq: "off",
       "no-console": "warn",
-      "no-unused-vars": "error",
+      "no-unused-vars": "off",
       "no-undef": "warn",
       "prefer-const": [
         "error",
@@ -24,7 +27,10 @@ export default tseslint.config(
           ignoreReadBeforeAssign: true,
         },
       ],
-      "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
+      "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+        caughtErrorsIgnorePattern: "^_",
+       }],
     },
   },
   {
