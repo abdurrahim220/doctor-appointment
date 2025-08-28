@@ -8,7 +8,8 @@ import { JsonWebTokenError, TokenExpiredError } from "jsonwebtoken";
 import { config } from "../config";
 import status from "http-status";
 import { ZodError } from "zod";
-const globalErrorHandler = (err: any, req: Request, res: Response, next: NextFunction) => {
+
+const globalErrorHandler = (err: unknown, req: Request, res: Response, _next: NextFunction) => {
   let statusCode = 500;
   let message = "Something went wrong!";
   let errorMessages: ErrorMessages[] = [
@@ -19,9 +20,9 @@ const globalErrorHandler = (err: any, req: Request, res: Response, next: NextFun
   ];
 
   if (err instanceof ZodError) {
-    statusCode = 400;
+    statusCode = status.BAD_REQUEST;
     message = "Validation error";
-    errorMessages = err.issues.map((e: any) => ({
+    errorMessages = err.issues.map((e) => ({
       path: e.path.join("."),
       message: e.message,
     }));
@@ -78,13 +79,14 @@ const globalErrorHandler = (err: any, req: Request, res: Response, next: NextFun
   }
 
   // ✅ If error already has statusCode/message (e.g. AppError)
-  else if (err.statusCode && err.message) {
-    statusCode = err.statusCode;
-    message = err.message;
+  else if (err && typeof err === "object" && "statusCode" in err && "message" in err) {
+    const e = err as { statusCode: number; message: string };
+    statusCode = e.statusCode;
+    message = e.message;
     errorMessages = [
       {
         path: "",
-        message: err.message,
+        message: e.message,
       },
     ];
   }
@@ -104,7 +106,12 @@ const globalErrorHandler = (err: any, req: Request, res: Response, next: NextFun
     success: false,
     message,
     errorSources: errorMessages,
-    stack: config.node_env === "development" ? err?.stack : undefined,
+    stack:
+      config.node_env === "development"
+        ? err instanceof Error
+          ? err.stack
+          : undefined
+        : undefined,
   });
 };
 
