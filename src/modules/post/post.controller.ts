@@ -33,7 +33,8 @@ const getAllPost = asyncHandler(async (req: Request, res: Response) => {
 
 const getPostById = asyncHandler(async (req: Request, res: Response) => {
   const { id } = req.params;
-  const result = await postService.getPostById(Number(id));
+  
+  const result = await postService.getPostById(id);
 
   sendResponse(res, {
     statusCode: status.OK,
@@ -45,7 +46,7 @@ const getPostById = asyncHandler(async (req: Request, res: Response) => {
 
 const updatePost = asyncHandler(async (req: Request, res: Response) => {
   const { id } = req.params;
-  const result = await postService.updatePost(Number(id), req.body);
+  const result = await postService.updatePost(id, req.body);
 
   sendResponse(res, {
     statusCode: status.OK,
@@ -57,7 +58,7 @@ const updatePost = asyncHandler(async (req: Request, res: Response) => {
 
 const deletePost = asyncHandler(async (req: Request, res: Response) => {
   const { id } = req.params;
-  const result = await postService.deletePost(Number(id));
+  const result = await postService.deletePost((id));
 
   sendResponse(res, {
     statusCode: status.OK,

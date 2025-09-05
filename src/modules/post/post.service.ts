@@ -1,15 +1,16 @@
 import prisma from "../../prisma/client";
 import { IPost, IPostUpdate } from "./post.interface";
-
+import { nanoid } from "nanoid";
 const createPost = async (payload: IPost) => {
   const { title, content, published, authorId } = payload;
-
+  const id = nanoid();
   const post = await prisma.post.create({
     data: {
+      id,
       title,
       content,
-      published,
-      authorId,
+      published: published ?? false,
+      authorId:authorId ?? null,
     },
     include: {
       author: true,
@@ -41,7 +42,7 @@ const getAllPost = async (page: number, limit: number) => {
   };
 };
 
-const getPostById = async (id: number) => {
+const getPostById = async (id: string) => {
   const post = await prisma.post.findUnique({
     where: { id },
     include: {
@@ -51,7 +52,7 @@ const getPostById = async (id: number) => {
   return post;
 };
 
-const updatePost = async (id: number, payload: IPostUpdate) => {
+const updatePost = async (id: string, payload: IPostUpdate) => {
   const post = await prisma.post.update({
     where: { id },
     data: payload,
@@ -67,7 +68,7 @@ const updatePost = async (id: number, payload: IPostUpdate) => {
   return post;
 };
 
-const deletePost = async (id: number) => {
+const deletePost = async (id: string) => {
   const post = await prisma.post.delete({
     where: { id },
   });

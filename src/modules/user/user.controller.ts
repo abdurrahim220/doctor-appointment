@@ -16,14 +16,12 @@ const createUser = asyncHandler(async (req: Request, res: Response) => {
 });
 
 const getAllUser = asyncHandler(async (req: Request, res: Response) => {
-  const result = await userService.getAllUser(
-    Number(req.query.page) || 1,
-    Number(req.query.limit) || 10,
-  );
+  const result = await userService.getAllUser();
+
   sendResponse(res, {
     statusCode: status.OK,
     success: true,
-    message: "Users retrieved successfully",
+    message: `Users retrieved successfully from ${result.source}`,
     data: result,
   });
 });
@@ -33,7 +31,7 @@ const getUserById = asyncHandler(async (req: Request, res: Response) => {
   sendResponse(res, {
     statusCode: status.OK,
     success: true,
-    message: "User retrieved successfully",
+    message: `User retrieved successfully from ${result.source}`,
     data: result,
   });
 });

@@ -9,12 +9,14 @@ services:
       - "3000:3000"
     depends_on:
       - postgres
+      - redis
     env_file:
       - .env.example
     environment:
       - NODE_ENV=development
       - PORT=3000
       - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/prisma_tutorial?schema=public
+      - REDIS_URL=redis://redis:6379
     volumes:
       - ./src:/app/src
       - ./prisma:/app/prisma
@@ -22,6 +24,12 @@ services:
       - /app/node_modules
       - /app/dist
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
 
   postgres:
     image: postgres:15-alpine
@@ -37,5 +45,14 @@ services:
       - postgres_data:/var/lib/postgresql/data
     restart: unless-stopped
 
+  redis:
+    image: redis/redis-stack:latest
+    container_name: redis-stack
+    ports:
+      - "6379:6379"
+      - "8001:8001" # RedisInsight UI
+    restart: unless-stopped
+
 volumes:
   postgres_data:
+  redis_data:

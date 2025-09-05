@@ -3,6 +3,7 @@ import compression from "compression";
 import helmet from "helmet";
 import rateLimit from "express-rate-limit";
 import { Express } from "express";
+import sanitizeMiddleware from "./sanitizeMiddleware";
 
 const applySecurityMiddleware = (app: Express) => {
   const corsOptions = {
@@ -13,6 +14,7 @@ const applySecurityMiddleware = (app: Express) => {
   app.use(cors(corsOptions));
   app.use(helmet());
   app.use(compression());
+  app.use(sanitizeMiddleware);
   const limiter = rateLimit({
     windowMs: 15 * 60 * 1000,
     max: 100,
