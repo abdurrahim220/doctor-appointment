@@ -263,3 +263,656 @@ The change you are trying to make would violate the required relation 'PatientPr
 2025-09-07 15:21:03 [[32minfo[39m]: 📋 Created 1 medical records
 2025-09-07 15:21:03 [[32minfo[39m]: ⭐ Created 1 reviews
 2025-09-07 15:21:03 [[32minfo[39m]: 🌱 Seed completed successfully!
+2025-09-07 20:47:11 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 20:47:11 [[32minfo[39m]: Redis connected
+2025-09-07 20:47:11 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 20:48:46 [[31merror[39m]: Error: Socket closed unexpectedly
+    at Socket.<anonymous> (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@redis\client\lib\client\socket.ts:272:29)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:518:28)
+    at TCP.<anonymous> (node:net:351:12)
+2025-09-07 20:48:46 [[32minfo[39m]: Redis reconnecting
+2025-09-07 20:48:46 [[32minfo[39m]: Redis connected
+2025-09-07 20:48:46 [[31merror[39m]: Error: Socket closed unexpectedly
+    at Socket.<anonymous> (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@redis\client\lib\client\socket.ts:272:29)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:518:28)
+    at TCP.<anonymous> (node:net:351:12)
+2025-09-07 20:49:26 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 20:49:26 [[32minfo[39m]: Redis connected
+2025-09-07 20:49:26 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 20:52:28 [[32minfo[39m]: Server is running 🚀
+2025-09-07 20:52:28 [[32minfo[39m]: Uptime: 184.263454
+2025-09-07 20:52:33 [[32minfo[39m]: Server is running 🚀
+2025-09-07 20:52:33 [[32minfo[39m]: Uptime: 189.3578047
+2025-09-07 20:57:20 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 20:57:20 [[32minfo[39m]: Redis connected
+2025-09-07 20:57:20 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 20:57:22 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 20:57:22 [[32minfo[39m]: Redis connected
+2025-09-07 20:57:22 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 20:57:42 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 20:57:42 [[32minfo[39m]: Redis connected
+2025-09-07 20:57:42 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 20:57:46 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 20:57:46 [[32minfo[39m]: Redis connected
+2025-09-07 20:57:46 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:00:05 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:00:05 [[32minfo[39m]: Redis connected
+2025-09-07 21:00:05 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:02:59 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:02:59 [[32minfo[39m]: Redis connected
+2025-09-07 21:02:59 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:04:16 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:04:16 [[32minfo[39m]: Redis connected
+2025-09-07 21:04:16 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:04:21 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:04:21 [[32minfo[39m]: Redis connected
+2025-09-07 21:04:21 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:04:45 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:04:45 [[32minfo[39m]: Redis connected
+2025-09-07 21:04:45 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:07:45 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:07:45 [[32minfo[39m]: Redis connected
+2025-09-07 21:07:45 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:08:58 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:08:58 [[32minfo[39m]: Redis connected
+2025-09-07 21:08:58 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:09:17 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:09:17 [[32minfo[39m]: Redis connected
+2025-09-07 21:09:17 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:23:16 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:23:16 [[32minfo[39m]: Redis connected
+2025-09-07 21:23:16 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:25:14 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:25:14 [[32minfo[39m]: Redis connected
+2025-09-07 21:25:14 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:25:29 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:25:29 [[32minfo[39m]: Redis connected
+2025-09-07 21:25:29 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:25:33 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:25:34 [[32minfo[39m]: Redis connected
+2025-09-07 21:25:34 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:27:41 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:27:41 [[32minfo[39m]: Redis connected
+2025-09-07 21:27:41 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:27:44 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:27:44 [[32minfo[39m]: Redis connected
+2025-09-07 21:27:44 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:27:49 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:27:49 [[32minfo[39m]: Redis connected
+2025-09-07 21:27:49 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:27:54 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:27:54 [[32minfo[39m]: Redis connected
+2025-09-07 21:27:54 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:28:02 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:28:02 [[32minfo[39m]: Redis connected
+2025-09-07 21:28:02 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:28:07 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:28:07 [[32minfo[39m]: Redis connected
+2025-09-07 21:28:07 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:28:12 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:28:12 [[32minfo[39m]: Redis connected
+2025-09-07 21:28:12 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:28:15 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:28:15 [[32minfo[39m]: Redis connected
+2025-09-07 21:28:15 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:28:21 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:28:21 [[32minfo[39m]: Redis connected
+2025-09-07 21:28:21 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:28:29 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:28:29 [[32minfo[39m]: Redis connected
+2025-09-07 21:28:29 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:29:01 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:29:01 [[32minfo[39m]: Redis connected
+2025-09-07 21:29:01 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:35:07 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:35:07 [[32minfo[39m]: Redis connected
+2025-09-07 21:35:07 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:41:42 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:41:42 [[32minfo[39m]: Redis connected
+2025-09-07 21:41:42 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:41:49 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:41:49 [[32minfo[39m]: Redis connected
+2025-09-07 21:41:49 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:41:52 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:41:52 [[32minfo[39m]: Redis connected
+2025-09-07 21:41:52 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:42:09 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:42:10 [[32minfo[39m]: Redis connected
+2025-09-07 21:42:10 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:42:24 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:42:24 [[32minfo[39m]: Redis connected
+2025-09-07 21:42:24 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:42:41 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:42:41 [[32minfo[39m]: Redis connected
+2025-09-07 21:42:41 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:43:16 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:43:16 [[32minfo[39m]: Redis connected
+2025-09-07 21:43:16 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:43:27 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:43:27 [[32minfo[39m]: Redis connected
+2025-09-07 21:43:27 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:43:42 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:43:42 [[32minfo[39m]: Redis connected
+2025-09-07 21:43:42 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:43:48 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:43:48 [[32minfo[39m]: Redis connected
+2025-09-07 21:43:48 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:44:26 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:44:26 [[32minfo[39m]: Redis connected
+2025-09-07 21:44:26 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:44:40 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:44:41 [[32minfo[39m]: Redis connected
+2025-09-07 21:44:41 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:44:48 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:44:48 [[32minfo[39m]: Redis connected
+2025-09-07 21:44:48 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:44:52 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:44:52 [[32minfo[39m]: Redis connected
+2025-09-07 21:44:52 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:45:02 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:45:02 [[32minfo[39m]: Redis connected
+2025-09-07 21:45:02 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:45:29 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:45:29 [[32minfo[39m]: Redis connected
+2025-09-07 21:45:29 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:46:34 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:46:34 [[32minfo[39m]: Redis connected
+2025-09-07 21:46:34 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:46:55 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:46:56 [[32minfo[39m]: Redis connected
+2025-09-07 21:46:56 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:46:59 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:46:59 [[32minfo[39m]: Redis connected
+2025-09-07 21:46:59 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:48:48 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:48:48 [[32minfo[39m]: Redis connected
+2025-09-07 21:48:48 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:51:52 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:51:52 [[32minfo[39m]: Redis connected
+2025-09-07 21:51:52 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:52:01 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:52:01 [[32minfo[39m]: Redis connected
+2025-09-07 21:52:01 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:52:07 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:52:07 [[32minfo[39m]: Redis connected
+2025-09-07 21:52:07 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:52:16 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:52:16 [[32minfo[39m]: Redis connected
+2025-09-07 21:52:16 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:52:20 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:52:20 [[32minfo[39m]: Redis connected
+2025-09-07 21:52:20 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:52:25 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:52:25 [[32minfo[39m]: Redis connected
+2025-09-07 21:52:25 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:52:32 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:52:32 [[32minfo[39m]: Redis connected
+2025-09-07 21:52:32 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:52:38 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:52:38 [[32minfo[39m]: Redis connected
+2025-09-07 21:52:38 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:52:40 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:52:40 [[32minfo[39m]: Redis connected
+2025-09-07 21:52:40 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:52:45 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:52:45 [[32minfo[39m]: Redis connected
+2025-09-07 21:52:45 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:52:48 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:52:48 [[32minfo[39m]: Redis connected
+2025-09-07 21:52:48 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:52:51 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:52:51 [[32minfo[39m]: Redis connected
+2025-09-07 21:52:51 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:53:00 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:53:00 [[32minfo[39m]: Redis connected
+2025-09-07 21:53:00 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:53:02 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:53:02 [[32minfo[39m]: Redis connected
+2025-09-07 21:53:02 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:54:27 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:54:27 [[32minfo[39m]: Redis connected
+2025-09-07 21:54:27 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:54:48 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:54:48 [[32minfo[39m]: Redis connected
+2025-09-07 21:54:48 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:54:53 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:54:53 [[32minfo[39m]: Redis connected
+2025-09-07 21:54:53 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:55:17 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:55:17 [[32minfo[39m]: Redis connected
+2025-09-07 21:55:17 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:55:38 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:55:38 [[32minfo[39m]: Redis connected
+2025-09-07 21:55:38 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:55:57 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:55:57 [[32minfo[39m]: Redis connected
+2025-09-07 21:55:57 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:56:00 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:56:00 [[32minfo[39m]: Redis connected
+2025-09-07 21:56:00 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:56:04 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:56:04 [[32minfo[39m]: Redis connected
+2025-09-07 21:56:04 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:56:06 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:56:06 [[32minfo[39m]: Redis connected
+2025-09-07 21:56:06 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:56:11 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:56:11 [[32minfo[39m]: Redis connected
+2025-09-07 21:56:11 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:56:15 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:56:15 [[32minfo[39m]: Redis connected
+2025-09-07 21:56:15 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:56:24 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:56:24 [[32minfo[39m]: Redis connected
+2025-09-07 21:56:24 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:56:27 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:56:27 [[32minfo[39m]: Redis connected
+2025-09-07 21:56:27 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 21:59:36 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 21:59:36 [[32minfo[39m]: Redis connected
+2025-09-07 21:59:36 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:18:25 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:18:25 [[32minfo[39m]: Redis connected
+2025-09-07 23:18:25 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:18:55 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:18:55 [[32minfo[39m]: Redis connected
+2025-09-07 23:18:55 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:19:01 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:19:01 [[32minfo[39m]: Redis connected
+2025-09-07 23:19:01 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:20:38 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:20:38 [[32minfo[39m]: Redis connected
+2025-09-07 23:20:38 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:20:42 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:20:42 [[32minfo[39m]: Redis connected
+2025-09-07 23:20:42 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:21:26 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:21:26 [[32minfo[39m]: Redis connected
+2025-09-07 23:21:26 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:21:30 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:21:30 [[32minfo[39m]: Redis connected
+2025-09-07 23:21:30 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:21:34 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:21:34 [[32minfo[39m]: Redis connected
+2025-09-07 23:21:34 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:21:39 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:21:39 [[32minfo[39m]: Redis connected
+2025-09-07 23:21:39 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:21:42 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:21:42 [[32minfo[39m]: Redis connected
+2025-09-07 23:21:42 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:22:06 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:22:06 [[32minfo[39m]: Redis connected
+2025-09-07 23:22:06 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:22:28 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:22:28 [[32minfo[39m]: Redis connected
+2025-09-07 23:22:28 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:22:31 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:22:31 [[32minfo[39m]: Redis connected
+2025-09-07 23:22:31 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:22:35 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:22:35 [[32minfo[39m]: Redis connected
+2025-09-07 23:22:35 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:22:38 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:22:39 [[32minfo[39m]: Redis connected
+2025-09-07 23:22:39 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:24:54 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:24:54 [[32minfo[39m]: Redis connected
+2025-09-07 23:24:54 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:25:04 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:25:04 [[32minfo[39m]: Redis connected
+2025-09-07 23:25:04 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:25:10 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:25:10 [[32minfo[39m]: Redis connected
+2025-09-07 23:25:10 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:25:37 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:25:39 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:25:39 [[32minfo[39m]: Redis connected
+2025-09-07 23:25:39 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:25:42 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:25:42 [[32minfo[39m]: Redis connected
+2025-09-07 23:25:42 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:25:49 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:25:49 [[32minfo[39m]: Redis connected
+2025-09-07 23:25:49 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:28:06 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:28:06 [[32minfo[39m]: Redis connected
+2025-09-07 23:28:06 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:28:16 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:28:16 [[32minfo[39m]: Redis connected
+2025-09-07 23:28:16 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:28:30 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:28:30 [[32minfo[39m]: Redis connected
+2025-09-07 23:28:30 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:28:36 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:28:36 [[32minfo[39m]: Redis connected
+2025-09-07 23:28:36 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:28:42 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:28:42 [[32minfo[39m]: Redis connected
+2025-09-07 23:28:42 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:28:49 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:28:49 [[32minfo[39m]: Redis connected
+2025-09-07 23:28:49 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:28:54 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:28:54 [[32minfo[39m]: Redis connected
+2025-09-07 23:28:54 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:29:02 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:29:02 [[32minfo[39m]: Redis connected
+2025-09-07 23:29:02 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:29:11 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:29:11 [[32minfo[39m]: Redis connected
+2025-09-07 23:29:11 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:29:17 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:29:17 [[32minfo[39m]: Redis connected
+2025-09-07 23:29:17 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:29:21 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:29:23 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:29:23 [[32minfo[39m]: Redis connected
+2025-09-07 23:29:23 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:29:42 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:29:43 [[32minfo[39m]: Redis connected
+2025-09-07 23:29:43 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:29:59 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:29:59 [[32minfo[39m]: Redis connected
+2025-09-07 23:29:59 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:30:08 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:30:08 [[32minfo[39m]: Redis connected
+2025-09-07 23:30:08 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:30:13 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:30:13 [[32minfo[39m]: Redis connected
+2025-09-07 23:30:13 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:30:18 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:30:18 [[32minfo[39m]: Redis connected
+2025-09-07 23:30:18 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:30:26 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:30:26 [[32minfo[39m]: Redis connected
+2025-09-07 23:30:26 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:30:29 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:30:29 [[32minfo[39m]: Redis connected
+2025-09-07 23:30:29 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:32:04 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:32:04 [[32minfo[39m]: Redis connected
+2025-09-07 23:32:04 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:32:35 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:32:35 [[32minfo[39m]: Redis connected
+2025-09-07 23:32:35 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:34:07 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:34:07 [[32minfo[39m]: Redis connected
+2025-09-07 23:34:07 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:43:47 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:43:47 [[32minfo[39m]: Redis connected
+2025-09-07 23:43:47 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:43:50 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:43:50 [[32minfo[39m]: Redis connected
+2025-09-07 23:43:50 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:44:39 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:44:39 [[32minfo[39m]: Redis connected
+2025-09-07 23:44:39 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:44:51 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:44:52 [[32minfo[39m]: Redis connected
+2025-09-07 23:44:52 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:44:55 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:44:55 [[32minfo[39m]: Redis connected
+2025-09-07 23:44:55 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:45:00 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:45:00 [[32minfo[39m]: Redis connected
+2025-09-07 23:45:00 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:46:42 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:46:42 [[32minfo[39m]: Redis connected
+2025-09-07 23:46:42 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:48:00 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:48:00 [[32minfo[39m]: Redis connected
+2025-09-07 23:48:00 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:48:34 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:48:34 [[32minfo[39m]: Redis connected
+2025-09-07 23:48:34 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:48:37 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:48:37 [[32minfo[39m]: Redis connected
+2025-09-07 23:48:37 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:48:58 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:48:58 [[32minfo[39m]: Redis connected
+2025-09-07 23:48:58 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:49:10 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:49:10 [[32minfo[39m]: Redis connected
+2025-09-07 23:49:10 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:49:13 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:49:13 [[32minfo[39m]: Redis connected
+2025-09-07 23:49:13 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:49:30 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:49:30 [[32minfo[39m]: Redis connected
+2025-09-07 23:49:30 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:49:48 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:49:48 [[32minfo[39m]: Redis connected
+2025-09-07 23:49:48 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:49:52 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:49:52 [[32minfo[39m]: Redis connected
+2025-09-07 23:49:52 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:49:56 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:49:56 [[32minfo[39m]: Redis connected
+2025-09-07 23:49:56 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:49:58 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:49:58 [[32minfo[39m]: Redis connected
+2025-09-07 23:49:58 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:50:11 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:50:11 [[32minfo[39m]: Redis connected
+2025-09-07 23:50:11 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:50:15 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:50:15 [[32minfo[39m]: Redis connected
+2025-09-07 23:50:15 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:50:17 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:50:17 [[32minfo[39m]: Redis connected
+2025-09-07 23:50:17 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:50:54 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:50:54 [[32minfo[39m]: Redis connected
+2025-09-07 23:50:54 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:51:31 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:51:31 [[32minfo[39m]: Redis connected
+2025-09-07 23:51:31 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:51:44 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:51:44 [[32minfo[39m]: Redis connected
+2025-09-07 23:51:44 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:51:51 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:51:51 [[32minfo[39m]: Redis connected
+2025-09-07 23:51:51 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:51:56 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:51:56 [[32minfo[39m]: Redis connected
+2025-09-07 23:51:56 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:52:01 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:52:01 [[32minfo[39m]: Redis connected
+2025-09-07 23:52:01 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:52:05 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:52:05 [[32minfo[39m]: Redis connected
+2025-09-07 23:52:05 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:52:11 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:52:11 [[32minfo[39m]: Redis connected
+2025-09-07 23:52:11 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:52:18 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:52:18 [[32minfo[39m]: Redis connected
+2025-09-07 23:52:18 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:52:36 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:52:36 [[32minfo[39m]: Redis connected
+2025-09-07 23:52:36 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:52:48 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:52:48 [[32minfo[39m]: Redis connected
+2025-09-07 23:52:48 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:54:28 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:54:28 [[32minfo[39m]: Redis connected
+2025-09-07 23:54:28 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:54:35 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:54:36 [[32minfo[39m]: Redis connected
+2025-09-07 23:54:36 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:55:01 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:55:01 [[32minfo[39m]: Redis connected
+2025-09-07 23:55:01 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:55:17 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:55:17 [[32minfo[39m]: Redis connected
+2025-09-07 23:55:17 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:55:31 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:55:31 [[32minfo[39m]: Redis connected
+2025-09-07 23:55:31 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:55:40 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:55:40 [[32minfo[39m]: Redis connected
+2025-09-07 23:55:40 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:55:53 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:55:53 [[32minfo[39m]: Redis connected
+2025-09-07 23:55:53 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:58:00 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:58:00 [[32minfo[39m]: Redis connected
+2025-09-07 23:58:00 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:58:12 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:58:13 [[32minfo[39m]: Redis connected
+2025-09-07 23:58:13 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:58:20 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:58:21 [[32minfo[39m]: Redis connected
+2025-09-07 23:58:21 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:58:24 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:58:24 [[32minfo[39m]: Redis connected
+2025-09-07 23:58:24 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:58:27 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:58:27 [[32minfo[39m]: Redis connected
+2025-09-07 23:58:27 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:58:29 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:58:30 [[32minfo[39m]: Redis connected
+2025-09-07 23:58:30 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:58:32 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:58:32 [[32minfo[39m]: Redis connected
+2025-09-07 23:58:32 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:58:34 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:58:34 [[32minfo[39m]: Redis connected
+2025-09-07 23:58:34 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:58:41 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:58:42 [[32minfo[39m]: Redis connected
+2025-09-07 23:58:42 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:58:44 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:58:47 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:58:47 [[32minfo[39m]: Redis connected
+2025-09-07 23:58:47 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:58:54 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:58:54 [[32minfo[39m]: Redis connected
+2025-09-07 23:58:54 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:59:05 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:59:05 [[32minfo[39m]: Redis connected
+2025-09-07 23:59:05 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:59:13 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:59:13 [[32minfo[39m]: Redis connected
+2025-09-07 23:59:13 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:59:21 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:59:21 [[32minfo[39m]: Redis connected
+2025-09-07 23:59:21 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:59:23 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:59:24 [[32minfo[39m]: Redis connected
+2025-09-07 23:59:24 [[32minfo[39m]: Server is running on port 5000
+2025-09-07 23:59:38 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-07 23:59:39 [[32minfo[39m]: Redis connected
+2025-09-07 23:59:39 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:00:21 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:00:21 [[32minfo[39m]: Redis connected
+2025-09-08 00:00:21 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:02:13 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:02:13 [[32minfo[39m]: Redis connected
+2025-09-08 00:02:13 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:03:05 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:03:09 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:03:09 [[32minfo[39m]: Redis connected
+2025-09-08 00:03:10 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:05:31 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:05:32 [[32minfo[39m]: Redis connected
+2025-09-08 00:05:32 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:05:54 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:05:54 [[32minfo[39m]: Redis connected
+2025-09-08 00:05:54 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:06:09 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:06:09 [[32minfo[39m]: Redis connected
+2025-09-08 00:06:09 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:06:19 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:06:19 [[32minfo[39m]: Redis connected
+2025-09-08 00:06:19 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:06:30 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:06:30 [[32minfo[39m]: Redis connected
+2025-09-08 00:06:30 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:06:32 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:06:32 [[32minfo[39m]: Redis connected
+2025-09-08 00:06:32 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:06:36 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:06:36 [[32minfo[39m]: Redis connected
+2025-09-08 00:06:36 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:06:42 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:06:42 [[32minfo[39m]: Redis connected
+2025-09-08 00:06:42 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:06:50 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:06:50 [[32minfo[39m]: Redis connected
+2025-09-08 00:06:50 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:07:20 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:07:20 [[32minfo[39m]: Redis connected
+2025-09-08 00:07:20 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:07:29 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:07:29 [[32minfo[39m]: Redis connected
+2025-09-08 00:07:29 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:07:34 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:07:34 [[32minfo[39m]: Redis connected
+2025-09-08 00:07:34 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:07:37 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:07:37 [[32minfo[39m]: Redis connected
+2025-09-08 00:07:37 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:07:40 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:07:40 [[32minfo[39m]: Redis connected
+2025-09-08 00:07:40 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:07:47 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:07:47 [[32minfo[39m]: Redis connected
+2025-09-08 00:07:47 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:08:13 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:08:13 [[32minfo[39m]: Redis connected
+2025-09-08 00:08:13 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:08:16 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:08:16 [[32minfo[39m]: Redis connected
+2025-09-08 00:08:16 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:08:19 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:08:19 [[32minfo[39m]: Redis connected
+2025-09-08 00:08:19 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:08:27 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:08:27 [[32minfo[39m]: Redis connected
+2025-09-08 00:08:27 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:08:31 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:08:31 [[32minfo[39m]: Redis connected
+2025-09-08 00:08:31 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:08:34 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:08:34 [[32minfo[39m]: Redis connected
+2025-09-08 00:08:34 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:08:38 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:08:38 [[32minfo[39m]: Redis connected
+2025-09-08 00:08:38 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:08:42 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:08:42 [[32minfo[39m]: Redis connected
+2025-09-08 00:08:42 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:09:54 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:09:54 [[32minfo[39m]: Redis connected
+2025-09-08 00:09:54 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:10:00 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:10:00 [[32minfo[39m]: Redis connected
+2025-09-08 00:10:00 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:12:04 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:12:04 [[32minfo[39m]: Redis connected
+2025-09-08 00:12:04 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:12:09 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:12:09 [[32minfo[39m]: Redis connected
+2025-09-08 00:12:09 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:12:16 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:12:16 [[32minfo[39m]: Redis connected
+2025-09-08 00:12:16 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:12:21 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:12:21 [[32minfo[39m]: Redis connected
+2025-09-08 00:12:21 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:14:51 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:14:51 [[32minfo[39m]: Redis connected
+2025-09-08 00:14:51 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:15:27 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:15:28 [[32minfo[39m]: Redis connected
+2025-09-08 00:15:28 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:15:35 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:15:35 [[32minfo[39m]: Redis connected
+2025-09-08 00:15:35 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 00:15:45 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 00:15:45 [[32minfo[39m]: Redis connected
+2025-09-08 00:15:45 [[32minfo[39m]: Server is running on port 5000

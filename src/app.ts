@@ -2,6 +2,7 @@ import express, { Application, Express, Request, Response } from "express";
 import status from "http-status";
 import dotenv from "dotenv";
 import morgan from "morgan";
+import cookieParser from "cookie-parser";
 import notFound from "./middleware/notFound";
 import router from "./route";
 import globalErrorHandler from "./middleware/globalErrorHandler";
@@ -13,6 +14,7 @@ const app: Application = express();
 
 app.use(express.json());
 applySecurityMiddleware(app as Express);
+app.use(cookieParser()); 
 
 if (process.env.NODE_ENV === "development") {
   app.use(

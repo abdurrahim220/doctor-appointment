@@ -59,10 +59,10 @@ enum ScheduleType {
 model User {
   id        String   @id @default(uuid())
   email     String   @unique
-  name      String?
-  phone     String?
+  name      String
+  phone     String
   role      Role     @default(USER)
-  gender    Gender?
+  gender    Gender
   password  String
   posts     Post[]
 

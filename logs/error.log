@@ -194,3 +194,13 @@ The change you are trying to make would violate the required relation 'PatientPr
     at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
     at async a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
     at async main (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:21:5)
+2025-09-07 20:48:46 [[31merror[39m]: Error: Socket closed unexpectedly
+    at Socket.<anonymous> (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@redis\client\lib\client\socket.ts:272:29)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:518:28)
+    at TCP.<anonymous> (node:net:351:12)
+2025-09-07 20:48:46 [[31merror[39m]: Error: Socket closed unexpectedly
+    at Socket.<anonymous> (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@redis\client\lib\client\socket.ts:272:29)
+    at Object.onceWrapper (node:events:633:26)
+    at Socket.emit (node:events:518:28)
+    at TCP.<anonymous> (node:net:351:12)

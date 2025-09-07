@@ -6,7 +6,7 @@ import * as bcrypt from "bcryptjs";
 import { nanoid } from "nanoid";
 
 const createUser = async (payload: IUser) => {
-  const { password, name, email } = payload;
+  const { password, name, email, gender, phone } = payload;
   const hashedPassword = await bcrypt.hash(password, 10);
   const redisClient = await initializeRedisClient();
   const id = nanoid();
@@ -16,12 +16,19 @@ const createUser = async (payload: IUser) => {
       id,
       name,
       email,
+      gender,
+      phone,
       password: hashedPassword,
     },
     select: {
       id: true,
       name: true,
       email: true,
+      role: true,
+      isActive: true,
+      isDeleted: true,
+      gender: true,
+      phone: true,
     },
   });
   await redisClient.set(userKeyById(user.id), JSON.stringify(user));
