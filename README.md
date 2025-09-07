@@ -20,7 +20,8 @@ This project is containerized using Docker for easy setup and deployment.
 
 ### Docker Commands
 
-- Start the application: `docker-compose up -d`
+- Start the application and run in detached mode: `docker-compose up -d`
+- Start the application and run in watch mode: `docker-compose up --build`
 - Stop the application: `docker-compose down`
 - View logs: `docker-compose logs -f app`
 - Run migrations: `docker-compose exec app yarn prisma:migrate`

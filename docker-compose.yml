@@ -20,6 +20,7 @@ services:
     volumes:
       - ./src:/app/src
       - ./prisma:/app/prisma
+      - ./logs:/app/logs
       - ./.env.example:/app/.env
       - /app/node_modules
       - /app/dist

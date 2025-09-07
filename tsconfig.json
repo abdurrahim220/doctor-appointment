@@ -3,11 +3,15 @@
     "target": "ES2020",
     "module": "CommonJS",
     "rootDir": "./src",
+    "lib": ["ES2020"],
+    "moduleResolution": "Node",
     "outDir": "./dist",
     "strict": true,
     "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
     "skipLibCheck": true
     },
   "include": ["src/**/*"],
-  "exclude": ["prisma"]
+  "exclude": ["prisma","node_modules","dist"]
 }

@@ -1,0 +1,196 @@
+2025-09-06 12:42:23 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `client_1.default.user.upsert()` invocation in
+/app/dist/prisma/seed.js:10:33
+
+   7 const logger_1 = __importDefault(require("../utils/logger"));
+   8 const client_1 = __importDefault(require("./client"));
+   9 async function main() {
+→ 10     await client_1.default.user.upsert(
+The table `public.User` does not exist in the current database.
+    at ei.handleRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:7283)
+    at ei.handleAndLogRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:6608)
+    at ei.request (/app/node_modules/@prisma/client/runtime/library.js:121:6315)
+    at async a (/app/node_modules/@prisma/client/runtime/library.js:130:9551)
+    at async main (/app/dist/prisma/seed.js:10:5)
+2025-09-06 12:42:27 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `client_1.default.user.upsert()` invocation in
+/app/dist/prisma/seed.js:10:33
+
+   7 const logger_1 = __importDefault(require("../utils/logger"));
+   8 const client_1 = __importDefault(require("./client"));
+   9 async function main() {
+→ 10     await client_1.default.user.upsert(
+The table `public.User` does not exist in the current database.
+    at ei.handleRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:7283)
+    at ei.handleAndLogRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:6608)
+    at ei.request (/app/node_modules/@prisma/client/runtime/library.js:121:6315)
+    at async a (/app/node_modules/@prisma/client/runtime/library.js:130:9551)
+    at async main (/app/dist/prisma/seed.js:10:5)
+2025-09-06 12:42:32 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `client_1.default.user.upsert()` invocation in
+/app/dist/prisma/seed.js:10:33
+
+   7 const logger_1 = __importDefault(require("../utils/logger"));
+   8 const client_1 = __importDefault(require("./client"));
+   9 async function main() {
+→ 10     await client_1.default.user.upsert(
+The table `public.User` does not exist in the current database.
+    at ei.handleRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:7283)
+    at ei.handleAndLogRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:6608)
+    at ei.request (/app/node_modules/@prisma/client/runtime/library.js:121:6315)
+    at async a (/app/node_modules/@prisma/client/runtime/library.js:130:9551)
+    at async main (/app/dist/prisma/seed.js:10:5)
+2025-09-06 12:42:37 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `client_1.default.user.upsert()` invocation in
+/app/dist/prisma/seed.js:10:33
+
+   7 const logger_1 = __importDefault(require("../utils/logger"));
+   8 const client_1 = __importDefault(require("./client"));
+   9 async function main() {
+→ 10     await client_1.default.user.upsert(
+The table `public.User` does not exist in the current database.
+    at ei.handleRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:7283)
+    at ei.handleAndLogRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:6608)
+    at ei.request (/app/node_modules/@prisma/client/runtime/library.js:121:6315)
+    at async a (/app/node_modules/@prisma/client/runtime/library.js:130:9551)
+    at async main (/app/dist/prisma/seed.js:10:5)
+2025-09-06 12:42:45 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `client_1.default.user.upsert()` invocation in
+/app/dist/prisma/seed.js:10:33
+
+   7 const logger_1 = __importDefault(require("../utils/logger"));
+   8 const client_1 = __importDefault(require("./client"));
+   9 async function main() {
+→ 10     await client_1.default.user.upsert(
+The table `public.User` does not exist in the current database.
+    at ei.handleRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:7283)
+    at ei.handleAndLogRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:6608)
+    at ei.request (/app/node_modules/@prisma/client/runtime/library.js:121:6315)
+    at async a (/app/node_modules/@prisma/client/runtime/library.js:130:9551)
+    at async main (/app/dist/prisma/seed.js:10:5)
+2025-09-06 12:42:55 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `client_1.default.user.upsert()` invocation in
+/app/dist/prisma/seed.js:10:33
+
+   7 const logger_1 = __importDefault(require("../utils/logger"));
+   8 const client_1 = __importDefault(require("./client"));
+   9 async function main() {
+→ 10     await client_1.default.user.upsert(
+The table `public.User` does not exist in the current database.
+    at ei.handleRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:7283)
+    at ei.handleAndLogRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:6608)
+    at ei.request (/app/node_modules/@prisma/client/runtime/library.js:121:6315)
+    at async a (/app/node_modules/@prisma/client/runtime/library.js:130:9551)
+    at async main (/app/dist/prisma/seed.js:10:5)
+2025-09-06 12:43:12 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `client_1.default.user.upsert()` invocation in
+/app/dist/prisma/seed.js:10:33
+
+   7 const logger_1 = __importDefault(require("../utils/logger"));
+   8 const client_1 = __importDefault(require("./client"));
+   9 async function main() {
+→ 10     await client_1.default.user.upsert(
+The table `public.User` does not exist in the current database.
+    at ei.handleRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:7283)
+    at ei.handleAndLogRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:6608)
+    at ei.request (/app/node_modules/@prisma/client/runtime/library.js:121:6315)
+    at async a (/app/node_modules/@prisma/client/runtime/library.js:130:9551)
+    at async main (/app/dist/prisma/seed.js:10:5)
+2025-09-06 12:43:41 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `client_1.default.user.upsert()` invocation in
+/app/dist/prisma/seed.js:10:33
+
+   7 const logger_1 = __importDefault(require("../utils/logger"));
+   8 const client_1 = __importDefault(require("./client"));
+   9 async function main() {
+→ 10     await client_1.default.user.upsert(
+The table `public.User` does not exist in the current database.
+    at ei.handleRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:7283)
+    at ei.handleAndLogRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:6608)
+    at ei.request (/app/node_modules/@prisma/client/runtime/library.js:121:6315)
+    at async a (/app/node_modules/@prisma/client/runtime/library.js:130:9551)
+    at async main (/app/dist/prisma/seed.js:10:5)
+2025-09-06 12:44:36 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `client_1.default.user.upsert()` invocation in
+/app/dist/prisma/seed.js:10:33
+
+   7 const logger_1 = __importDefault(require("../utils/logger"));
+   8 const client_1 = __importDefault(require("./client"));
+   9 async function main() {
+→ 10     await client_1.default.user.upsert(
+The table `public.User` does not exist in the current database.
+    at ei.handleRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:7283)
+    at ei.handleAndLogRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:6608)
+    at ei.request (/app/node_modules/@prisma/client/runtime/library.js:121:6315)
+    at async a (/app/node_modules/@prisma/client/runtime/library.js:130:9551)
+    at async main (/app/dist/prisma/seed.js:10:5)
+2025-09-06 12:45:41 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `client_1.default.user.upsert()` invocation in
+/app/dist/prisma/seed.js:10:33
+
+   7 const logger_1 = __importDefault(require("../utils/logger"));
+   8 const client_1 = __importDefault(require("./client"));
+   9 async function main() {
+→ 10     await client_1.default.user.upsert(
+The table `public.User` does not exist in the current database.
+    at ei.handleRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:7283)
+    at ei.handleAndLogRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:6608)
+    at ei.request (/app/node_modules/@prisma/client/runtime/library.js:121:6315)
+    at async a (/app/node_modules/@prisma/client/runtime/library.js:130:9551)
+    at async main (/app/dist/prisma/seed.js:10:5)
+2025-09-06 12:46:46 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `client_1.default.user.upsert()` invocation in
+/app/dist/prisma/seed.js:10:33
+
+   7 const logger_1 = __importDefault(require("../utils/logger"));
+   8 const client_1 = __importDefault(require("./client"));
+   9 async function main() {
+→ 10     await client_1.default.user.upsert(
+The table `public.User` does not exist in the current database.
+    at ei.handleRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:7283)
+    at ei.handleAndLogRequestError (/app/node_modules/@prisma/client/runtime/library.js:121:6608)
+    at ei.request (/app/node_modules/@prisma/client/runtime/library.js:121:6315)
+    at async a (/app/node_modules/@prisma/client/runtime/library.js:130:9551)
+    at async main (/app/dist/prisma/seed.js:10:5)
+2025-09-07 14:59:42 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `prisma.patientProfile.upsert()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:21:33
+
+  18 // profiles seeds 
+  19 // patient profiles
+  20 for (const profile of patientProfiles) {
+→ 21   await prisma.patientProfile.upsert(
+Foreign key constraint violated on the constraint: `PatientProfile_userId_fkey`
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:228:13)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async main (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:21:5)
+2025-09-07 15:00:16 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `prisma.patientProfile.upsert()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:21:33
+
+  18 // profiles seeds 
+  19 // patient profiles
+  20 for (const profile of patientProfiles) {
+→ 21   await prisma.patientProfile.upsert(
+Foreign key constraint violated on the constraint: `PatientProfile_userId_fkey`
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:228:13)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async main (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:21:5)
+2025-09-07 15:06:31 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `prisma.patientProfile.upsert()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:21:33
+
+  18 // profiles seeds
+  19 // patient profiles
+  20 for (const profile of patientProfiles) {
+→ 21   await prisma.patientProfile.upsert(
+The change you are trying to make would violate the required relation 'PatientProfileToUser' between the `PatientProfile` and `User` models.
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:228:13)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async main (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:21:5)

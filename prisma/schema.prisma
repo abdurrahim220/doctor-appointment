@@ -7,19 +7,203 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model User {
-  id       String  @id
-  email    String  @unique
-  name     String?
-  password String
-  posts    Post[]
+enum Role {
+  USER
+  ADMIN
+  SUPER_ADMIN
+  PATIENT
+  DOCTOR
+  NURSE
 }
 
+enum Gender {
+  MALE
+  FEMALE
+  OTHER
+}
+
+enum Specialty {
+  CARDIOLOGY
+  DERMATOLOGY
+  ENDOCRINOLOGY
+  GASTROENTEROLOGY
+  GENERAL_PRACTICE
+  HEMATOLOGY
+  INTERNAL_MEDICINE
+  NEUROLOGY
+  OBSTETRICS_GYNECOLOGY
+  ORTHOPEDICS
+  PEDIATRICS
+  PSYCHIATRY
+  RADIOLOGY
+  SURGERY
+}
+
+enum ProfileStatus {
+  ACTIVE
+  INACTIVE
+}
+enum AppointmentStatus {
+  BOOKED
+  CANCELLED
+  COMPLETED
+}
+enum ScheduleType {
+  COMPLETE
+  PENDING
+  CANCELLED
+  RESCHEDULED
+  BOOKED
+}
+
+model User {
+  id        String   @id @default(uuid())
+  email     String   @unique
+  name      String?
+  phone     String?
+  role      Role     @default(USER)
+  gender    Gender?
+  password  String
+  posts     Post[]
+
+  patientProfile PatientProfile?
+  doctorProfile  DoctorProfile?
+  nurseProfile   NurseProfile?
+
+  isActive   Boolean  @default(true)
+  isDeleted  Boolean  @default(false)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+
+model PatientProfile {
+  id             String    @id @default(uuid())
+  userId         String    @unique
+  user           User      @relation(fields: [userId], references: [id])
+  medicalRecords MedicalRecord[]
+  appointments   Appointment[] @relation("AppointmentPatient")
+  reviews        Review[]      @relation("ReviewPatient")
+  dateOfBirth    DateTime?
+  status         ProfileStatus
+}
+
+model DoctorProfile {
+  id            String    @id @default(uuid())
+  userId        String    @unique
+  user          User      @relation(fields: [userId], references: [id])
+  specialty     Specialty
+  licenseNumber String
+  schedules    Schedule[]
+  appointments Appointment[] @relation("AppointmentDoctor")
+  status        ProfileStatus
+  clinics       ClinicDoctor[] @relation("ClinicDoctor")
+}
+
+model NurseProfile {
+  id            String  @id @default(uuid())
+  userId        String  @unique
+  user          User    @relation(fields: [userId], references: [id])
+  licenseNumber String?
+  status        ProfileStatus
+}
+
+model Schedule {
+  id          String        @id @default(uuid())
+  doctorId    String
+  doctor      DoctorProfile @relation(fields: [doctorId], references: [id])
+  startTime   DateTime
+  endTime     DateTime
+  isAvailable Boolean       @default(true)
+  appointments Appointment[]
+
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+
 model Post {
-  id        String  @id
+  id        String   @id @default(uuid())
   title     String
   content   String?
-  published Boolean @default(false)
-  author    User?   @relation(fields: [authorId], references: [id])
+  published Boolean  @default(false)
   authorId  String?
+  author    User?    @relation(fields: [authorId], references: [id])
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+
+
+
+model Appointment {
+  id          String          @id @default(uuid())
+  date        DateTime
+  status      AppointmentStatus
+  notes       String?
+  
+  patientId   String
+  patient     PatientProfile  @relation("AppointmentPatient", fields: [patientId], references: [id])
+
+  doctorId    String
+  doctor      DoctorProfile   @relation("AppointmentDoctor", fields: [doctorId], references: [id])
+
+  scheduleId  String
+  schedule    Schedule        @relation(fields: [scheduleId], references: [id])
+
+  clinicId    String?
+  clinic      Clinic?         @relation(fields: [clinicId], references: [id])
+
+  medicalRecords MedicalRecord[]
+
+  scheduleType ScheduleType
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+
+
+model MedicalRecord {
+  id            String    @id @default(uuid())
+  patientId     String
+  patient       PatientProfile      @relation(fields: [patientId], references: [id])
+  appointmentId String?
+  appointment   Appointment? @relation(fields: [appointmentId], references: [id])
+  diagnosis     String?
+  notes         String?
+  createdAt     DateTime  @default(now())
+}
+
+
+model Review {
+  id        String         @id @default(uuid())
+  patientId String
+  patient   PatientProfile @relation("ReviewPatient", fields: [patientId], references: [id])
+  doctorId  String
+  rating    Int
+  comment   String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+
+model Clinic {
+  id           String          @id @default(uuid())
+  name         String
+  address      String?
+  doctors      ClinicDoctor[] @relation("ClinicDoctor")
+  appointments Appointment[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model ClinicDoctor {
+  id          String         @id @default(uuid())
+  clinicId    String
+  doctorId    String
+  clinic      Clinic         @relation("ClinicDoctor", fields: [clinicId], references: [id])
+  doctor      DoctorProfile  @relation("ClinicDoctor", fields: [doctorId], references: [id])
+  @@unique([clinicId, doctorId]) // prevents duplicate doctor in same clinic
 }

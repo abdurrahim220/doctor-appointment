@@ -12,6 +12,8 @@
     "prisma:studio": "prisma studio",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
+    "prisma:seed:dev": "ts-node ./src/prisma/seed.ts",
+    "prisma:seed": "node dist/prisma/seed.js",
     "prisma:reset": "prisma migrate reset",
     "prisma:deploy": "prisma migrate deploy",
     "format": "prettier --write \"src/**/*.{ts,js}\"",
@@ -21,7 +23,6 @@
   },
   "dependencies": {
     "@prisma/client": "^6.14.0",
-    "bcrypt": "^6.0.0",
     "bcryptjs": "^3.0.2",
     "compression": "^1.8.1",
     "cors": "^2.8.5",
@@ -34,6 +35,7 @@
     "morgan": "^1.10.1",
     "nanoid": "^5.1.5",
     "redis": "^5.8.2",
+    "ts-node": "^10.9.2",
     "winston": "^3.17.0",
     "xss": "^1.0.15",
     "zod": "^4.1.3"

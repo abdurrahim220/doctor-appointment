@@ -14,6 +14,7 @@ COPY . .
 # Generate Prisma client
 RUN yarn prisma:generate
 
+
 # Build the application
 RUN yarn build
 
@@ -40,4 +41,4 @@ COPY .env.example ./.env
 EXPOSE 3000
 
 # Command to run the application
-CMD ["node", "dist/server.js"]
+CMD ["sh", "-c", " yarn prisma:migrate && yarn prisma:deploy && yarn prisma:seed && node dist/server.js"]
