@@ -9,12 +9,18 @@ import { Role } from "../../types/schema.types";
 const router = Router();
 
 router.post("/", validateRequest(userValidation.userZodSchema), userController.createUser);
-router.get("/", isAuth(["USER", "ADMIN"]), userController.getAllUser);
+router.get("/profile", isAuth(), userController.getUserProfile);
+
+router.get("/", isAuth([Role.USER, Role.ADMIN]), userController.getAllUser);
 
 router.get("/:id", userController.getUserById);
 router.put("/:id", validateRequest(userValidation.updateUserZodSchema), userController.updateUser);
 router.delete("/:id", userController.deleteUser);
 
-// router.get("/profile", userController.getUserProfile);
-// router.patch("/update-role", userController.updateUserRole);
+router.patch(
+  "/update-role/:id",
+  isAuth([Role.ADMIN]),
+  validateRequest(userValidation.updateRoleZodSchema),
+  userController.updateRole,
+);
 export const userRoutes = router;

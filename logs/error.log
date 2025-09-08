@@ -204,3 +204,58 @@ The change you are trying to make would violate the required relation 'PatientPr
     at Object.onceWrapper (node:events:633:26)
     at Socket.emit (node:events:518:28)
     at TCP.<anonymous> (node:net:351:12)
+2025-09-08 08:05:26 [[31merror[39m]: JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:82:17)
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:8:25)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:20:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:295:15
+2025-09-08 08:05:33 [[31merror[39m]: JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:82:17)
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:8:25)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:20:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:295:15
+2025-09-08 08:07:29 [[31merror[39m]: JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:82:17)
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:8:25)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:21:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:295:15
+2025-09-08 08:07:32 [[31merror[39m]: JsonWebTokenError: invalid token
+    at Object.module.exports [as verify] (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:82:17)
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:8:25)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:21:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:295:15
+2025-09-08 10:32:51 [[31merror[39m]: JsonWebTokenError: jwt malformed
+    at Object.module.exports [as verify] (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:70:17)
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:8:25)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:21:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:295:15

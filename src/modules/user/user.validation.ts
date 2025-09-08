@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { Role } from "../../types/schema.types";
 
 const userZodSchema = z.object({
   id: z.string().optional(),
@@ -18,7 +19,12 @@ const updateUserZodSchema = z.object({
   password: z.string().min(6, "Password must be at least 6 characters"),
 });
 
+const updateRoleZodSchema = z.object({
+  role: z.enum(Object.values(Role) as [Role, ...Role[]]),
+});
+
 export const userValidation = {
   userZodSchema,
   updateUserZodSchema,
+  updateRoleZodSchema,
 };

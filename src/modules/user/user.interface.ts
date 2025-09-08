@@ -22,8 +22,8 @@ export interface IUser {
 export type IPatientProfile = {
   id?: string;
   userId: string;
-  dateOfBirth: Date;
-  status: ProfileStatus;
+  dateOfBirth: string;
+  status?: ProfileStatus;
 };
 
 export type IDoctorProfile = {
@@ -43,4 +43,7 @@ export type INurseProfile = {
   status: ProfileStatus;
 };
 
-export type IUserRole = "USER" | "ADMIN" | "SUPER_ADMIN" | "PATIENT" | "DOCTOR" | "NURSE";
+
+
+
+

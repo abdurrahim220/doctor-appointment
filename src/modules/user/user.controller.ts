@@ -15,7 +15,7 @@ const createUser = asyncHandler(async (req: Request, res: Response) => {
   });
 });
 
-const getAllUser = asyncHandler(async (req: Request, res: Response) => {
+const getAllUser = asyncHandler(async (_req: Request, res: Response) => {
   const result = await userService.getAllUser();
 
   sendResponse(res, {
@@ -56,10 +56,34 @@ const deleteUser = asyncHandler(async (req: Request, res: Response) => {
   });
 });
 
+const updateRole = asyncHandler(async (req: Request, res: Response) => {
+  const result = await userService.updateRole(req.params.id, req.body);
+  sendResponse(res, {
+    statusCode: status.OK,
+    success: true,
+    message: "User role updated successfully",
+    data: result,
+  });
+});
+
+const getUserProfile = asyncHandler(async (req: Request, res: Response) => {
+  const userId = req.user?.userId;
+  
+  const result = await userService.getUserProfile(userId);
+  sendResponse(res, {
+    statusCode: status.OK,
+    success: true,
+    message: "User profile retrieved successfully",
+    data: result,
+  });
+});
+
 export const userController = {
   createUser,
   getAllUser,
   getUserById,
   updateUser,
   deleteUser,
+  updateRole,
+  getUserProfile,
 };

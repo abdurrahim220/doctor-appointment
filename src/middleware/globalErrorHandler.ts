@@ -9,7 +9,7 @@ import { config } from "../config";
 import status from "http-status";
 import { ZodError } from "zod";
 
-const globalErrorHandler = (err: unknown, req: Request, res: Response, _next: NextFunction) => {
+const globalErrorHandler = (err: unknown, _req: Request, res: Response, _next: NextFunction) => {
   let statusCode = 500;
   let message = "Something went wrong!";
   let errorMessages: ErrorMessages[] = [

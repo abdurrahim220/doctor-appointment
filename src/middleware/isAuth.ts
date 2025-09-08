@@ -1,5 +1,5 @@
 import { NextFunction, Response, Request } from "express";
-import { IUserRole } from "../modules/user/user.interface";
+
 import asyncHandler from "../utils/asyncHandler";
 import AppError from "../errors/appError";
 import status from "http-status";
@@ -7,9 +7,10 @@ import verifyToken from "../utils/verifyToken";
 import { config } from "../config";
 import { JwtPayload } from "jsonwebtoken";
 import prisma from "../prisma/client";
+import { Role } from "../types/schema.types";
 
-const isAuth = (requiredRole: IUserRole[]) => {
-  return asyncHandler(async (req: Request, res: Response, next: NextFunction) => {
+const isAuth = (requiredRole?: Role[]) => {
+  return asyncHandler(async (req: Request, _res: Response, next: NextFunction) => {
     const token = req.headers.authorization;
     
 

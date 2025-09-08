@@ -1,5 +1,6 @@
 import initializeRedisClient from "../../config/redis.client";
 import prisma from "../../prisma/client";
+import { Role } from "../../types/schema.types";
 import { allUsers, userKeyById } from "../../utils/keys";
 import { IUser } from "./user.interface";
 import * as bcrypt from "bcryptjs";
@@ -37,7 +38,7 @@ const createUser = async (payload: IUser) => {
   if (cachedAllUsers) {
     const allUsersData = JSON.parse(cachedAllUsers);
     allUsersData.users.push(user);
-    await redisClient.set(allUsers(), JSON.stringify(allUsersData),{
+    await redisClient.set(allUsers(), JSON.stringify(allUsersData), {
       EX: 60 * 60,
     });
   }
@@ -112,7 +113,6 @@ const getUserById = async (id: string) => {
 const updateUser = async (id: string, payload: IUser) => {
   const { password, name, email } = payload;
   const hashedPassword = await bcrypt.hash(password, 10);
-  
 
   const user = await prisma.user.update({
     where: {
@@ -141,7 +141,56 @@ const deleteUser = async (id: string) => {
   });
   await redisClient.del(userKeyById(id));
   await redisClient.del(allUsers());
-  
+};
+
+const updateRole = async (id: string, payload: { role: Role }) => {
+  const { role } = payload;
+  const user = await prisma.user.update({
+    where: {
+      id,
+    },
+    data: {
+      role,
+    },
+    select: {
+      name: true,
+      email: true,
+      role: true,
+    },
+  });
+  return user;
+};
+
+const getUserProfile = async (id: string) => {
+  const redisClient = await initializeRedisClient();
+  const cachedData = await redisClient.get(userKeyById(id));
+  if (cachedData) {
+    return {
+      data: JSON.parse(cachedData),
+      source: `redis` as const,
+    };
+  }
+  const user = await prisma.user.findUnique({
+    where: {
+      id,
+    },
+    select: {
+      name: true,
+      email: true,
+      role: true,
+      isActive: true,
+      isDeleted: true,
+      gender: true,
+      phone: true,
+    },
+  });
+  await redisClient.set(userKeyById(id), JSON.stringify(user), {
+    EX: 60 * 60,
+  });
+  return {
+    data: user,
+    source: `database` as const,
+  };
 };
 
 export const userService = {
@@ -150,4 +199,6 @@ export const userService = {
   getUserById,
   updateUser,
   deleteUser,
+  updateRole,
+  getUserProfile,
 };

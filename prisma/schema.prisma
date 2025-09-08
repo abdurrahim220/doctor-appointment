@@ -84,8 +84,8 @@ model PatientProfile {
   medicalRecords MedicalRecord[]
   appointments   Appointment[] @relation("AppointmentPatient")
   reviews        Review[]      @relation("ReviewPatient")
-  dateOfBirth    DateTime?
-  status         ProfileStatus
+  dateOfBirth    String
+  status         ProfileStatus @default(ACTIVE)
 }
 
 model DoctorProfile {
