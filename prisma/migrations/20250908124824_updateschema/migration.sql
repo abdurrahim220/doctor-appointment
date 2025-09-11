@@ -37,8 +37,8 @@ CREATE TABLE "public"."User" (
 CREATE TABLE "public"."PatientProfile" (
     "id" TEXT NOT NULL,
     "userId" TEXT NOT NULL,
-    "dateOfBirth" TIMESTAMP(3),
-    "status" "public"."ProfileStatus" NOT NULL,
+    "dateOfBirth" TEXT NOT NULL,
+    "status" "public"."ProfileStatus" NOT NULL DEFAULT 'ACTIVE',
 
     CONSTRAINT "PatientProfile_pkey" PRIMARY KEY ("id")
 );

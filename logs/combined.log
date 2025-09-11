@@ -1598,3 +1598,331 @@ The change you are trying to make would violate the required relation 'PatientPr
 2025-09-08 10:35:13 [[32minfo[39m]: ✅ Database connected successfully!
 2025-09-08 10:35:13 [[32minfo[39m]: Redis connected
 2025-09-08 10:35:13 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 18:45:27 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 18:45:27 [[32minfo[39m]: Redis connected
+2025-09-08 18:45:27 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 18:50:00 [[32minfo[39m]: 🌱 Starting seed process...
+2025-09-08 18:50:01 [[32minfo[39m]: 🧹 Cleaned up existing data
+2025-09-08 18:50:01 [[32minfo[39m]: 👥 Created 4 users
+2025-09-08 18:50:01 [[32minfo[39m]: 👤 Created 1 patient profiles
+2025-09-08 18:50:01 [[32minfo[39m]: 👨‍⚕️ Created 1 doctor profiles
+2025-09-08 18:50:01 [[32minfo[39m]: 👩‍⚕️ Created 1 nurse profiles
+2025-09-08 18:50:01 [[32minfo[39m]: 🏥 Created 1 clinics
+2025-09-08 18:50:01 [[32minfo[39m]: 🔗 Created 1 clinic doctor relationships
+2025-09-08 18:50:01 [[32minfo[39m]: 📅 Created 2 schedules
+2025-09-08 18:50:01 [[32minfo[39m]: 📋 Created 1 appointments
+2025-09-08 18:50:01 [[32minfo[39m]: 📋 Created 1 medical records
+2025-09-08 18:50:01 [[32minfo[39m]: ⭐ Created 1 reviews
+2025-09-08 18:50:01 [[32minfo[39m]: 🌱 Seed completed successfully!
+2025-09-08 18:51:01 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 18:51:01 [[32minfo[39m]: Redis connected
+2025-09-08 18:51:01 [[32minfo[39m]: Server is running on port 5000
+2025-09-08 18:52:52 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-08 18:52:52 [[32minfo[39m]: Redis connected
+2025-09-08 18:52:52 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 07:39:36 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 07:39:36 [[32minfo[39m]: Redis connected
+2025-09-10 07:39:36 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:38:16 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:38:16 [[32minfo[39m]: Redis connected
+2025-09-10 08:38:16 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:39:01 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:39:01 [[32minfo[39m]: Redis connected
+2025-09-10 08:39:01 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:39:07 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:39:07 [[32minfo[39m]: Redis connected
+2025-09-10 08:39:07 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:39:30 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:39:30 [[32minfo[39m]: Redis connected
+2025-09-10 08:39:30 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:39:34 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:39:34 [[32minfo[39m]: Redis connected
+2025-09-10 08:39:34 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:39:49 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:39:49 [[32minfo[39m]: Redis connected
+2025-09-10 08:39:49 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:40:21 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:40:21 [[32minfo[39m]: Redis connected
+2025-09-10 08:40:22 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:40:39 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:40:39 [[32minfo[39m]: Redis connected
+2025-09-10 08:40:39 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:40:43 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:40:43 [[32minfo[39m]: Redis connected
+2025-09-10 08:40:43 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:40:46 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:40:46 [[32minfo[39m]: Redis connected
+2025-09-10 08:40:46 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:40:49 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:40:49 [[32minfo[39m]: Redis connected
+2025-09-10 08:40:49 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:40:55 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:40:55 [[32minfo[39m]: Redis connected
+2025-09-10 08:40:55 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:41:05 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:41:05 [[32minfo[39m]: Redis connected
+2025-09-10 08:41:05 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:41:11 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:41:11 [[32minfo[39m]: Redis connected
+2025-09-10 08:41:11 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:41:16 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:41:16 [[32minfo[39m]: Redis connected
+2025-09-10 08:41:16 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:41:19 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:41:19 [[32minfo[39m]: Redis connected
+2025-09-10 08:41:19 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:43:36 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:43:36 [[32minfo[39m]: Redis connected
+2025-09-10 08:43:36 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:43:42 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:43:42 [[32minfo[39m]: Redis connected
+2025-09-10 08:43:42 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:43:51 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:43:51 [[32minfo[39m]: Redis connected
+2025-09-10 08:43:51 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:43:55 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:43:56 [[32minfo[39m]: Redis connected
+2025-09-10 08:43:56 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:44:21 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:44:21 [[32minfo[39m]: Redis connected
+2025-09-10 08:44:21 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:47:07 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:47:07 [[32minfo[39m]: Redis connected
+2025-09-10 08:47:07 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:47:16 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:47:16 [[32minfo[39m]: Redis connected
+2025-09-10 08:47:16 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:48:15 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:48:16 [[32minfo[39m]: Redis connected
+2025-09-10 08:48:16 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:48:21 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:48:21 [[32minfo[39m]: Redis connected
+2025-09-10 08:48:21 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:49:34 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:49:34 [[32minfo[39m]: Redis connected
+2025-09-10 08:49:34 [[32minfo[39m]: Server is running on port 5000
+2025-09-10 08:49:42 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-10 08:49:42 [[32minfo[39m]: Redis connected
+2025-09-10 08:49:42 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 07:56:11 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 07:56:11 [[32minfo[39m]: Redis connected
+2025-09-11 07:56:11 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:09:11 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:09:11 [[32minfo[39m]: Redis connected
+2025-09-11 08:09:11 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:09:17 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:09:17 [[32minfo[39m]: Redis connected
+2025-09-11 08:09:17 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:09:29 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:09:30 [[32minfo[39m]: Redis connected
+2025-09-11 08:09:30 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:09:42 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:09:42 [[32minfo[39m]: Redis connected
+2025-09-11 08:09:42 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:10:25 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:10:25 [[32minfo[39m]: Redis connected
+2025-09-11 08:10:25 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:10:28 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:10:28 [[32minfo[39m]: Redis connected
+2025-09-11 08:10:28 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:10:52 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:10:52 [[32minfo[39m]: Redis connected
+2025-09-11 08:10:52 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:11:00 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:11:00 [[32minfo[39m]: Redis connected
+2025-09-11 08:11:00 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:11:13 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:11:13 [[32minfo[39m]: Redis connected
+2025-09-11 08:11:13 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:11:43 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:11:44 [[32minfo[39m]: Redis connected
+2025-09-11 08:11:44 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:11:51 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:11:51 [[32minfo[39m]: Redis connected
+2025-09-11 08:11:51 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:11:51 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:22:38 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:22:38 [[32minfo[39m]: Redis connected
+2025-09-11 08:22:38 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:22:38 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:22:43 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:22:44 [[32minfo[39m]: Redis connected
+2025-09-11 08:22:44 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:22:44 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:23:07 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:23:07 [[32minfo[39m]: Redis connected
+2025-09-11 08:23:07 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:23:07 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:23:17 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:23:17 [[32minfo[39m]: Redis connected
+2025-09-11 08:23:17 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:23:17 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:23:28 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:23:28 [[32minfo[39m]: Redis connected
+2025-09-11 08:23:28 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:23:28 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:23:36 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:23:37 [[32minfo[39m]: Redis connected
+2025-09-11 08:23:37 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:23:37 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:23:57 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:23:57 [[32minfo[39m]: Redis connected
+2025-09-11 08:23:58 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:23:58 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:24:02 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:24:02 [[32minfo[39m]: Redis connected
+2025-09-11 08:24:02 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:24:02 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:24:31 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:24:31 [[32minfo[39m]: Redis connected
+2025-09-11 08:24:31 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:24:31 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:24:54 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:24:54 [[32minfo[39m]: Redis connected
+2025-09-11 08:24:54 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:24:54 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:25:15 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:25:15 [[32minfo[39m]: Redis connected
+2025-09-11 08:25:15 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:25:15 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:25:24 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:25:24 [[32minfo[39m]: Redis connected
+2025-09-11 08:25:24 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:25:24 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:25:30 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:25:30 [[32minfo[39m]: Redis connected
+2025-09-11 08:25:30 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:25:30 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:25:33 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:25:33 [[32minfo[39m]: Redis connected
+2025-09-11 08:25:33 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:25:33 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:29:31 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:29:32 [[32minfo[39m]: Redis connected
+2025-09-11 08:29:32 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:29:32 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:29:36 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:29:39 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:29:39 [[32minfo[39m]: Redis connected
+2025-09-11 08:29:39 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:29:39 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:29:47 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:29:48 [[32minfo[39m]: Redis connected
+2025-09-11 08:29:48 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:29:48 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:29:59 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:29:59 [[32minfo[39m]: Redis connected
+2025-09-11 08:29:59 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:29:59 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:30:13 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:30:14 [[32minfo[39m]: Redis connected
+2025-09-11 08:30:14 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:30:14 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:30:22 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:30:23 [[32minfo[39m]: Redis connected
+2025-09-11 08:30:23 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:30:23 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:30:28 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:30:28 [[32minfo[39m]: Redis connected
+2025-09-11 08:30:28 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:30:28 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:30:35 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:30:35 [[32minfo[39m]: Redis connected
+2025-09-11 08:30:35 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:30:35 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:30:53 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:30:53 [[32minfo[39m]: Redis connected
+2025-09-11 08:30:53 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:30:53 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:31:06 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:31:06 [[32minfo[39m]: Redis connected
+2025-09-11 08:31:06 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:31:06 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:31:15 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:31:15 [[32minfo[39m]: Redis connected
+2025-09-11 08:31:15 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:31:15 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:31:23 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:31:23 [[32minfo[39m]: Redis connected
+2025-09-11 08:31:23 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:31:23 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:32:18 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:32:18 [[32minfo[39m]: Redis connected
+2025-09-11 08:32:18 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:32:18 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:34:05 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:34:05 [[32minfo[39m]: Redis connected
+2025-09-11 08:34:05 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:34:05 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:34:30 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:34:30 [[32minfo[39m]: Redis connected
+2025-09-11 08:34:30 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:34:30 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:34:34 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:34:34 [[32minfo[39m]: Redis connected
+2025-09-11 08:34:34 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:34:34 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:34:38 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:34:38 [[32minfo[39m]: Redis connected
+2025-09-11 08:34:38 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:34:38 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:34:46 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:34:46 [[32minfo[39m]: Redis connected
+2025-09-11 08:34:46 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:34:46 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:35:02 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:35:02 [[32minfo[39m]: Redis connected
+2025-09-11 08:35:02 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:35:02 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:35:39 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:35:39 [[32minfo[39m]: Redis connected
+2025-09-11 08:35:39 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:35:39 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:35:48 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:35:48 [[32minfo[39m]: Redis connected
+2025-09-11 08:35:48 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:35:48 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:36:12 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:36:12 [[32minfo[39m]: Redis connected
+2025-09-11 08:36:12 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:36:12 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:36:28 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:36:28 [[32minfo[39m]: Redis connected
+2025-09-11 08:36:28 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:36:28 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:37:01 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:37:01 [[32minfo[39m]: Redis connected
+2025-09-11 08:37:01 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:37:01 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:37:05 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:37:05 [[32minfo[39m]: Redis connected
+2025-09-11 08:37:06 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:37:06 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:37:11 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:37:11 [[32minfo[39m]: Redis connected
+2025-09-11 08:37:11 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:37:11 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:37:35 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:37:35 [[32minfo[39m]: Redis connected
+2025-09-11 08:37:35 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:37:35 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:38:28 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:38:28 [[32minfo[39m]: Redis connected
+2025-09-11 08:38:28 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:38:28 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:39:14 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:39:14 [[32minfo[39m]: Redis connected
+2025-09-11 08:39:14 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:39:14 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:39:17 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:39:17 [[32minfo[39m]: Redis connected
+2025-09-11 08:39:17 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:39:17 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:44:30 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:44:30 [[32minfo[39m]: Redis connected
+2025-09-11 08:44:30 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:44:30 [[32minfo[39m]: Server is running on port 5000
+2025-09-11 08:46:17 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-11 08:46:17 [[32minfo[39m]: Redis connected
+2025-09-11 08:46:17 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-11 08:46:17 [[32minfo[39m]: Server is running on port 5000

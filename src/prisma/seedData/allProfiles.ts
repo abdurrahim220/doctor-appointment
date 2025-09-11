@@ -4,7 +4,7 @@ export const patientProfiles = [
   {
     id: 'patient-profile-1',
     userId: 'user-patient-1',
-    dateOfBirth: new Date('1990-05-15'),
+    dateOfBirth:'1990-05-15',
     status: ProfileStatus.ACTIVE,
   },
 ];

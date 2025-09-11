@@ -1,4 +1,7 @@
+import status from "http-status";
+import { BLOOM_KEY } from "../../config/bloom.redis";
 import initializeRedisClient from "../../config/redis.client";
+import AppError from "../../errors/appError";
 import prisma from "../../prisma/client";
 import { Role } from "../../types/schema.types";
 import { allUsers, userKeyById } from "../../utils/keys";
@@ -8,8 +11,19 @@ import { nanoid } from "nanoid";
 
 const createUser = async (payload: IUser) => {
   const { password, name, email, gender, phone } = payload;
-  const hashedPassword = await bcrypt.hash(password, 10);
   const redisClient = await initializeRedisClient();
+  const bfReply: unknown = await redisClient.sendCommand(["BF.EXISTS", BLOOM_KEY, email]);
+  if (bfReply === 1) {
+    const existing = await prisma.user.findUnique({
+      where: {
+        email,
+      },
+    });
+    if (existing) {
+      throw new AppError("User already exists", status.BAD_REQUEST);
+    }
+  }
+  const hashedPassword = await bcrypt.hash(password, 10);
   const id = nanoid();
 
   const user = await prisma.user.create({
@@ -30,35 +44,60 @@ const createUser = async (payload: IUser) => {
       isDeleted: true,
       gender: true,
       phone: true,
+      createdAt: true,
     },
   });
-  await redisClient.set(userKeyById(user.id), JSON.stringify(user));
+  await redisClient.sendCommand(["BF.ADD", BLOOM_KEY, user.email]);
+  await redisClient.sendCommand(["BF.ADD", BLOOM_KEY, user.id]);
+
+  await redisClient.zAdd(userKeyById(user.id), {
+    score: new Date(user.createdAt).getTime(),
+    value: JSON.stringify(user),
+  });
 
   const cachedAllUsers = await redisClient.get(allUsers());
   if (cachedAllUsers) {
     const allUsersData = JSON.parse(cachedAllUsers);
     allUsersData.users.push(user);
-    await redisClient.set(allUsers(), JSON.stringify(allUsersData), {
-      EX: 60 * 60,
-    });
+    await redisClient.zAdd(
+      allUsers(),
+      {
+        score: new Date(user.createdAt).getTime(),
+        value: JSON.stringify(allUsersData),
+      },
+      {
+        NX: true,
+      },
+    );
   }
 
   return user;
 };
 
-const getAllUser = async () => {
+const getAllUser = async (page: number, limit: number) => {
   const redisClient = await initializeRedisClient();
-  const cachedData = await redisClient.get(allUsers());
-  if (cachedData) {
+  const start = (page - 1) * limit;
+  const end = start + limit -1;
+ const cachedUsers = await redisClient.zRange(allUsers(), start, end, {
+    REV: true,
+  });
+  if (cachedUsers.length === limit) {
     return {
-      data: JSON.parse(cachedData),
+      data: cachedUsers.map((u)=>JSON.parse(u)),
       source: `redis` as const,
     };
   }
   const users = await prisma.user.findMany({
+    orderBy: {
+      createdAt: "desc",
+    },
+    take: limit,
+    skip: start,
     select: {
       name: true,
       email: true,
+      role: true,
+      createdAt: true,
       posts: {
         select: {
           title: true,
@@ -68,13 +107,17 @@ const getAllUser = async () => {
     },
   });
 
+  for (const u of users) {
+    await redisClient.zAdd(allUsers(), {
+      score: new Date(u.createdAt).getTime(),
+      value: JSON.stringify(u),
+    });
+  }
+
   const result = {
     users,
     source: `database` as const,
   };
-  await redisClient.set(allUsers(), JSON.stringify(result), {
-    EX: 60 * 60,
-  });
   return result;
 };
 

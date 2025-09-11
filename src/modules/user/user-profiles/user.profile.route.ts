@@ -7,7 +7,9 @@ import isAuth from "../../../middleware/isAuth";
 const router = Router()
 
 router.post("/create-patient-profile",isAuth(),validateRequest(subUserValidation.createPatientProfileZodSchema),subUserController.createdPatientProfile)
+
 router.post("/update-patient-profile",isAuth(),validateRequest(subUserValidation.updatePatientProfileZodSchema),subUserController.updatePatientProfile)
+
 router.get("/get-patient-profile",isAuth(),subUserController.getPatientProfile)
 
 

@@ -11,7 +11,7 @@ const router = Router();
 router.post("/", validateRequest(userValidation.userZodSchema), userController.createUser);
 router.get("/profile", isAuth(), userController.getUserProfile);
 
-router.get("/", isAuth([Role.USER, Role.ADMIN]), userController.getAllUser);
+router.get("/", userController.getAllUser);
 
 router.get("/:id", userController.getUserById);
 router.put("/:id", validateRequest(userValidation.updateUserZodSchema), userController.updateUser);
