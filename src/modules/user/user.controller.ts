@@ -16,8 +16,8 @@ const createUser = asyncHandler(async (req: Request, res: Response) => {
 });
 
 const getAllUser = asyncHandler(async (req: Request, res: Response) => {
-  const page = req.query.page;
-  const limit = req.query.limit;
+  const page = req.query.page ||1;
+  const limit = req.query.limit || 10;
   const result = await userService.getAllUser(Number(page), Number(limit));
 
   sendResponse(res, {

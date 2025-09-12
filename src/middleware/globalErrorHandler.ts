@@ -8,6 +8,7 @@ import { JsonWebTokenError, TokenExpiredError } from "jsonwebtoken";
 import { config } from "../config";
 import status from "http-status";
 import { ZodError } from "zod";
+import logger from "../utils/logger";
 
 const globalErrorHandler = (err: unknown, _req: Request, res: Response, _next: NextFunction) => {
   let statusCode = 500;
@@ -101,7 +102,12 @@ const globalErrorHandler = (err: unknown, _req: Request, res: Response, _next: N
       },
     ];
   }
-
+ logger.error({
+    message: (err as Error).message || message,
+    stack: (err as Error).stack,
+    statusCode,
+    errorMessages,
+  });
   res.status(statusCode).json({
     success: false,
     message,

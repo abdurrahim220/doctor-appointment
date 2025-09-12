@@ -4,7 +4,7 @@ import initializeRedisClient from "../../config/redis.client";
 import AppError from "../../errors/appError";
 import prisma from "../../prisma/client";
 import { Role } from "../../types/schema.types";
-import { allUsers, userKeyById } from "../../utils/keys";
+import { userKeyById, allUsersZSet } from "../../utils/keys";
 import { IUser } from "./user.interface";
 import * as bcrypt from "bcryptjs";
 import { nanoid } from "nanoid";
@@ -40,8 +40,6 @@ const createUser = async (payload: IUser) => {
       name: true,
       email: true,
       role: true,
-      isActive: true,
-      isDeleted: true,
       gender: true,
       phone: true,
       createdAt: true,
@@ -50,26 +48,7 @@ const createUser = async (payload: IUser) => {
   await redisClient.sendCommand(["BF.ADD", BLOOM_KEY, user.email]);
   await redisClient.sendCommand(["BF.ADD", BLOOM_KEY, user.id]);
 
-  await redisClient.zAdd(userKeyById(user.id), {
-    score: new Date(user.createdAt).getTime(),
-    value: JSON.stringify(user),
-  });
-
-  const cachedAllUsers = await redisClient.get(allUsers());
-  if (cachedAllUsers) {
-    const allUsersData = JSON.parse(cachedAllUsers);
-    allUsersData.users.push(user);
-    await redisClient.zAdd(
-      allUsers(),
-      {
-        score: new Date(user.createdAt).getTime(),
-        value: JSON.stringify(allUsersData),
-      },
-      {
-        NX: true,
-      },
-    );
-  }
+  await redisClient.set(userKeyById(user.id), JSON.stringify(user));
 
   return user;
 };
@@ -77,13 +56,13 @@ const createUser = async (payload: IUser) => {
 const getAllUser = async (page: number, limit: number) => {
   const redisClient = await initializeRedisClient();
   const start = (page - 1) * limit;
-  const end = start + limit -1;
- const cachedUsers = await redisClient.zRange(allUsers(), start, end, {
+  const end = start + limit - 1;
+  const cachedUsers = await redisClient.zRange(allUsersZSet(), start, end, {
     REV: true,
   });
-  if (cachedUsers.length === limit) {
+  if (cachedUsers.length >= limit || (start === 0 && cachedUsers.length > 0)) {
     return {
-      data: cachedUsers.map((u)=>JSON.parse(u)),
+      data: cachedUsers.map((u) => JSON.parse(u)),
       source: `redis` as const,
     };
   }
@@ -108,7 +87,7 @@ const getAllUser = async (page: number, limit: number) => {
   });
 
   for (const u of users) {
-    await redisClient.zAdd(allUsers(), {
+    await redisClient.zAdd(allUsersZSet(), {
       score: new Date(u.createdAt).getTime(),
       value: JSON.stringify(u),
     });
@@ -137,6 +116,10 @@ const getUserById = async (id: string) => {
     select: {
       name: true,
       email: true,
+      role: true,
+      gender: true,
+      phone: true,
+      createdAt: true,
       posts: {
         select: {
           title: true,
@@ -146,7 +129,14 @@ const getUserById = async (id: string) => {
     },
   });
 
+  if (!user) {
+    throw new AppError("User not found", status.NOT_FOUND);
+  }
   await redisClient.set(userKeyById(id), JSON.stringify(user));
+  await redisClient.zAdd(allUsersZSet(), {
+    score: new Date(user.createdAt).getTime(),
+    value: JSON.stringify(user),
+  });
   return {
     data: user,
     source: `database` as const,
@@ -154,8 +144,26 @@ const getUserById = async (id: string) => {
 };
 
 const updateUser = async (id: string, payload: IUser) => {
-  const { password, name, email } = payload;
-  const hashedPassword = await bcrypt.hash(password, 10);
+  const redisClient = await initializeRedisClient();
+  const { password, name, email, gender, phone } = payload;
+  if (email) {
+    const bfReply: unknown = await redisClient.sendCommand(["BF.EXISTS", BLOOM_KEY, email]);
+    if (bfReply === 1) {
+      const existing = await prisma.user.findUnique({
+        where: {
+          email,
+        },
+      });
+      if (existing && existing.id !== id) {
+        throw new AppError("Email already exists", status.BAD_REQUEST);
+      }
+    }
+  }
+
+  let hashedPassword: string | undefined;
+  if (password) {
+    hashedPassword = await bcrypt.hash(password, 10);
+  }
 
   const user = await prisma.user.update({
     where: {
@@ -165,28 +173,58 @@ const updateUser = async (id: string, payload: IUser) => {
       name,
       email,
       password: hashedPassword,
+      gender,
+      phone,
     },
     select: {
       name: true,
       email: true,
+      gender: true,
+      phone: true,
+      role: true,
+      createdAt: true,
     },
+  });
+  if (email) {
+    await redisClient.sendCommand(["BF.ADD", BLOOM_KEY, email]);
+  }
+  await redisClient.set(userKeyById(id), JSON.stringify(user));
+  await redisClient.zAdd(allUsersZSet(), {
+    score: new Date(user.createdAt).getTime(),
+    value: JSON.stringify(user),
   });
   return user;
 };
 
 const deleteUser = async (id: string) => {
   const redisClient = await initializeRedisClient();
-  await redisClient.del(userKeyById(id));
+  const user = await prisma.user.findUnique({
+    where: {
+      id,
+    },
+  });
+  if (!user) {
+    throw new AppError("User not found", status.NOT_FOUND);
+  }
   await prisma.user.delete({
     where: {
       id,
     },
   });
   await redisClient.del(userKeyById(id));
-  await redisClient.del(allUsers());
+
+  const cachedAllUsers = await redisClient.zRange(allUsersZSet(), 0, -1);
+  for (const u of cachedAllUsers) {
+    const parsed = JSON.parse(u);
+    if (parsed.id === id) {
+      await redisClient.zRem(allUsersZSet(), u);
+      break;
+    }
+  }
 };
 
 const updateRole = async (id: string, payload: { role: Role }) => {
+  const redisClient = await initializeRedisClient();
   const { role } = payload;
   const user = await prisma.user.update({
     where: {
@@ -199,7 +237,22 @@ const updateRole = async (id: string, payload: { role: Role }) => {
       name: true,
       email: true,
       role: true,
+      createdAt: true,
     },
+  });
+  await redisClient.set(userKeyById(id), JSON.stringify(user));
+
+  const cachedAllUsers = await redisClient.zRange(allUsersZSet(), 0, -1);
+  for (const u of cachedAllUsers) {
+    const parsed = JSON.parse(u);
+    if (parsed.id === id) {
+      await redisClient.zRem(allUsersZSet(), u);
+      break;
+    }
+  }
+  await redisClient.zAdd(allUsersZSet(), {
+    score: new Date(user.createdAt).getTime(),
+    value: JSON.stringify(user),
   });
   return user;
 };
