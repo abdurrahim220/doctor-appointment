@@ -4,7 +4,7 @@ import prisma from "../../../prisma/client";
 import { IPatientProfile } from "../user.interface";
 import { nanoid } from "nanoid";
 import initializeRedisClient from "../../../config/redis.client";
-import { allPatientProfiles, patientProfileKeyById } from "../../../utils/keys";
+import { allPatientProfilesZSet, patientProfileKeyById } from "../../../utils/keys";
 
 const createPatientProfile = async (data: IPatientProfile, userId: string) => {
   const redisClient = await initializeRedisClient();
@@ -33,32 +33,35 @@ const createPatientProfile = async (data: IPatientProfile, userId: string) => {
     data: {
       id: nanoid(),
       userId: userId,
-      dateOfBirth: data.dateOfBirth,
-    },
-    include: {
-      user: {
-        select: {
-          name: true,
-          email: true,
-          phone: true,
-          role: true,
-          gender: true,
-        },
-      },
+      dateOfBirth: String(data.dateOfBirth),
     },
   });
 
-  await redisClient.set(patientProfileKeyById(userId), JSON.stringify(result), {
+  const fullProfile = await prisma.patientProfile.findUnique({
+  where: { id: result.id },
+  include: {
+    user: {
+      select: {
+        name: true,
+        email: true,
+        phone: true,
+        role: true,
+        gender: true,
+      },
+    },
+  },
+});
+
+  await redisClient.set(patientProfileKeyById(userId), JSON.stringify(fullProfile), {
     EX: 60 * 60,
   });
-  const cachedAllProfiles = await redisClient.get(allPatientProfiles());
-  if (cachedAllProfiles) {
-    const allProfilesData = JSON.parse(cachedAllProfiles);
-    allProfilesData.profiles.push(result);
-    await redisClient.set(allPatientProfiles(), JSON.stringify(allProfilesData), {
-      EX: 60 * 60,
-    });
-  }
+
+  await redisClient.zAdd(allPatientProfilesZSet(), [
+    {
+      score: Date.now(),
+      value: result.id,
+    },
+  ]);
   return result;
 };
 
@@ -88,22 +91,41 @@ const getPatientProfile = async (userId: string) => {
     },
   });
 
-  await redisClient.set(patientProfileKeyById(userId), JSON.stringify(patientProfile), {
-    EX: 60 * 60,
-  });
-
+   if (patientProfile) {
+    await redisClient.set(
+      patientProfileKeyById(userId),
+      JSON.stringify(patientProfile),
+      { EX: 60 * 60 }
+    );
+  }
   return {
     data: patientProfile,
     source: `database` as const,
   };
 };
 
-const updatePatientProfile = async (userId: string, data: IPatientProfile) => {
+const updatePatientProfile = async (userId: string, data: Partial<IPatientProfile>) => {
+  const redisClient = await initializeRedisClient();
+
   const result = await prisma.patientProfile.update({
     where: {
       userId,
     },
     data,
+    include: {
+      user: {
+        select: {
+          name: true,
+          email: true,
+          phone: true,
+          role: true,
+          gender: true,
+        },
+      },
+    },
+  });
+  await redisClient.set(patientProfileKeyById(userId), JSON.stringify(result), {
+    EX: 60 * 60,
   });
   return result;
 };

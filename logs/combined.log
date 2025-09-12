@@ -92,3 +92,1015 @@
 2025-09-12 18:16:28 [[32minfo[39m]: Redis connected
 2025-09-12 18:16:28 [[32minfo[39m]: Bloom filter created: users_bloom
 2025-09-12 18:16:28 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 18:18:13 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 18:18:13 [[32minfo[39m]: Redis connected
+2025-09-12 18:18:13 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 18:18:13 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 18:18:50 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 18:18:50 [[32minfo[39m]: Redis connected
+2025-09-12 18:18:50 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 18:18:50 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 18:21:49 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 18:21:49 [[32minfo[39m]: Redis connected
+2025-09-12 18:21:49 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 18:21:49 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 18:22:07 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 18:22:07 [[32minfo[39m]: Redis connected
+2025-09-12 18:22:07 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 18:22:07 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 18:22:15 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 18:22:15 [[32minfo[39m]: Redis connected
+2025-09-12 18:22:15 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 18:22:15 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 18:22:37 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 18:22:37 [[32minfo[39m]: Redis connected
+2025-09-12 18:22:37 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 18:22:37 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 18:22:43 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 18:22:43 [[32minfo[39m]: Redis connected
+2025-09-12 18:22:43 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 18:22:43 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 18:22:48 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 18:22:48 [[32minfo[39m]: Redis connected
+2025-09-12 18:22:48 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 18:22:48 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 18:22:56 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 18:22:56 [[32minfo[39m]: Redis connected
+2025-09-12 18:22:56 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 18:22:56 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 18:36:40 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 18:36:40 [[32minfo[39m]: Redis connected
+2025-09-12 18:36:40 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 18:36:40 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 18:36:44 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 18:36:44 [[32minfo[39m]: Redis connected
+2025-09-12 18:36:44 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 18:36:44 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 18:37:33 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 18:37:33 [[32minfo[39m]: Redis connected
+2025-09-12 18:37:33 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 18:37:33 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 18:37:38 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 18:37:38 [[32minfo[39m]: Redis connected
+2025-09-12 18:37:38 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 18:37:38 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 18:37:43 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 18:37:43 [[32minfo[39m]: Redis connected
+2025-09-12 18:37:43 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 18:37:43 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 18:37:46 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 18:37:46 [[32minfo[39m]: Redis connected
+2025-09-12 18:37:46 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 18:37:46 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 18:37:54 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 18:37:55 [[32minfo[39m]: Redis connected
+2025-09-12 18:37:55 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 18:37:55 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 18:47:04 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 18:47:04 [[32minfo[39m]: Redis connected
+2025-09-12 18:47:04 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 18:47:04 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 18:47:10 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 18:47:10 [[32minfo[39m]: Redis connected
+2025-09-12 18:47:10 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 18:47:10 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 18:50:21 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 18:50:21 [[32minfo[39m]: Redis connected
+2025-09-12 18:50:21 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 18:50:21 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 18:54:05 [[31merror[39m]: TokenExpiredError: jwt expired
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:97:14)
+    at Object.module.exports [as verify] (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:8:25)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:21:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+2025-09-12 18:54:05 [[31merror[39m]: Error: Invalid or expired token
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:12:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:21:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:295:15
+    at processParams (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:582:12)
+2025-09-12 18:57:46 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 18:57:46 [[32minfo[39m]: Redis connected
+2025-09-12 18:57:46 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 18:57:46 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:04:38 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:04:39 [[32minfo[39m]: Redis connected
+2025-09-12 19:04:39 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:04:39 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:04:46 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:04:46 [[32minfo[39m]: Redis connected
+2025-09-12 19:04:46 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:04:46 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:05:03 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:05:03 [[32minfo[39m]: Redis connected
+2025-09-12 19:05:03 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:05:03 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:08:27 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:08:27 [[32minfo[39m]: Redis connected
+2025-09-12 19:08:27 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:08:27 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:09:00 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:09:00 [[32minfo[39m]: Redis connected
+2025-09-12 19:09:00 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:09:00 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:09:05 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:09:05 [[32minfo[39m]: Redis connected
+2025-09-12 19:09:05 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:09:05 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:09:08 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:09:08 [[32minfo[39m]: Redis connected
+2025-09-12 19:09:08 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:09:08 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:10:05 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:10:05 [[32minfo[39m]: Redis connected
+2025-09-12 19:10:05 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:10:05 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:11:54 [[31merror[39m]: ZodError: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "dateOfBirth"
+    ],
+    "message": "Date of birth is required in dd/mm/yyyy format"
+  }
+]
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\validateRequest.ts:7:18
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:50:5
+2025-09-12 19:11:58 [[31merror[39m]: ZodError: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "dateOfBirth"
+    ],
+    "message": "Date of birth is required in dd/mm/yyyy format"
+  }
+]
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\validateRequest.ts:7:18
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:50:5
+2025-09-12 19:13:20 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:13:20 [[32minfo[39m]: Redis connected
+2025-09-12 19:13:20 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:13:20 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:13:23 [[31merror[39m]: ZodError: [
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "dateOfBirth"
+    ],
+    "message": "Date of birth is required in dd/mm/yyyy format"
+  }
+]
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\validateRequest.ts:7:18
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:50:5
+2025-09-12 19:14:20 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:14:20 [[32minfo[39m]: Redis connected
+2025-09-12 19:14:20 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:14:20 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:16:14 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:16:14 [[32minfo[39m]: Redis connected
+2025-09-12 19:16:14 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:16:14 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:16:15 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.patientProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:46
+
+  107 const updatePatientProfile = async (userId: string, data: IPatientProfile) => {
+  108   const redisClient = await initializeRedisClient();
+  109 
+→ 110   const result = await prisma.patientProfile.update({
+          where: {
+            userId: undefined,
+        ?   id?: String,
+        ?   AND?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   OR?: PatientProfileWhereInput[],
+        ?   NOT?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   dateOfBirth?: StringFilter | String,
+        ?   status?: EnumProfileStatusFilter | ProfileStatus,
+        ?   user?: UserScalarRelationFilter | UserWhereInput,
+        ?   medicalRecords?: MedicalRecordListRelationFilter,
+        ?   appointments?: AppointmentListRelationFilter,
+        ?   reviews?: ReviewListRelationFilter
+          },
+          data: {
+            status: "INACTIVE"
+          },
+          include: {
+            user: {
+              select: {
+                name: true,
+                email: true,
+                phone: true,
+                role: true,
+                gender: true
+              }
+            }
+          }
+        })
+
+Argument `where` of type PatientProfileWhereUniqueInput needs at least one of `id` or `userId` arguments. Available options are marked with ?.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updatePatientProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\user.profile.controller.ts:36:18
+2025-09-12 19:20:38 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:20:38 [[32minfo[39m]: Redis connected
+2025-09-12 19:20:38 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:20:38 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:20:41 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:20:41 [[32minfo[39m]: Redis connected
+2025-09-12 19:20:41 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:20:41 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:20:43 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.patientProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:46
+
+  107 const updatePatientProfile = async (userId: string, data: IPatientProfile) => {
+  108   const redisClient = await initializeRedisClient();
+  109 
+→ 110   const result = await prisma.patientProfile.update({
+          where: {
+            userId: undefined,
+        ?   id?: String,
+        ?   AND?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   OR?: PatientProfileWhereInput[],
+        ?   NOT?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   dateOfBirth?: StringFilter | String,
+        ?   status?: EnumProfileStatusFilter | ProfileStatus,
+        ?   user?: UserScalarRelationFilter | UserWhereInput,
+        ?   medicalRecords?: MedicalRecordListRelationFilter,
+        ?   appointments?: AppointmentListRelationFilter,
+        ?   reviews?: ReviewListRelationFilter
+          },
+          data: {
+            status: "INACTIVE"
+          },
+          include: {
+            user: {
+              select: {
+                name: true,
+                email: true,
+                phone: true,
+                role: true,
+                gender: true
+              }
+            }
+          }
+        })
+
+Argument `where` of type PatientProfileWhereUniqueInput needs at least one of `id` or `userId` arguments. Available options are marked with ?.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updatePatientProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\user.profile.controller.ts:36:18
+2025-09-12 19:20:48 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.patientProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:46
+
+  107 const updatePatientProfile = async (userId: string, data: IPatientProfile) => {
+  108   const redisClient = await initializeRedisClient();
+  109 
+→ 110   const result = await prisma.patientProfile.update({
+          where: {
+            userId: undefined,
+        ?   id?: String,
+        ?   AND?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   OR?: PatientProfileWhereInput[],
+        ?   NOT?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   dateOfBirth?: StringFilter | String,
+        ?   status?: EnumProfileStatusFilter | ProfileStatus,
+        ?   user?: UserScalarRelationFilter | UserWhereInput,
+        ?   medicalRecords?: MedicalRecordListRelationFilter,
+        ?   appointments?: AppointmentListRelationFilter,
+        ?   reviews?: ReviewListRelationFilter
+          },
+          data: {
+            status: "INACTIVE"
+          },
+          include: {
+            user: {
+              select: {
+                name: true,
+                email: true,
+                phone: true,
+                role: true,
+                gender: true
+              }
+            }
+          }
+        })
+
+Argument `where` of type PatientProfileWhereUniqueInput needs at least one of `id` or `userId` arguments. Available options are marked with ?.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updatePatientProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\user.profile.controller.ts:36:18
+2025-09-12 19:20:58 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.patientProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:46
+
+  107 const updatePatientProfile = async (userId: string, data: IPatientProfile) => {
+  108   const redisClient = await initializeRedisClient();
+  109 
+→ 110   const result = await prisma.patientProfile.update({
+          where: {
+            userId: undefined,
+        ?   id?: String,
+        ?   AND?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   OR?: PatientProfileWhereInput[],
+        ?   NOT?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   dateOfBirth?: StringFilter | String,
+        ?   status?: EnumProfileStatusFilter | ProfileStatus,
+        ?   user?: UserScalarRelationFilter | UserWhereInput,
+        ?   medicalRecords?: MedicalRecordListRelationFilter,
+        ?   appointments?: AppointmentListRelationFilter,
+        ?   reviews?: ReviewListRelationFilter
+          },
+          data: {
+            status: "INACTIVE"
+          },
+          include: {
+            user: {
+              select: {
+                name: true,
+                email: true,
+                phone: true,
+                role: true,
+                gender: true
+              }
+            }
+          }
+        })
+
+Argument `where` of type PatientProfileWhereUniqueInput needs at least one of `id` or `userId` arguments. Available options are marked with ?.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updatePatientProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\user.profile.controller.ts:36:18
+2025-09-12 19:21:08 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:21:08 [[32minfo[39m]: Redis connected
+2025-09-12 19:21:08 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:21:08 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:21:15 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.patientProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:46
+
+  107 const updatePatientProfile = async (userId: string, data: IPatientProfile) => {
+  108   const redisClient = await initializeRedisClient();
+  109 
+→ 110   const result = await prisma.patientProfile.update({
+          where: {
+            userId: undefined,
+        ?   id?: String,
+        ?   AND?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   OR?: PatientProfileWhereInput[],
+        ?   NOT?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   dateOfBirth?: StringFilter | String,
+        ?   status?: EnumProfileStatusFilter | ProfileStatus,
+        ?   user?: UserScalarRelationFilter | UserWhereInput,
+        ?   medicalRecords?: MedicalRecordListRelationFilter,
+        ?   appointments?: AppointmentListRelationFilter,
+        ?   reviews?: ReviewListRelationFilter
+          },
+          data: {
+            status: "INACTIVE"
+          },
+          include: {
+            user: {
+              select: {
+                name: true,
+                email: true,
+                phone: true,
+                role: true,
+                gender: true
+              }
+            }
+          }
+        })
+
+Argument `where` of type PatientProfileWhereUniqueInput needs at least one of `id` or `userId` arguments. Available options are marked with ?.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updatePatientProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\user.profile.controller.ts:36:18
+2025-09-12 19:21:59 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.patientProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:46
+
+  107 const updatePatientProfile = async (userId: string, data: IPatientProfile) => {
+  108   const redisClient = await initializeRedisClient();
+  109 
+→ 110   const result = await prisma.patientProfile.update({
+          where: {
+            userId: undefined,
+        ?   id?: String,
+        ?   AND?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   OR?: PatientProfileWhereInput[],
+        ?   NOT?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   dateOfBirth?: StringFilter | String,
+        ?   status?: EnumProfileStatusFilter | ProfileStatus,
+        ?   user?: UserScalarRelationFilter | UserWhereInput,
+        ?   medicalRecords?: MedicalRecordListRelationFilter,
+        ?   appointments?: AppointmentListRelationFilter,
+        ?   reviews?: ReviewListRelationFilter
+          },
+          data: {
+            status: "INACTIVE"
+          },
+          include: {
+            user: {
+              select: {
+                name: true,
+                email: true,
+                phone: true,
+                role: true,
+                gender: true
+              }
+            }
+          }
+        })
+
+Argument `where` of type PatientProfileWhereUniqueInput needs at least one of `id` or `userId` arguments. Available options are marked with ?.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updatePatientProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\user.profile.controller.ts:36:18
+2025-09-12 19:22:34 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:22:36 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:22:36 [[32minfo[39m]: Redis connected
+2025-09-12 19:22:36 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:22:36 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:22:38 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.patientProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:46
+
+  107 const updatePatientProfile = async (userId: string, data: Partial<IPatientProfile>) => {
+  108   const redisClient = await initializeRedisClient();
+  109 
+→ 110   const result = await prisma.patientProfile.update({
+          where: {
+            userId: undefined,
+        ?   id?: String,
+        ?   AND?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   OR?: PatientProfileWhereInput[],
+        ?   NOT?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   dateOfBirth?: StringFilter | String,
+        ?   status?: EnumProfileStatusFilter | ProfileStatus,
+        ?   user?: UserScalarRelationFilter | UserWhereInput,
+        ?   medicalRecords?: MedicalRecordListRelationFilter,
+        ?   appointments?: AppointmentListRelationFilter,
+        ?   reviews?: ReviewListRelationFilter
+          },
+          data: {
+            status: "INACTIVE"
+          },
+          include: {
+            user: {
+              select: {
+                name: true,
+                email: true,
+                phone: true,
+                role: true,
+                gender: true
+              }
+            }
+          }
+        })
+
+Argument `where` of type PatientProfileWhereUniqueInput needs at least one of `id` or `userId` arguments. Available options are marked with ?.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updatePatientProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\user.profile.controller.ts:36:18
+2025-09-12 19:22:40 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.patientProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:46
+
+  107 const updatePatientProfile = async (userId: string, data: Partial<IPatientProfile>) => {
+  108   const redisClient = await initializeRedisClient();
+  109 
+→ 110   const result = await prisma.patientProfile.update({
+          where: {
+            userId: undefined,
+        ?   id?: String,
+        ?   AND?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   OR?: PatientProfileWhereInput[],
+        ?   NOT?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   dateOfBirth?: StringFilter | String,
+        ?   status?: EnumProfileStatusFilter | ProfileStatus,
+        ?   user?: UserScalarRelationFilter | UserWhereInput,
+        ?   medicalRecords?: MedicalRecordListRelationFilter,
+        ?   appointments?: AppointmentListRelationFilter,
+        ?   reviews?: ReviewListRelationFilter
+          },
+          data: {
+            status: "INACTIVE"
+          },
+          include: {
+            user: {
+              select: {
+                name: true,
+                email: true,
+                phone: true,
+                role: true,
+                gender: true
+              }
+            }
+          }
+        })
+
+Argument `where` of type PatientProfileWhereUniqueInput needs at least one of `id` or `userId` arguments. Available options are marked with ?.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updatePatientProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\user.profile.controller.ts:36:18
+2025-09-12 19:23:01 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:23:01 [[32minfo[39m]: Redis connected
+2025-09-12 19:23:01 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:23:01 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:23:07 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:23:07 [[32minfo[39m]: Redis connected
+2025-09-12 19:23:07 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:23:07 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:23:11 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.patientProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:46
+
+  107 const updatePatientProfile = async (userId: string, data: Partial<IPatientProfile>) => {
+  108   const redisClient = await initializeRedisClient();
+  109 
+→ 110   const result = await prisma.patientProfile.update({
+          where: {
+            userId: undefined,
+        ?   id?: String,
+        ?   AND?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   OR?: PatientProfileWhereInput[],
+        ?   NOT?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   dateOfBirth?: StringFilter | String,
+        ?   status?: EnumProfileStatusFilter | ProfileStatus,
+        ?   user?: UserScalarRelationFilter | UserWhereInput,
+        ?   medicalRecords?: MedicalRecordListRelationFilter,
+        ?   appointments?: AppointmentListRelationFilter,
+        ?   reviews?: ReviewListRelationFilter
+          },
+          data: {
+            status: "INACTIVE"
+          },
+          include: {
+            user: {
+              select: {
+                name: true,
+                email: true,
+                phone: true,
+                role: true,
+                gender: true
+              }
+            }
+          }
+        })
+
+Argument `where` of type PatientProfileWhereUniqueInput needs at least one of `id` or `userId` arguments. Available options are marked with ?.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updatePatientProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\user.profile.controller.ts:36:18
+2025-09-12 19:23:12 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.patientProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:46
+
+  107 const updatePatientProfile = async (userId: string, data: Partial<IPatientProfile>) => {
+  108   const redisClient = await initializeRedisClient();
+  109 
+→ 110   const result = await prisma.patientProfile.update({
+          where: {
+            userId: undefined,
+        ?   id?: String,
+        ?   AND?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   OR?: PatientProfileWhereInput[],
+        ?   NOT?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   dateOfBirth?: StringFilter | String,
+        ?   status?: EnumProfileStatusFilter | ProfileStatus,
+        ?   user?: UserScalarRelationFilter | UserWhereInput,
+        ?   medicalRecords?: MedicalRecordListRelationFilter,
+        ?   appointments?: AppointmentListRelationFilter,
+        ?   reviews?: ReviewListRelationFilter
+          },
+          data: {
+            status: "INACTIVE"
+          },
+          include: {
+            user: {
+              select: {
+                name: true,
+                email: true,
+                phone: true,
+                role: true,
+                gender: true
+              }
+            }
+          }
+        })
+
+Argument `where` of type PatientProfileWhereUniqueInput needs at least one of `id` or `userId` arguments. Available options are marked with ?.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updatePatientProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\user.profile.controller.ts:36:18
+2025-09-12 19:23:38 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:23:38 [[32minfo[39m]: Redis connected
+2025-09-12 19:23:38 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:23:38 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:23:41 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:23:41 [[32minfo[39m]: Redis connected
+2025-09-12 19:23:41 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:23:41 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:23:42 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.patientProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:46
+
+  107 const updatePatientProfile = async (userId: string, data: Partial<IPatientProfile>) => {
+  108   const redisClient = await initializeRedisClient();
+  109 
+→ 110   const result = await prisma.patientProfile.update({
+          where: {
+            userId: undefined,
+        ?   id?: String,
+        ?   AND?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   OR?: PatientProfileWhereInput[],
+        ?   NOT?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   dateOfBirth?: StringFilter | String,
+        ?   status?: EnumProfileStatusFilter | ProfileStatus,
+        ?   user?: UserScalarRelationFilter | UserWhereInput,
+        ?   medicalRecords?: MedicalRecordListRelationFilter,
+        ?   appointments?: AppointmentListRelationFilter,
+        ?   reviews?: ReviewListRelationFilter
+          },
+          data: {
+            status: "INACTIVE"
+          },
+          include: {
+            user: {
+              select: {
+                name: true,
+                email: true,
+                phone: true,
+                role: true,
+                gender: true
+              }
+            }
+          }
+        })
+
+Argument `where` of type PatientProfileWhereUniqueInput needs at least one of `id` or `userId` arguments. Available options are marked with ?.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updatePatientProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\user.profile.controller.ts:37:18
+2025-09-12 19:23:56 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:23:56 [[32minfo[39m]: Redis connected
+2025-09-12 19:23:56 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:23:56 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:23:58 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.patientProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:46
+
+  107 const updatePatientProfile = async (userId: string, data: Partial<IPatientProfile>) => {
+  108   const redisClient = await initializeRedisClient();
+  109 
+→ 110   const result = await prisma.patientProfile.update({
+          where: {
+            userId: undefined,
+        ?   id?: String,
+        ?   AND?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   OR?: PatientProfileWhereInput[],
+        ?   NOT?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   dateOfBirth?: StringFilter | String,
+        ?   status?: EnumProfileStatusFilter | ProfileStatus,
+        ?   user?: UserScalarRelationFilter | UserWhereInput,
+        ?   medicalRecords?: MedicalRecordListRelationFilter,
+        ?   appointments?: AppointmentListRelationFilter,
+        ?   reviews?: ReviewListRelationFilter
+          },
+          data: {
+            status: "INACTIVE"
+          },
+          include: {
+            user: {
+              select: {
+                name: true,
+                email: true,
+                phone: true,
+                role: true,
+                gender: true
+              }
+            }
+          }
+        })
+
+Argument `where` of type PatientProfileWhereUniqueInput needs at least one of `id` or `userId` arguments. Available options are marked with ?.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updatePatientProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\user.profile.controller.ts:37:18
+2025-09-12 19:23:59 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.patientProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:46
+
+  107 const updatePatientProfile = async (userId: string, data: Partial<IPatientProfile>) => {
+  108   const redisClient = await initializeRedisClient();
+  109 
+→ 110   const result = await prisma.patientProfile.update({
+          where: {
+            userId: undefined,
+        ?   id?: String,
+        ?   AND?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   OR?: PatientProfileWhereInput[],
+        ?   NOT?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   dateOfBirth?: StringFilter | String,
+        ?   status?: EnumProfileStatusFilter | ProfileStatus,
+        ?   user?: UserScalarRelationFilter | UserWhereInput,
+        ?   medicalRecords?: MedicalRecordListRelationFilter,
+        ?   appointments?: AppointmentListRelationFilter,
+        ?   reviews?: ReviewListRelationFilter
+          },
+          data: {
+            status: "INACTIVE"
+          },
+          include: {
+            user: {
+              select: {
+                name: true,
+                email: true,
+                phone: true,
+                role: true,
+                gender: true
+              }
+            }
+          }
+        })
+
+Argument `where` of type PatientProfileWhereUniqueInput needs at least one of `id` or `userId` arguments. Available options are marked with ?.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updatePatientProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\user.profile.controller.ts:37:18
+2025-09-12 19:24:16 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:24:16 [[32minfo[39m]: Redis connected
+2025-09-12 19:24:16 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:24:16 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:24:17 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.patientProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:46
+
+  107 const updatePatientProfile = async (userId: string, data: Partial<IPatientProfile>) => {
+  108   const redisClient = await initializeRedisClient();
+  109 
+→ 110   const result = await prisma.patientProfile.update({
+          where: {
+            userId: undefined,
+        ?   id?: String,
+        ?   AND?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   OR?: PatientProfileWhereInput[],
+        ?   NOT?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   dateOfBirth?: StringFilter | String,
+        ?   status?: EnumProfileStatusFilter | ProfileStatus,
+        ?   user?: UserScalarRelationFilter | UserWhereInput,
+        ?   medicalRecords?: MedicalRecordListRelationFilter,
+        ?   appointments?: AppointmentListRelationFilter,
+        ?   reviews?: ReviewListRelationFilter
+          },
+          data: {
+            status: "INACTIVE"
+          },
+          include: {
+            user: {
+              select: {
+                name: true,
+                email: true,
+                phone: true,
+                role: true,
+                gender: true
+              }
+            }
+          }
+        })
+
+Argument `where` of type PatientProfileWhereUniqueInput needs at least one of `id` or `userId` arguments. Available options are marked with ?.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updatePatientProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\user.profile.controller.ts:37:18
+2025-09-12 19:25:14 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:25:14 [[32minfo[39m]: Redis connected
+2025-09-12 19:25:14 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:25:14 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:25:20 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.patientProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:46
+
+  107 const updatePatientProfile = async (userId: string, data: Partial<IPatientProfile>) => {
+  108   const redisClient = await initializeRedisClient();
+  109 
+→ 110   const result = await prisma.patientProfile.update({
+          where: {
+            userId: undefined,
+        ?   id?: String,
+        ?   AND?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   OR?: PatientProfileWhereInput[],
+        ?   NOT?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   dateOfBirth?: StringFilter | String,
+        ?   status?: EnumProfileStatusFilter | ProfileStatus,
+        ?   user?: UserScalarRelationFilter | UserWhereInput,
+        ?   medicalRecords?: MedicalRecordListRelationFilter,
+        ?   appointments?: AppointmentListRelationFilter,
+        ?   reviews?: ReviewListRelationFilter
+          },
+          data: {
+            status: "INACTIVE"
+          },
+          include: {
+            user: {
+              select: {
+                name: true,
+                email: true,
+                phone: true,
+                role: true,
+                gender: true
+              }
+            }
+          }
+        })
+
+Argument `where` of type PatientProfileWhereUniqueInput needs at least one of `id` or `userId` arguments. Available options are marked with ?.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updatePatientProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\user.profile.controller.ts:37:18
+2025-09-12 19:25:44 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:25:44 [[32minfo[39m]: Redis connected
+2025-09-12 19:25:44 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:25:44 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:25:49 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:25:49 [[32minfo[39m]: Redis connected
+2025-09-12 19:25:49 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:25:49 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:25:53 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:25:53 [[32minfo[39m]: Redis connected
+2025-09-12 19:25:53 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:25:53 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:25:58 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:25:58 [[32minfo[39m]: Redis connected
+2025-09-12 19:25:58 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:25:58 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:26:02 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.patientProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:46
+
+  107 const updatePatientProfile = async (userId: string, data: Partial<IPatientProfile>) => {
+  108   const redisClient = await initializeRedisClient();
+  109 
+→ 110   const result = await prisma.patientProfile.update({
+          where: {
+            userId: undefined,
+        ?   id?: String,
+        ?   AND?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   OR?: PatientProfileWhereInput[],
+        ?   NOT?: PatientProfileWhereInput | PatientProfileWhereInput[],
+        ?   dateOfBirth?: StringFilter | String,
+        ?   status?: EnumProfileStatusFilter | ProfileStatus,
+        ?   user?: UserScalarRelationFilter | UserWhereInput,
+        ?   medicalRecords?: MedicalRecordListRelationFilter,
+        ?   appointments?: AppointmentListRelationFilter,
+        ?   reviews?: ReviewListRelationFilter
+          },
+          data: {
+            status: "INACTIVE"
+          },
+          include: {
+            user: {
+              select: {
+                name: true,
+                email: true,
+                phone: true,
+                role: true,
+                gender: true
+              }
+            }
+          }
+        })
+
+Argument `where` of type PatientProfileWhereUniqueInput needs at least one of `id` or `userId` arguments. Available options are marked with ?.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updatePatientProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\user.profile.controller.ts:38:18
+2025-09-12 19:26:17 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:26:17 [[32minfo[39m]: Redis connected
+2025-09-12 19:26:17 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:26:17 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:26:39 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:26:39 [[32minfo[39m]: Redis connected
+2025-09-12 19:26:39 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:26:39 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:27:26 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:27:26 [[32minfo[39m]: Redis connected
+2025-09-12 19:27:26 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:27:26 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:27:32 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:27:32 [[32minfo[39m]: Redis connected
+2025-09-12 19:27:32 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:27:32 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:27:37 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:27:37 [[32minfo[39m]: Redis connected
+2025-09-12 19:27:37 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:27:37 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:27:44 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:27:45 [[32minfo[39m]: Redis connected
+2025-09-12 19:27:45 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:27:45 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:27:47 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:27:47 [[32minfo[39m]: Redis connected
+2025-09-12 19:27:47 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:27:47 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:27:55 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:27:55 [[32minfo[39m]: Redis connected
+2025-09-12 19:27:55 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:27:55 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:27:58 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:27:58 [[32minfo[39m]: Redis connected
+2025-09-12 19:27:58 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:27:58 [[32minfo[39m]: Server is running on port 5000
+2025-09-12 19:28:02 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-12 19:28:02 [[32minfo[39m]: Redis connected
+2025-09-12 19:28:02 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-12 19:28:02 [[32minfo[39m]: Server is running on port 5000
