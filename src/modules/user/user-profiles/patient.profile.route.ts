@@ -1,7 +1,7 @@
 import { Router } from "express";
 import validateRequest from "../../../middleware/validateRequest";
-import { subUserValidation } from "./user.profile.validation";
-import { subUserController } from "./user.profile.controller";
+import { subUserValidation } from "./patient.profile.validation";
+import { subUserController } from "./patient.profile.controller";
 import isAuth from "../../../middleware/isAuth";
 
 const router = Router()

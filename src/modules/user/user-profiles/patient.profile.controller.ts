@@ -1,7 +1,7 @@
 import status from "http-status";
 import { Request, Response } from "express";
 
-import { patientProfileService } from "./patient.profile";
+import { patientProfileService } from "./patient.profile.service";
 import { sendResponse } from "../../../utils/sendResponse";
 import asyncHandler from "../../../utils/asyncHandler";
 
