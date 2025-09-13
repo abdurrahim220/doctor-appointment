@@ -29,10 +29,12 @@ export type IPatientProfile = {
 export type IDoctorProfile = {
   id?: string;
   userId: string;
-  profileStatus: ProfileStatus;
   specialty: Specialty;
   licenseNumber: string;
-  status: ProfileStatus;
+  status?: ProfileStatus;
+  // schedules?: Schedule[];
+  // appointments?: Appointment[];
+  // clinics?: ClinicDoctor[];
 };
 
 export type INurseProfile = {

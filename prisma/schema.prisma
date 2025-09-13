@@ -96,7 +96,7 @@ model DoctorProfile {
   licenseNumber String
   schedules    Schedule[]
   appointments Appointment[] @relation("AppointmentDoctor")
-  status        ProfileStatus
+  status        ProfileStatus @default(ACTIVE)
   clinics       ClinicDoctor[] @relation("ClinicDoctor")
 }
 

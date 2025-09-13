@@ -851,3 +851,359 @@ Argument `where` of type PatientProfileWhereUniqueInput needs at least one of `i
     at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
     at Object.updatePatientProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\patient.profile.ts:110:18)
     at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user-profiles\user.profile.controller.ts:38:18
+2025-09-13 11:31:03 [[31merror[39m]: Error: password not matched
+    at Object.login (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\auth\auth.services.ts:24:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\auth\auth.controller.ts:10:18
+2025-09-13 11:37:36 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.doctorProfile.create()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:19:45
+
+  16 }
+  17 
+  18 
+→ 19 const result = await prisma.doctorProfile.create({
+       data: {
+         specialty: "SURGERY",
+         licenseNumber: "S10567",
+     +   status: ProfileStatus
+       }
+     })
+
+Argument `status` is missing.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.createDoctorProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:19:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.controller.ts:11:18
+2025-09-13 11:49:04 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.doctorProfile.findUnique()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:32:45
+
+  29 };
+  30 
+  31 const getDoctorProfile = async (userId: string) => {
+→ 32   const result = await prisma.doctorProfile.findUnique({
+         where: {
+           userId: "9kf3Q0yNh6SbTvhdS_DmY"
+         },
+         include: {
+           user: {
+             select: {
+               id: true,
+               email: true,
+               name: true,
+               phone: true,
+               role: true,
+               status: true,
+               ~~~~~~
+               dateOfBirth: true,
+       ?       gender?: true,
+       ?       password?: true,
+       ?       isActive?: true,
+       ?       isDeleted?: true,
+       ?       createdAt?: true,
+       ?       updatedAt?: true,
+       ?       posts?: true,
+       ?       patientProfile?: true,
+       ?       doctorProfile?: true,
+       ?       nurseProfile?: true,
+       ?       _count?: true
+             }
+           },
+           schedules: true,
+           appointments: true,
+           clinics: true
+         }
+       })
+
+Unknown field `status` for select statement on model `User`. Available options are marked with ?.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.getDoctorProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:32:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.controller.ts:23:18
+2025-09-13 12:00:54 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.doctorProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:55:45
+
+  52 };
+  53 
+  54 const updateDoctorProfile = async (userId: string, data: Partial<IDoctorProfile>) => {
+→ 55   const result = await prisma.doctorProfile.update({
+         where: {
+           userId: "9kf3Q0yNh6SbTvhdS_DmY"
+         },
+         data: {
+           status: "ACTIV"
+                   ~~~~~~~
+         }
+       })
+
+Invalid value for argument `status`. Expected ProfileStatus.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updateDoctorProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:55:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.controller.ts:36:18
+2025-09-13 12:01:11 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.doctorProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:55:45
+
+  52 };
+  53 
+  54 const updateDoctorProfile = async (userId: string, data: Partial<IDoctorProfile>) => {
+→ 55   const result = await prisma.doctorProfile.update({
+         where: {
+           userId: "9kf3Q0yNh6SbTvhdS_DmY"
+         },
+         data: {
+           status: "ACTIVEe"
+                   ~~~~~~~~~
+         }
+       })
+
+Invalid value for argument `status`. Expected ProfileStatus.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updateDoctorProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:55:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.controller.ts:36:18
+2025-09-13 12:01:35 [[31merror[39m]: ZodError: [
+  {
+    "expected": "object",
+    "code": "invalid_type",
+    "path": [],
+    "message": "Invalid input: expected object, received undefined"
+  }
+]
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\validateRequest.ts:7:18
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:50:5
+2025-09-13 12:01:45 [[31merror[39m]: Error: Doctor profile already exists
+    at Object.createDoctorProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:17:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.controller.ts:11:18
+2025-09-13 12:01:58 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.doctorProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:55:45
+
+  52 };
+  53 
+  54 const updateDoctorProfile = async (userId: string, data: Partial<IDoctorProfile>) => {
+→ 55   const result = await prisma.doctorProfile.update({
+         where: {
+           userId: "9kf3Q0yNh6SbTvhdS_DmY"
+         },
+         data: {
+           status: "ACTIVEe"
+                   ~~~~~~~~~
+         }
+       })
+
+Invalid value for argument `status`. Expected ProfileStatus.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updateDoctorProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:55:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.controller.ts:36:18
+2025-09-13 12:03:36 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.doctorProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:55:45
+
+  52 };
+  53 
+  54 const updateDoctorProfile = async (userId: string, data: Partial<IDoctorProfile>) => {
+→ 55   const result = await prisma.doctorProfile.update({
+         where: {
+           userId: "9kf3Q0yNh6SbTvhdS_DmY"
+         },
+         data: {
+           status: "ACTIVEe"
+                   ~~~~~~~~~
+         }
+       })
+
+Invalid value for argument `status`. Expected ProfileStatus.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updateDoctorProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:55:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.controller.ts:36:18
+2025-09-13 12:05:49 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.doctorProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:55:45
+
+  52 };
+  53 
+  54 const updateDoctorProfile = async (userId: string, data: Partial<IDoctorProfile>) => {
+→ 55   const result = await prisma.doctorProfile.update({
+         where: {
+           userId: "9kf3Q0yNh6SbTvhdS_DmY"
+         },
+         data: {
+           status: "ACTIVEe"
+                   ~~~~~~~~~
+         }
+       })
+
+Invalid value for argument `status`. Expected ProfileStatus.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updateDoctorProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:55:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.controller.ts:36:18
+2025-09-13 12:06:09 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.doctorProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:55:45
+
+  52 };
+  53 
+  54 const updateDoctorProfile = async (userId: string, data: Partial<IDoctorProfile>) => {
+→ 55   const result = await prisma.doctorProfile.update({
+         where: {
+           userId: "9kf3Q0yNh6SbTvhdS_DmY"
+         },
+         data: {
+           status: "ACTIVEe"
+                   ~~~~~~~~~
+         }
+       })
+
+Invalid value for argument `status`. Expected ProfileStatus.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updateDoctorProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:55:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.controller.ts:36:18
+2025-09-13 12:06:10 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.doctorProfile.update()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:55:45
+
+  52 };
+  53 
+  54 const updateDoctorProfile = async (userId: string, data: Partial<IDoctorProfile>) => {
+→ 55   const result = await prisma.doctorProfile.update({
+         where: {
+           userId: "9kf3Q0yNh6SbTvhdS_DmY"
+         },
+         data: {
+           status: "ACTIVEe"
+                   ~~~~~~~~~
+         }
+       })
+
+Invalid value for argument `status`. Expected ProfileStatus.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.updateDoctorProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:55:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.controller.ts:36:18
+2025-09-13 12:06:23 [[31merror[39m]: ZodError: [
+  {
+    "code": "invalid_value",
+    "values": [
+      "ACTIVE",
+      "INACTIVE"
+    ],
+    "path": [
+      "status"
+    ],
+    "message": "Invalid option: expected one of \"ACTIVE\"|\"INACTIVE\""
+  }
+]
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\validateRequest.ts:7:18
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:50:5
+2025-09-13 12:09:03 [[31merror[39m]: ZodError: [
+  {
+    "code": "invalid_value",
+    "values": [
+      "ACTIVE",
+      "INACTIVE"
+    ],
+    "path": [
+      "status"
+    ],
+    "message": "Invalid option: expected one of \"ACTIVE\"|\"INACTIVE\""
+  }
+]
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\validateRequest.ts:7:18
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:50:5
+2025-09-13 12:09:05 [[31merror[39m]: ZodError: [
+  {
+    "code": "invalid_value",
+    "values": [
+      "ACTIVE",
+      "INACTIVE"
+    ],
+    "path": [
+      "status"
+    ],
+    "message": "Invalid option: expected one of \"ACTIVE\"|\"INACTIVE\""
+  }
+]
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\validateRequest.ts:7:18
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:50:5
+2025-09-13 12:09:11 [[31merror[39m]: ZodError: [
+  {
+    "code": "invalid_value",
+    "values": [
+      "ACTIVE",
+      "INACTIVE"
+    ],
+    "path": [
+      "status"
+    ],
+    "message": "Invalid option: expected one of \"ACTIVE\"|\"INACTIVE\""
+  }
+]
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\validateRequest.ts:7:18
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:50:5
+2025-09-13 12:09:19 [[31merror[39m]: ZodError: [
+  {
+    "code": "invalid_value",
+    "values": [
+      "ACTIVE",
+      "INACTIVE"
+    ],
+    "path": [
+      "status"
+    ],
+    "message": "Invalid option: expected one of \"ACTIVE\"|\"INACTIVE\""
+  }
+]
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\validateRequest.ts:7:18
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:50:5
