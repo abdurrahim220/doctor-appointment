@@ -13,4 +13,4 @@ router.put("/update-patient-profile",isAuth(),validateRequest(subUserValidation.
 router.get("/get-patient-profile",isAuth(),subUserController.getPatientProfile)
 
 
-export const subUserRoutes = router
+export const patientProfileRoutes = router

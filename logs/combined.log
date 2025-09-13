@@ -1140,3 +1140,11 @@ Argument `where` of type PatientProfileWhereUniqueInput needs at least one of `i
 2025-09-12 19:53:02 [[32minfo[39m]: Redis connected
 2025-09-12 19:53:02 [[32minfo[39m]: Bloom filter already exists: users_bloom
 2025-09-12 19:53:02 [[32minfo[39m]: Server is running on port 5000
+2025-09-13 11:07:02 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-13 11:07:02 [[32minfo[39m]: Redis connected
+2025-09-13 11:07:02 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-13 11:07:02 [[32minfo[39m]: Server is running on port 5000
+2025-09-13 11:07:06 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-13 11:07:06 [[32minfo[39m]: Redis connected
+2025-09-13 11:07:06 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-13 11:07:06 [[32minfo[39m]: Server is running on port 5000
