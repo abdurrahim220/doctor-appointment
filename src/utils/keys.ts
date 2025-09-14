@@ -12,3 +12,10 @@ export const patientProfileKeyById = (id: string): string => {
 export const allPatientProfilesZSet = (): string => {
   return `${REDIS_PREFIX}patientProfiles:zset`;
 };
+
+export const doctorProfileKeyById = (id: string): string => {
+  return `${REDIS_PREFIX}doctorProfile:${id}`;
+};
+export const allDoctorProfilesZSet = (): string => {
+  return `${REDIS_PREFIX}doctorProfiles:zset`;
+};

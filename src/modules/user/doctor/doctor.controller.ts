@@ -24,7 +24,7 @@ const getDoctorProfile = asyncHandler(async (req: Request, res: Response) => {
   sendResponse(res, {
     statusCode: status.OK,
     success: true,
-    // message: `Doctor profile retrieved successfully ${result.source}`,
+    message: `Doctor profile retrieved successfully ${result.source}`,
     data: result,
   });
 });
@@ -42,8 +42,21 @@ const updateDoctorProfile = asyncHandler(async (req: Request, res: Response) => 
   });
 });
 
+const getAllDoctors=asyncHandler(async(req:Request,res:Response)=>{
+  const page = Number(req.query.page) || 1;
+  const limit = Number(req.query.limit) || 10;
+  const result = await doctorProfileService.getAllDoctors(page, limit);
+  sendResponse(res, {
+    statusCode: status.OK,
+    success: true,
+    message: `Doctor profiles retrieved successfully from ${result.source}`,
+    data: result,
+  });
+})
+
 export const doctorProfileController = {
   createdDoctorProfile,
   getDoctorProfile,
   updateDoctorProfile,
+  getAllDoctors,
 };

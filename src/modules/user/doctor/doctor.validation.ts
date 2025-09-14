@@ -1,6 +1,6 @@
 import z from "zod";
 import { ProfileStatus, Specialty } from "../../../types/schema.types";
-import { zodEnumFromTSWithDefault } from "../../../utils/zodEnumForm";
+import { zodEnumFromTSWithDefault } from "../../../helpers/zodEnumForm";
 
 
 const createDoctorZodSchema = z.object({
