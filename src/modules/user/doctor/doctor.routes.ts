@@ -22,7 +22,7 @@ router.put(
   doctorProfileController.updateDoctorProfile,
 );  
 
-router.get("/all", isAuth(), doctorProfileController.getAllDoctors);
+router.get("/get-all", isAuth(), doctorProfileController.getAllDoctors);
 
 
 export const doctorProfileRouter = router;

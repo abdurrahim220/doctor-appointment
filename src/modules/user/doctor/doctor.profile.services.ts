@@ -41,10 +41,12 @@ const createDoctorProfile = async (data: IDoctorProfile, userId: string) => {
     },
   });
 
-  await redisClient.set(doctorProfileKeyById(result.id), JSON.stringify(result));
+  await redisClient.set(doctorProfileKeyById(userId), JSON.stringify(result), {
+    EX: 60 * 60,
+  });
   await redisClient.zAdd(allDoctorProfilesZSet(), {
     score: Date.now(),
-    value: result.id,
+    value: userId,
   });
   return result;
 };
@@ -118,7 +120,7 @@ const updateDoctorProfile = async (userId: string, data: Partial<IDoctorProfile>
 
   await redisClient.zAdd(allDoctorProfilesZSet(), {
     score: new Date().getTime(),
-    value: result.id,
+    value: userId,
   });
 
   return result;
@@ -132,12 +134,18 @@ const getAllDoctors = async (page: number, limit: number) => {
     REV: true,
   });
   if (cachedDoctors.length >= limit || (start === 0 && cachedDoctors.length > 0)) {
-    const cached = await redisClient.mGet(cachedDoctors.map((id) => doctorProfileKeyById(id)));
+    const cached = await redisClient.mGet(cachedDoctors.map((userId) => doctorProfileKeyById(userId)));
     const doctors = cached.filter(Boolean).map((item) => JSON.parse(item as string));
     if (doctors.length) {
       return {
         data: doctors,
         source: `redis` as const,
+        meta: {
+          total: cachedDoctors.length,
+          page,
+          limit,
+          totalPages: Math.ceil(cachedDoctors.length / limit),
+        },
       };
     }
   }
@@ -162,10 +170,10 @@ const getAllDoctors = async (page: number, limit: number) => {
   });
 
   for (const u of result) {
-    await redisClient.set(doctorProfileKeyById(u.id), JSON.stringify(u));
+    await redisClient.set(doctorProfileKeyById(u.userId), JSON.stringify(u));
     await redisClient.zAdd(allDoctorProfilesZSet(), {
       score: new Date().getTime(),
-      value: u.id,
+      value: u.userId,
     });
   }
   return {
