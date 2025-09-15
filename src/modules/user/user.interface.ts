@@ -40,7 +40,6 @@ export type IDoctorProfile = {
 export type INurseProfile = {
   id?: string;
   userId: string;
-  profileStatus: ProfileStatus;
   licenseNumber: string;
   status: ProfileStatus;
 };

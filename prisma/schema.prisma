@@ -93,7 +93,7 @@ model DoctorProfile {
   userId        String    @unique
   user          User      @relation(fields: [userId], references: [id])
   specialty     Specialty
-  licenseNumber String
+  licenseNumber String    @unique
   schedules    Schedule[]
   appointments Appointment[] @relation("AppointmentDoctor")
   status        ProfileStatus @default(ACTIVE)
@@ -104,8 +104,9 @@ model NurseProfile {
   id            String  @id @default(uuid())
   userId        String  @unique
   user          User    @relation(fields: [userId], references: [id])
-  licenseNumber String?
-  status        ProfileStatus
+  licenseNumber String  @unique
+  status        ProfileStatus @default(ACTIVE)
+  clinics       ClinicNurse[] @relation("ClinicNurse")
 }
 
 model Schedule {
@@ -194,6 +195,7 @@ model Clinic {
   address      String?
   doctors      ClinicDoctor[] @relation("ClinicDoctor")
   appointments Appointment[]
+  nurses       ClinicNurse[]  @relation("ClinicNurse")
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -205,5 +207,14 @@ model ClinicDoctor {
   doctorId    String
   clinic      Clinic         @relation("ClinicDoctor", fields: [clinicId], references: [id])
   doctor      DoctorProfile  @relation("ClinicDoctor", fields: [doctorId], references: [id])
-  @@unique([clinicId, doctorId]) // prevents duplicate doctor in same clinic
+  @@unique([clinicId, doctorId]) 
+}
+
+model ClinicNurse {
+  id          String         @id @default(uuid())
+  clinicId    String
+  nurseId     String
+  clinic      Clinic         @relation("ClinicNurse", fields: [clinicId], references: [id])
+  nurse       NurseProfile   @relation("ClinicNurse", fields: [nurseId], references: [id])
+  @@unique([clinicId, nurseId]) 
 }

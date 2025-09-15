@@ -42,8 +42,21 @@ const updateNurseProfile = asyncHandler(async (req: Request, res: Response) => {
   });
 });
 
+const getAllNurseProfiles = asyncHandler(async (req: Request, res: Response) => {
+  const page = parseInt(req.query.page as string) || 1;
+  const limit = parseInt(req.query.limit as string) || 10;
+  const result = await nurseProfileService.getAllNurseProfiles(page, limit);
+  sendResponse(res, {
+    statusCode: status.OK,
+    success: true,
+    message: "Nurse profiles retrieved successfully",
+    data: result,
+  });
+});
+
 export const nurseProfileController = {
   createdNurseProfile,
   getNurseProfile,
   updateNurseProfile,
+  getAllNurseProfiles,
 };
