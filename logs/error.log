@@ -1505,3 +1505,6 @@ Foreign key constraint violated on the constraint: `ClinicDoctor_doctorId_fkey`
     at Object.assignDoctorToClinic (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.service.ts:52:11)
     at processTicksAndRejections (node:internal/process/task_queues:105:5)
     at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.controller.ts:17:18
+2025-09-16 17:39:10 [[31merror[39m]: Error: User already exists
+    at Object.createUser (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user.service.ts:24:13)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user.controller.ts:8:18

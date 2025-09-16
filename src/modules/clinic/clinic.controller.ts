@@ -4,6 +4,7 @@ import { sendResponse } from "../../utils/sendResponse";
 import status from "http-status";
 import { clinicService } from "./clinic.service";
 
+
 const createClinic = asyncHandler(async (req: Request, res: Response) => {
   const clinic = await clinicService.createClinic(req.body);
   sendResponse(res, {
@@ -13,6 +14,8 @@ const createClinic = asyncHandler(async (req: Request, res: Response) => {
     data: clinic,
   });
 });
+
+
 const assignDoctorToClinic = asyncHandler(async (req: Request, res: Response) => {
   const result = await clinicService.assignDoctorToClinic(req.body);
     sendResponse(res, {
@@ -22,6 +25,7 @@ const assignDoctorToClinic = asyncHandler(async (req: Request, res: Response) =>
     data: result,
   });
 });
+
 const assignNurseToClinic = asyncHandler(async (req: Request, res: Response) => {
   const result = await clinicService.assignNurseToClinic(req.body);
   sendResponse(res, {
@@ -31,6 +35,7 @@ const assignNurseToClinic = asyncHandler(async (req: Request, res: Response) => 
     data: result,
   });
 });
+
 const getClinic = asyncHandler(async (req: Request, res: Response) => {
   const result = await clinicService.getClinic(req.params.id);
   sendResponse(res, {
@@ -40,6 +45,7 @@ const getClinic = asyncHandler(async (req: Request, res: Response) => {
     data: result,
   });
 });
+
 const getClinicWithStaff = asyncHandler(async (req: Request, res: Response) => {
   sendResponse(res, {
     statusCode: status.CREATED,
@@ -50,31 +56,20 @@ const getClinicWithStaff = asyncHandler(async (req: Request, res: Response) => {
 });
 
 const getAllClinic = asyncHandler(async (req: Request, res: Response) => {
+  const page = Number(req.params.page) || 1;
+  const limit = Number(req.params.limit)||10;
+  const result = await clinicService.getAllClinic(page,limit)
   sendResponse(res, {
     statusCode: status.CREATED,
     success: true,
     message: "Clinic retrieved successfully",
-    data: {},
+    data: result,
   });
 });
 
-const getAllDoctors = asyncHandler(async (req: Request, res: Response) => {
-  sendResponse(res, {
-    statusCode: status.CREATED,
-    success: true,
-    message: "Doctor retrieved successfully",
-    data: {},
-  });
-});
 
-const getAllNurses = asyncHandler(async (req: Request, res: Response) => {
-  sendResponse(res, {
-    statusCode: status.CREATED,
-    success: true,
-    message: "Nurse retrieved successfully",
-    data: {},
-  });
-});
+
+
 
 export const clinicController = {
   createClinic,
@@ -83,6 +78,5 @@ export const clinicController = {
   getClinic,
   getClinicWithStaff,
   getAllClinic,
-  getAllDoctors,
-  getAllNurses,
+ 
 };

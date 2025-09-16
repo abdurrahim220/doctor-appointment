@@ -118,6 +118,8 @@ model Schedule {
   endTime      DateTime
   isAvailable  Boolean       @default(true)
   appointments Appointment[]
+  clinicId     String
+  Clinic       Clinic        @relation("ClinicSchedules", fields: [clinicId], references: [id])
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -169,6 +171,7 @@ model MedicalRecord {
   diagnosis     String?
   notes         String?
   createdAt     DateTime       @default(now())
+  updatedAt     DateTime       @updatedAt
 }
 
 model Review {
@@ -189,11 +192,11 @@ model Clinic {
   doctors      ClinicDoctor[] @relation("ClinicDoctor")
   appointments Appointment[]
   nurses       ClinicNurse[]  @relation("ClinicNurse")
+  schedules    Schedule[]     @relation("ClinicSchedules")
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
 
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
-
-  @@unique([name, address]) 
+  @@unique([name, address])
 }
 
 model ClinicDoctor {

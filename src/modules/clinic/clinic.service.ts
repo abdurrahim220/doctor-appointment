@@ -239,9 +239,7 @@ const getAllClinic = async (page: number, limit: number) => {
   }
 };
 
-const getAllDoctors = async () => {};
 
-const getAllNurses = async () => {};
 
 export const clinicService = {
   createClinic,
@@ -250,6 +248,5 @@ export const clinicService = {
   getClinic,
   getClinicWithStaff,
   getAllClinic,
-  getAllDoctors,
-  getAllNurses,
+ 
 };
