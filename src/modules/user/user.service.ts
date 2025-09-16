@@ -1,5 +1,5 @@
 import status from "http-status";
-import { BLOOM_KEY } from "../../config/bloom.redis";
+import {  } from "../../config/bloom.redis";
 import initializeRedisClient from "../../config/redis.client";
 import AppError from "../../errors/appError";
 import prisma from "../../prisma/client";
@@ -8,11 +8,12 @@ import { userKeyById, allUsersZSet } from "../../utils/keys";
 import { IUser } from "./user.interface";
 import * as bcrypt from "bcryptjs";
 import { nanoid } from "nanoid";
+const USER_BLOOM_KEY = "users_bloom";
 
 const createUser = async (payload: IUser) => {
   const { password, name, email, gender, phone } = payload;
   const redisClient = await initializeRedisClient();
-  const bfReply: unknown = await redisClient.sendCommand(["BF.EXISTS", BLOOM_KEY, email]);
+  const bfReply: unknown = await redisClient.sendCommand(["BF.EXISTS", USER_BLOOM_KEY, email.toLocaleLowerCase()]);
   if (bfReply === 1) {
     const existing = await prisma.user.findUnique({
       where: {
@@ -45,8 +46,8 @@ const createUser = async (payload: IUser) => {
       createdAt: true,
     },
   });
-  await redisClient.sendCommand(["BF.ADD", BLOOM_KEY, user.email]);
-  await redisClient.sendCommand(["BF.ADD", BLOOM_KEY, user.id]);
+  await redisClient.sendCommand(["BF.ADD", USER_BLOOM_KEY, user.email]);
+  await redisClient.sendCommand(["BF.ADD", USER_BLOOM_KEY, user.id]);
 
   await redisClient.set(userKeyById(user.id), JSON.stringify(user));
 
@@ -147,7 +148,7 @@ const updateUser = async (id: string, payload: IUser) => {
   const redisClient = await initializeRedisClient();
   const { password, name, email, gender, phone } = payload;
   if (email) {
-    const bfReply: unknown = await redisClient.sendCommand(["BF.EXISTS", BLOOM_KEY, email]);
+    const bfReply: unknown = await redisClient.sendCommand(["BF.EXISTS", USER_BLOOM_KEY, email.toLocaleLowerCase()]);
     if (bfReply === 1) {
       const existing = await prisma.user.findUnique({
         where: {
@@ -186,7 +187,7 @@ const updateUser = async (id: string, payload: IUser) => {
     },
   });
   if (email) {
-    await redisClient.sendCommand(["BF.ADD", BLOOM_KEY, email]);
+    await redisClient.sendCommand(["BF.ADD", USER_BLOOM_KEY, email]);
   }
   await redisClient.set(userKeyById(id), JSON.stringify(user));
   await redisClient.zAdd(allUsersZSet(), {

@@ -26,3 +26,25 @@ export const nurseProfileKeyById = (id: string): string => {
 export const allNurseProfilesZSet = (): string => {
   return `${REDIS_PREFIX}nurseProfiles:zset`;
 };
+
+
+export const clinicKeyById = (id: string): string => {
+  return `${REDIS_PREFIX}clinic:${id}`;
+};
+export const allClinicZSet = (): string => {
+  return `${REDIS_PREFIX}clinic:zset`;
+};
+
+
+export const clinicDoctorKeyById = (id: string): string => {
+  return `${REDIS_PREFIX}clinicDoctor:${id}`;
+};
+export const allClinicDoctorZSet = (): string => {
+  return `${REDIS_PREFIX}clinicDoctor:zset`;
+};
+export const clinicNurseKeyById = (id: string): string => {
+  return `${REDIS_PREFIX}clinicNurse:${id}`;
+};
+export const allClinicNurseZSet = (): string => {
+  return `${REDIS_PREFIX}clinicNurse:zset`;
+};

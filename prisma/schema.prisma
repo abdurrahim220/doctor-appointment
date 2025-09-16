@@ -43,11 +43,13 @@ enum ProfileStatus {
   ACTIVE
   INACTIVE
 }
+
 enum AppointmentStatus {
   BOOKED
   CANCELLED
   COMPLETED
 }
+
 enum ScheduleType {
   COMPLETE
   PENDING
@@ -57,125 +59,117 @@ enum ScheduleType {
 }
 
 model User {
-  id        String   @id @default(uuid())
-  email     String   @unique
-  name      String
-  phone     String
-  role      Role     @default(USER)
-  gender    Gender
-  password  String
-  posts     Post[]
+  id       String @id @default(uuid())
+  email    String @unique
+  name     String
+  phone    String
+  role     Role   @default(USER)
+  gender   Gender
+  password String
+  posts    Post[]
 
   patientProfile PatientProfile?
   doctorProfile  DoctorProfile?
   nurseProfile   NurseProfile?
 
-  isActive   Boolean  @default(true)
-  isDeleted  Boolean  @default(false)
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
+  isActive  Boolean  @default(true)
+  isDeleted Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
-
 model PatientProfile {
-  id             String    @id @default(uuid())
-  userId         String    @unique
-  user           User      @relation(fields: [userId], references: [id])
+  id             String          @id @default(uuid())
+  userId         String          @unique
+  user           User            @relation(fields: [userId], references: [id])
   medicalRecords MedicalRecord[]
-  appointments   Appointment[] @relation("AppointmentPatient")
-  reviews        Review[]      @relation("ReviewPatient")
+  appointments   Appointment[]   @relation("AppointmentPatient")
+  reviews        Review[]        @relation("ReviewPatient")
   dateOfBirth    String
-  status         ProfileStatus @default(ACTIVE)
+  status         ProfileStatus   @default(ACTIVE)
 }
 
 model DoctorProfile {
-  id            String    @id @default(uuid())
-  userId        String    @unique
-  user          User      @relation(fields: [userId], references: [id])
+  id            String         @id @default(uuid())
+  userId        String         @unique
+  user          User           @relation(fields: [userId], references: [id])
   specialty     Specialty
-  licenseNumber String    @unique
-  schedules    Schedule[]
-  appointments Appointment[] @relation("AppointmentDoctor")
-  status        ProfileStatus @default(ACTIVE)
+  licenseNumber String         @unique
+  schedules     Schedule[]
+  appointments  Appointment[]  @relation("AppointmentDoctor")
+  status        ProfileStatus  @default(ACTIVE)
   clinics       ClinicDoctor[] @relation("ClinicDoctor")
 }
 
 model NurseProfile {
-  id            String  @id @default(uuid())
-  userId        String  @unique
-  user          User    @relation(fields: [userId], references: [id])
-  licenseNumber String  @unique
+  id            String        @id @default(uuid())
+  userId        String        @unique
+  user          User          @relation(fields: [userId], references: [id])
+  licenseNumber String        @unique
   status        ProfileStatus @default(ACTIVE)
   clinics       ClinicNurse[] @relation("ClinicNurse")
 }
 
 model Schedule {
-  id          String        @id @default(uuid())
-  doctorId    String
-  doctor      DoctorProfile @relation(fields: [doctorId], references: [id])
-  startTime   DateTime
-  endTime     DateTime
-  isAvailable Boolean       @default(true)
+  id           String        @id @default(uuid())
+  doctorId     String
+  doctor       DoctorProfile @relation(fields: [doctorId], references: [id])
+  startTime    DateTime
+  endTime      DateTime
+  isAvailable  Boolean       @default(true)
   appointments Appointment[]
-
-  createdAt  DateTime @default(now())
-  updatedAt  DateTime @updatedAt
-}
-
-
-model Post {
-  id        String   @id @default(uuid())
-  title     String
-  content   String?
-  published Boolean  @default(false)
-  authorId  String?
-  author    User?    @relation(fields: [authorId], references: [id])
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
 
+model Post {
+  id        String  @id @default(uuid())
+  title     String
+  content   String?
+  published Boolean @default(false)
+  authorId  String?
+  author    User?   @relation(fields: [authorId], references: [id])
 
-
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
 
 model Appointment {
-  id          String          @id @default(uuid())
-  date        DateTime
-  status      AppointmentStatus
-  notes       String?
-  
-  patientId   String
-  patient     PatientProfile  @relation("AppointmentPatient", fields: [patientId], references: [id])
+  id     String            @id @default(uuid())
+  date   DateTime
+  status AppointmentStatus
+  notes  String?
 
-  doctorId    String
-  doctor      DoctorProfile   @relation("AppointmentDoctor", fields: [doctorId], references: [id])
+  patientId String
+  patient   PatientProfile @relation("AppointmentPatient", fields: [patientId], references: [id])
 
-  scheduleId  String
-  schedule    Schedule        @relation(fields: [scheduleId], references: [id])
+  doctorId String
+  doctor   DoctorProfile @relation("AppointmentDoctor", fields: [doctorId], references: [id])
 
-  clinicId    String?
-  clinic      Clinic?         @relation(fields: [clinicId], references: [id])
+  scheduleId String
+  schedule   Schedule @relation(fields: [scheduleId], references: [id])
+
+  clinicId String?
+  clinic   Clinic? @relation(fields: [clinicId], references: [id])
 
   medicalRecords MedicalRecord[]
 
   scheduleType ScheduleType
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
 }
-
-
 
 model MedicalRecord {
-  id            String    @id @default(uuid())
+  id            String         @id @default(uuid())
   patientId     String
-  patient       PatientProfile      @relation(fields: [patientId], references: [id])
+  patient       PatientProfile @relation(fields: [patientId], references: [id])
   appointmentId String?
-  appointment   Appointment? @relation(fields: [appointmentId], references: [id])
+  appointment   Appointment?   @relation(fields: [appointmentId], references: [id])
   diagnosis     String?
   notes         String?
-  createdAt     DateTime  @default(now())
+  createdAt     DateTime       @default(now())
 }
-
 
 model Review {
   id        String         @id @default(uuid())
@@ -184,13 +178,12 @@ model Review {
   doctorId  String
   rating    Int
   comment   String?
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  createdAt DateTime       @default(now())
+  updatedAt DateTime       @updatedAt
 }
 
-
 model Clinic {
-  id           String          @id @default(uuid())
+  id           String         @id @default(uuid())
   name         String
   address      String?
   doctors      ClinicDoctor[] @relation("ClinicDoctor")
@@ -199,22 +192,26 @@ model Clinic {
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+
+  @@unique([name, address]) 
 }
 
 model ClinicDoctor {
-  id          String         @id @default(uuid())
-  clinicId    String
-  doctorId    String
-  clinic      Clinic         @relation("ClinicDoctor", fields: [clinicId], references: [id])
-  doctor      DoctorProfile  @relation("ClinicDoctor", fields: [doctorId], references: [id])
-  @@unique([clinicId, doctorId]) 
+  id       String        @id @default(uuid())
+  clinicId String
+  doctorId String
+  clinic   Clinic        @relation("ClinicDoctor", fields: [clinicId], references: [id])
+  doctor   DoctorProfile @relation("ClinicDoctor", fields: [doctorId], references: [id])
+
+  @@unique([clinicId, doctorId])
 }
 
 model ClinicNurse {
-  id          String         @id @default(uuid())
-  clinicId    String
-  nurseId     String
-  clinic      Clinic         @relation("ClinicNurse", fields: [clinicId], references: [id])
-  nurse       NurseProfile   @relation("ClinicNurse", fields: [nurseId], references: [id])
-  @@unique([clinicId, nurseId]) 
+  id       String       @id @default(uuid())
+  clinicId String
+  nurseId  String
+  clinic   Clinic       @relation("ClinicNurse", fields: [clinicId], references: [id])
+  nurse    NurseProfile @relation("ClinicNurse", fields: [nurseId], references: [id])
+
+  @@unique([clinicId, nurseId])
 }
