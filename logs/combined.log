@@ -5378,3 +5378,158 @@ Foreign key constraint violated on the constraint: `ClinicDoctor_doctorId_fkey`
     at Object.createSchedule (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:22:11)
     at processTicksAndRejections (node:internal/process/task_queues:105:5)
     at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.controller.ts:8:20
+2025-09-17 18:59:16 [[32minfo[39m]: 🌱 Starting seed process...
+2025-09-17 18:59:16 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `prisma.clinic.deleteMany()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:23:23
+
+  20 await prisma.appointment.deleteMany();
+  21 await prisma.schedule.deleteMany();
+  22 await prisma.clinicDoctor.deleteMany();
+→ 23 await prisma.clinic.deleteMany(
+Foreign key constraint violated on the constraint: `ClinicNurse_clinicId_fkey`
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:228:13)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async main (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:23:3)
+2025-09-17 19:01:00 [[32minfo[39m]: 🌱 Starting seed process...
+2025-09-17 19:01:00 [[32minfo[39m]: 🧹 Cleaned up existing data
+2025-09-17 19:01:00 [[32minfo[39m]: 👥 Created 4 users
+2025-09-17 19:01:00 [[32minfo[39m]: 👤 Created 1 patient profiles
+2025-09-17 19:01:00 [[32minfo[39m]: 👨‍⚕️ Created 1 doctor profiles
+2025-09-17 19:01:00 [[32minfo[39m]: 👩‍⚕️ Created 1 nurse profiles
+2025-09-17 19:01:00 [[32minfo[39m]: 🏥 Created 1 clinics
+2025-09-17 19:01:00 [[32minfo[39m]: 🔗 Created 1 clinic doctor relationships
+2025-09-17 19:01:00 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.schedule.upsert()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:96:27
+
+  93   ...schedule,
+  94   dayOfWeek: schedule.dayOfWeek.map((d) => DayOfWeek[d as keyof typeof DayOfWeek]),
+  95 };
+→ 96 await prisma.schedule.upsert({
+       where: {
+         id: "schedule-1"
+       },
+       update: {
+         id: "schedule-1",
+         doctorId: "doctor-profile-1",
+         clinicId: "clinic-1",
+         date: "2025-10-22",
+         startTime: "16:00",
+         endTime: "22:00",
+         timezone: "Asia/Dhaka",
+         dayOfWeek: [
+           "WEDNESDAY",
+           "SATURDAY"
+         ],
+         isAvailable: true
+       },
+       create: {
+         id: "schedule-1",
+         doctorId: "doctor-profile-1",
+         clinicId: "clinic-1",
+         date: "2025-10-22",
+               ~~~~~~~~~~~~
+         startTime: "16:00",
+         endTime: "22:00",
+         timezone: "Asia/Dhaka",
+         dayOfWeek: [
+           "WEDNESDAY",
+           "SATURDAY"
+         ],
+         isAvailable: true
+       }
+     })
+
+Invalid value for argument `date`: premature end of input. Expected ISO-8601 DateTime.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async main (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:96:5)
+2025-09-17 19:01:51 [[32minfo[39m]: 🌱 Starting seed process...
+2025-09-17 19:01:51 [[32minfo[39m]: 🧹 Cleaned up existing data
+2025-09-17 19:01:51 [[32minfo[39m]: 👥 Created 4 users
+2025-09-17 19:01:51 [[32minfo[39m]: 👤 Created 1 patient profiles
+2025-09-17 19:01:51 [[32minfo[39m]: 👨‍⚕️ Created 1 doctor profiles
+2025-09-17 19:01:51 [[32minfo[39m]: 👩‍⚕️ Created 1 nurse profiles
+2025-09-17 19:01:51 [[32minfo[39m]: 🏥 Created 1 clinics
+2025-09-17 19:01:51 [[32minfo[39m]: 🔗 Created 1 clinic doctor relationships
+2025-09-17 19:01:51 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.schedule.upsert()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:96:27
+
+  93   ...schedule,
+  94   dayOfWeek: schedule.dayOfWeek.map((d) => DayOfWeek[d as keyof typeof DayOfWeek]),
+  95 };
+→ 96 await prisma.schedule.upsert({
+       where: {
+         id: "schedule-1"
+       },
+       update: {
+         id: "schedule-1",
+         doctorId: "doctor-profile-1",
+         clinicId: "clinic-1",
+         date: new Date("2025-10-22T00:00:00.000Z"),
+         startTime: "16:00",
+         endTime: "22:00",
+         timezone: "Asia/Dhaka",
+         dayOfWeek: [
+           "WEDNESDAY",
+           "SATURDAY"
+         ],
+         isAvailable: true
+       },
+       create: {
+         id: "schedule-1",
+         doctorId: "doctor-profile-1",
+         clinicId: "clinic-1",
+         date: new Date("2025-10-22T00:00:00.000Z"),
+         startTime: "16:00",
+                    ~~~~~~~
+         endTime: "22:00",
+         timezone: "Asia/Dhaka",
+         dayOfWeek: [
+           "WEDNESDAY",
+           "SATURDAY"
+         ],
+         isAvailable: true
+       }
+     })
+
+Invalid value for argument `startTime`: input contains invalid characters. Expected ISO-8601 DateTime.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async main (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:96:5)
+2025-09-17 19:02:24 [[32minfo[39m]: 🌱 Starting seed process...
+2025-09-17 19:02:24 [[32minfo[39m]: 🧹 Cleaned up existing data
+2025-09-17 19:02:24 [[32minfo[39m]: 👥 Created 4 users
+2025-09-17 19:02:24 [[32minfo[39m]: 👤 Created 1 patient profiles
+2025-09-17 19:02:24 [[32minfo[39m]: 👨‍⚕️ Created 1 doctor profiles
+2025-09-17 19:02:24 [[32minfo[39m]: 👩‍⚕️ Created 1 nurse profiles
+2025-09-17 19:02:24 [[32minfo[39m]: 🏥 Created 1 clinics
+2025-09-17 19:02:24 [[32minfo[39m]: 🔗 Created 1 clinic doctor relationships
+2025-09-17 19:02:24 [[32minfo[39m]: 📅 Created 2 schedules
+2025-09-17 19:02:24 [[32minfo[39m]: 📋 Created 1 appointments
+2025-09-17 19:02:24 [[32minfo[39m]: 📋 Created 1 medical records
+2025-09-17 19:02:24 [[32minfo[39m]: ⭐ Created 1 reviews
+2025-09-17 19:02:24 [[32minfo[39m]: 🌱 Seed completed successfully!
+2025-09-17 19:05:06 [[32minfo[39m]: 🌱 Starting seed process...
+2025-09-17 19:05:06 [[32minfo[39m]: 🧹 Cleaned up existing data
+2025-09-17 19:05:06 [[32minfo[39m]: 👥 Created 4 users
+2025-09-17 19:05:06 [[32minfo[39m]: 👤 Created 1 patient profiles
+2025-09-17 19:05:06 [[32minfo[39m]: 👨‍⚕️ Created 1 doctor profiles
+2025-09-17 19:05:06 [[32minfo[39m]: 👩‍⚕️ Created 1 nurse profiles
+2025-09-17 19:05:06 [[32minfo[39m]: 🏥 Created 1 clinics
+2025-09-17 19:05:06 [[32minfo[39m]: 🔗 Created 1 clinic doctor relationships
+2025-09-17 19:05:06 [[32minfo[39m]: 📅 Created 2 schedules
+2025-09-17 19:05:06 [[32minfo[39m]: 📋 Created 1 appointments
+2025-09-17 19:05:06 [[32minfo[39m]: 📋 Created 1 medical records
+2025-09-17 19:05:06 [[32minfo[39m]: ⭐ Created 1 reviews
+2025-09-17 19:05:06 [[32minfo[39m]: 🌱 Seed completed successfully!

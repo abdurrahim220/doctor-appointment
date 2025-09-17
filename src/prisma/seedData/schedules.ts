@@ -1,18 +1,26 @@
+import { DayOfWeek } from "@prisma/client";
+
 export const schedules = [
   {
-    id: 'schedule-1',
-    doctorId: 'doctor-profile-1',
-     clinicId: 'clinic-1',
-    startTime: new Date(Date.now() + 24 * 60 * 60 * 1000), // Tomorrow
-    endTime: new Date(Date.now() + 25 * 60 * 60 * 1000), // Tomorrow + 1 hour
+    id: "schedule-1",
+    doctorId: "doctor-profile-1",
+    clinicId: "clinic-1",
+    date: new Date("2025-10-22"),
+    startTime: new Date("2025-10-22T16:00:00.000Z"),
+    endTime: new Date("2025-10-22T22:00:00.000Z"),
+    timezone: "Asia/Dhaka",
+    dayOfWeek: [DayOfWeek.WEDNESDAY, DayOfWeek.SATURDAY],
     isAvailable: true,
   },
   {
-    id: 'schedule-2',
-    doctorId: 'doctor-profile-1',
-     clinicId: 'clinic-1',
-    startTime: new Date(Date.now() + 48 * 60 * 60 * 1000), // Day after tomorrow
-    endTime: new Date(Date.now() + 49 * 60 * 60 * 1000), // Day after tomorrow + 1 hour
+    id: "schedule-2",
+    doctorId: "doctor-profile-1",
+    clinicId: "clinic-1",
+    date: new Date("2025-10-23"),
+    startTime: new Date("2025-10-23T16:00:00.000Z"),
+    endTime: new Date("2025-10-23T22:00:00.000Z"),
+    timezone: "Asia/Dhaka",
+    dayOfWeek: [DayOfWeek.THURSDAY, DayOfWeek.SATURDAY],
     isAvailable: false,
   },
 ];

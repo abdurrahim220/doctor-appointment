@@ -1,17 +1,17 @@
+import { users } from "./seedData/users";
 
-import { users } from './seedData/users';
-
-import { clinics, clinicDoctors } from './seedData/clinics';
-import { schedules } from './seedData/schedules';
-import { appointments } from './seedData/appointments';
-import { medicalRecords } from './seedData/medicalRecords';
-import { reviews } from './seedData/reviews';
-import logger from '../utils/logger';
-import prisma from './client';
-import { doctorProfiles, nurseProfiles, patientProfiles } from './seedData/allProfiles';
+import { clinics, clinicDoctors } from "./seedData/clinics";
+import { schedules } from "./seedData/schedules";
+import { appointments } from "./seedData/appointments";
+import { medicalRecords } from "./seedData/medicalRecords";
+import { reviews } from "./seedData/reviews";
+import logger from "../utils/logger";
+import prisma from "./client";
+import { doctorProfiles, nurseProfiles, patientProfiles } from "./seedData/allProfiles";
+import { DayOfWeek } from "../types/schema.types";
 
 async function main() {
-  logger.info('🌱 Starting seed process...');
+  logger.info("🌱 Starting seed process...");
 
   // Clean up existing data (be careful with this in production!)
   await prisma.medicalRecord.deleteMany();
@@ -26,7 +26,7 @@ async function main() {
   await prisma.post.deleteMany();
   await prisma.user.deleteMany();
 
-  logger.info('🧹 Cleaned up existing data');
+  logger.info("🧹 Cleaned up existing data");
 
   // Create users
   for (const user of users) {
@@ -126,7 +126,7 @@ async function main() {
   }
   logger.info(`⭐ Created ${reviews.length} reviews`);
 
-  logger.info('🌱 Seed completed successfully!');
+  logger.info("🌱 Seed completed successfully!");
 }
 
 main()
