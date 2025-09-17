@@ -28,3 +28,23 @@ This file contains sample user data for testing and development purposes.
     "password": "123456"
   }
 ]
+
+
+## Clinics
+
+```json
+[
+  {
+    "name": "Popular Diagnostic Centre Ltd",
+    "address": "Mohakhali, Dhaka"
+  },
+  {
+    "name": "Popular Diagnostic Centre Ltd",
+    "address": "Laxmipur, Rajshahi"
+  },
+  {
+    "name": "Popular Diagnostic Centre Ltd",
+    "address": "Chadpur, Chittagong"
+  }
+]
+```

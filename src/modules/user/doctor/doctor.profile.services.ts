@@ -15,7 +15,7 @@ const createDoctorProfile = async (data: IDoctorProfile, userId: string) => {
   });
 
   if (doctorProfile) {
-    throw new AppError("Doctor profile already exists", status.BAD_REQUEST);
+    throw new AppError("Doctor profile already exists in redis", status.BAD_REQUEST);
   }
 
   const result = await prisma.doctorProfile.create({

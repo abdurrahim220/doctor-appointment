@@ -7,7 +7,7 @@ import { scheduleZodValidation } from "./schedule.validation";
 
 const router = Router();
 
-router.post("/create", isAuth([Role.DOCTOR]), validateRequest(scheduleZodValidation.scheduleZodSchema),scheduleController.createSchedule);
+router.post("/create", isAuth([Role.DOCTOR,Role.ADMIN]), validateRequest(scheduleZodValidation.scheduleZodSchema),scheduleController.createSchedule);
 router.get("/get", isAuth(), scheduleController.getSchedule);
 router.put("/update/:id", isAuth([Role.DOCTOR]), scheduleController.updateSchedule);
 router.delete("/delete/:id", isAuth([Role.DOCTOR, Role.ADMIN]), scheduleController.deleteSchedule);

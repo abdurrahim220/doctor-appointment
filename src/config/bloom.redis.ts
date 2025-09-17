@@ -28,6 +28,16 @@ export const BLOOM_FILTERS: BloomConfig[] = [
     capacity: 50_000,
     errorRate: 0.01,
   },
+  {
+    key: "schedules_bloom",
+    capacity: 50_000,
+    errorRate: 0.01,
+  },
+  {
+    key: "appointments_bloom",
+    capacity: 50_000,
+    errorRate: 0.01,
+  },
 ];
 
 export async function ensureBloom() {

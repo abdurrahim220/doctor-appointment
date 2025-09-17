@@ -48,3 +48,11 @@ export const clinicNurseKeyById = (id: string): string => {
 export const allClinicNurseZSet = (): string => {
   return `${REDIS_PREFIX}clinicNurse:zset`;
 };
+
+
+export const scheduleKeyById = (id: string): string => {
+  return `${REDIS_PREFIX}schedule:${id}`;
+};
+export const allScheduleZSet = (): string => {
+  return `${REDIS_PREFIX}schedule:zset`;
+};

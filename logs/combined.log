@@ -4570,3 +4570,811 @@ Foreign key constraint violated on the constraint: `ClinicDoctor_doctorId_fkey`
 2025-09-16 17:39:10 [[31merror[39m]: Error: User already exists
     at Object.createUser (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user.service.ts:24:13)
     at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user.controller.ts:8:18
+2025-09-16 17:50:35 [[31merror[39m]: TokenExpiredError: jwt expired
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:97:14)
+    at Object.module.exports [as verify] (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:8:25)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:21:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+2025-09-16 17:50:35 [[31merror[39m]: Error: Invalid or expired token
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:12:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:21:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:295:15
+    at param (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:600:14)
+2025-09-16 17:55:47 [[31merror[39m]: Error: User already exists
+    at Object.createUser (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user.service.ts:24:13)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\user.controller.ts:8:18
+2025-09-16 17:57:23 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-16 17:57:23 [[32minfo[39m]: Redis connected
+2025-09-16 17:57:23 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-16 17:57:23 [[32minfo[39m]: Bloom filter created: clinics_bloom
+2025-09-16 17:57:23 [[32minfo[39m]: Bloom filter created: doctors_bloom
+2025-09-16 17:57:23 [[32minfo[39m]: Bloom filter created: nurses_bloom
+2025-09-16 17:57:23 [[32minfo[39m]: Server is running on port 5000
+2025-09-16 17:58:27 [[31merror[39m]: ZodError: [
+  {
+    "code": "invalid_value",
+    "values": [
+      "USER",
+      "ADMIN",
+      "SUPER_ADMIN",
+      "PATIENT",
+      "DOCTOR",
+      "NURSE"
+    ],
+    "path": [
+      "role"
+    ],
+    "message": "Invalid option: expected one of \"USER\"|\"ADMIN\"|\"SUPER_ADMIN\"|\"PATIENT\"|\"DOCTOR\"|\"NURSE\""
+  }
+]
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\validateRequest.ts:7:18
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:50:5
+2025-09-16 18:09:58 [[31merror[39m]: Error: password not matched
+    at Object.login (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\auth\auth.services.ts:24:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\auth\auth.controller.ts:10:18
+2025-09-16 18:10:23 [[31merror[39m]: TokenExpiredError: jwt expired
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:97:14)
+    at Object.module.exports [as verify] (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:8:25)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:21:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+2025-09-16 18:10:23 [[31merror[39m]: Error: Invalid or expired token
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:12:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:21:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:295:15
+    at processParams (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:582:12)
+2025-09-16 18:16:55 [[31merror[39m]: Error: Doctor profile already exists
+    at Object.createDoctorProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:18:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.controller.ts:11:18
+2025-09-16 18:17:25 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-16 18:17:25 [[32minfo[39m]: Redis connected
+2025-09-16 18:17:25 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-16 18:17:25 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-16 18:17:25 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-16 18:17:25 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-16 18:17:25 [[32minfo[39m]: Server is running on port 5000
+2025-09-16 18:17:30 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-16 18:17:30 [[32minfo[39m]: Redis connected
+2025-09-16 18:17:30 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-16 18:17:30 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-16 18:17:30 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-16 18:17:30 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-16 18:17:30 [[32minfo[39m]: Server is running on port 5000
+2025-09-16 18:17:31 [[31merror[39m]: Error: Doctor profile already exists in redis
+    at Object.createDoctorProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.profile.services.ts:18:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\doctor\doctor.controller.ts:11:18
+2025-09-16 18:18:48 [[31merror[39m]: Error: Nurse profile already exists
+    at Object.createNurseProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\nurse\nurse.profile.services.ts:17:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\nurse\nurse.controller.ts:11:18
+2025-09-16 18:19:13 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-16 18:19:13 [[32minfo[39m]: Redis connected
+2025-09-16 18:19:13 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-16 18:19:13 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-16 18:19:13 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-16 18:19:13 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-16 18:19:13 [[32minfo[39m]: Server is running on port 5000
+2025-09-16 18:19:15 [[31merror[39m]: Error: Nurse profile already exists in redis
+    at Object.createNurseProfile (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\nurse\nurse.profile.services.ts:17:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\user\nurse\nurse.controller.ts:11:18
+2025-09-16 18:21:48 [[31merror[39m]: Error: Clinic not found
+    at Object.assignNurseToClinic (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.service.ts:120:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.controller.ts:30:18
+2025-09-16 18:22:18 [[31merror[39m]: Error: Doctor already assigned to this clinic (redis)
+    at Object.assignDoctorToClinic (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.service.ts:62:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.controller.ts:20:18
+2025-09-16 18:22:26 [[31merror[39m]: Error: Doctor already assigned to this clinic (redis)
+    at Object.assignDoctorToClinic (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.service.ts:62:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.controller.ts:20:18
+2025-09-16 18:26:03 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-16 18:26:03 [[32minfo[39m]: Redis connected
+2025-09-16 18:26:03 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-16 18:26:03 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-16 18:26:03 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-16 18:26:03 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-16 18:26:03 [[32minfo[39m]: Server is running on port 5000
+2025-09-16 18:27:04 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-16 18:27:04 [[32minfo[39m]: Redis connected
+2025-09-16 18:27:04 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-16 18:27:04 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-16 18:27:04 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-16 18:27:04 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-16 18:27:04 [[32minfo[39m]: Server is running on port 5000
+2025-09-16 18:27:08 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-16 18:27:08 [[32minfo[39m]: Redis connected
+2025-09-16 18:27:08 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-16 18:27:08 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-16 18:27:08 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-16 18:27:08 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-16 18:27:08 [[32minfo[39m]: Server is running on port 5000
+2025-09-16 18:27:28 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-16 18:27:28 [[32minfo[39m]: Redis connected
+2025-09-16 18:27:28 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-16 18:27:28 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-16 18:27:28 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-16 18:27:28 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-16 18:27:28 [[32minfo[39m]: Server is running on port 5000
+2025-09-16 20:33:52 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-16 20:33:52 [[32minfo[39m]: Redis connected
+2025-09-16 20:33:52 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-16 20:33:52 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-16 20:33:52 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-16 20:33:52 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-16 20:33:52 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:18:30 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:18:30 [[32minfo[39m]: Redis connected
+2025-09-17 09:18:30 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:18:30 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:18:30 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:18:30 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:18:30 [[32minfo[39m]: Bloom filter created: schedules_bloom
+2025-09-17 09:18:30 [[32minfo[39m]: Bloom filter created: appointments_bloom
+2025-09-17 09:18:30 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:18:51 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:18:51 [[32minfo[39m]: Redis connected
+2025-09-17 09:18:51 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:18:51 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:18:51 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:18:51 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:18:51 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:18:51 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:18:51 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:19:06 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:19:06 [[32minfo[39m]: Redis connected
+2025-09-17 09:19:06 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:19:06 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:19:06 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:19:06 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:19:06 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:19:06 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:19:06 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:19:21 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:19:21 [[32minfo[39m]: Redis connected
+2025-09-17 09:19:21 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:19:21 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:19:21 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:19:21 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:19:21 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:19:21 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:19:21 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:19:28 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:19:28 [[32minfo[39m]: Redis connected
+2025-09-17 09:19:28 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:19:28 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:19:28 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:19:28 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:19:28 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:19:28 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:19:28 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:19:35 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:19:35 [[32minfo[39m]: Redis connected
+2025-09-17 09:19:35 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:19:35 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:19:35 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:19:35 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:19:35 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:19:35 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:19:35 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:19:45 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:19:45 [[32minfo[39m]: Redis connected
+2025-09-17 09:19:53 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:19:53 [[32minfo[39m]: Redis connected
+2025-09-17 09:19:53 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:19:53 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:19:53 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:19:53 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:19:53 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:19:53 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:19:53 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:19:58 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:19:58 [[32minfo[39m]: Redis connected
+2025-09-17 09:19:58 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:19:58 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:19:58 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:19:58 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:19:58 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:19:58 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:19:58 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:20:03 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:20:03 [[32minfo[39m]: Redis connected
+2025-09-17 09:20:03 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:20:03 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:20:03 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:20:03 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:20:03 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:20:03 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:20:03 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:20:11 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:20:11 [[32minfo[39m]: Redis connected
+2025-09-17 09:20:11 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:20:11 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:20:11 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:20:11 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:20:11 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:20:11 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:20:11 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:20:17 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:20:17 [[32minfo[39m]: Redis connected
+2025-09-17 09:20:17 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:20:17 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:20:17 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:20:17 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:20:17 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:20:17 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:20:17 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:20:22 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:20:22 [[32minfo[39m]: Redis connected
+2025-09-17 09:20:22 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:20:22 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:20:22 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:20:22 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:20:22 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:20:22 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:20:22 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:20:33 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:20:33 [[32minfo[39m]: Redis connected
+2025-09-17 09:20:33 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:20:33 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:20:33 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:20:33 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:20:33 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:20:33 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:20:33 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:20:37 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:20:37 [[32minfo[39m]: Redis connected
+2025-09-17 09:20:37 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:20:37 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:20:37 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:20:37 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:20:37 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:20:37 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:20:37 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:20:41 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:20:41 [[32minfo[39m]: Redis connected
+2025-09-17 09:20:41 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:20:41 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:20:41 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:20:41 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:20:41 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:20:41 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:20:41 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:20:46 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:20:46 [[32minfo[39m]: Redis connected
+2025-09-17 09:20:46 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:20:46 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:20:46 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:20:46 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:20:46 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:20:46 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:20:46 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:20:51 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:20:51 [[32minfo[39m]: Redis connected
+2025-09-17 09:20:51 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:20:51 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:20:51 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:20:51 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:20:51 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:20:51 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:20:51 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:21:05 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:21:05 [[32minfo[39m]: Redis connected
+2025-09-17 09:21:05 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:21:05 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:21:05 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:21:05 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:21:05 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:21:05 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:21:05 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:21:11 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:21:11 [[32minfo[39m]: Redis connected
+2025-09-17 09:21:11 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:21:11 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:21:11 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:21:11 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:21:11 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:21:11 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:21:11 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:21:17 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:21:17 [[32minfo[39m]: Redis connected
+2025-09-17 09:21:17 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:21:17 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:21:17 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:21:17 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:21:17 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:21:17 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:21:17 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:21:22 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:21:22 [[32minfo[39m]: Redis connected
+2025-09-17 09:21:22 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:21:22 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:21:22 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:21:22 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:21:22 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:21:22 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:21:22 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:22:10 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:22:10 [[32minfo[39m]: Redis connected
+2025-09-17 09:22:10 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:22:10 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:22:10 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:22:10 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:22:10 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:22:10 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:22:10 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:22:27 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:22:27 [[32minfo[39m]: Redis connected
+2025-09-17 09:22:27 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:22:27 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:22:27 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:22:27 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:22:27 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:22:27 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:22:27 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:22:29 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:22:29 [[32minfo[39m]: Redis connected
+2025-09-17 09:22:29 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:22:29 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:22:29 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:22:29 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:22:29 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:22:29 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:22:29 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:22:36 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:22:36 [[32minfo[39m]: Redis connected
+2025-09-17 09:22:36 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:22:36 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:22:36 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:22:36 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:22:36 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:22:36 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:22:36 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:22:57 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:22:57 [[32minfo[39m]: Redis connected
+2025-09-17 09:22:57 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:22:57 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:22:57 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:22:57 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:22:57 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:22:57 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:22:57 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:22:59 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:22:59 [[32minfo[39m]: Redis connected
+2025-09-17 09:22:59 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:22:59 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:22:59 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:22:59 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:22:59 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:22:59 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:22:59 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:23:02 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:23:02 [[32minfo[39m]: Redis connected
+2025-09-17 09:23:02 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:23:02 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:23:02 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:23:02 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:23:02 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:23:02 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:23:02 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:23:05 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:23:05 [[32minfo[39m]: Redis connected
+2025-09-17 09:23:05 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:23:05 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:23:05 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:23:05 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:23:05 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:23:05 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:23:05 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:23:10 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:23:10 [[32minfo[39m]: Redis connected
+2025-09-17 09:23:10 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:23:10 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:23:10 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:23:10 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:23:10 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:23:10 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:23:10 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:23:14 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:23:14 [[32minfo[39m]: Redis connected
+2025-09-17 09:23:14 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:23:14 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:23:14 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:23:14 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:23:14 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:23:14 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:23:14 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:23:22 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:23:22 [[32minfo[39m]: Redis connected
+2025-09-17 09:23:22 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:23:22 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:23:22 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:23:22 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:23:22 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:23:22 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:23:22 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:23:27 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:23:28 [[32minfo[39m]: Redis connected
+2025-09-17 09:23:28 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:23:28 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:23:28 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:23:28 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:23:28 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:23:28 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:23:28 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:23:44 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:23:44 [[32minfo[39m]: Redis connected
+2025-09-17 09:23:44 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:23:44 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:23:44 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:23:44 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:23:44 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:23:44 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:23:44 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:23:48 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:23:48 [[32minfo[39m]: Redis connected
+2025-09-17 09:23:48 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:23:48 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:23:48 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:23:48 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:23:48 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:23:48 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:23:48 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:23:55 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:23:55 [[32minfo[39m]: Redis connected
+2025-09-17 09:23:55 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:23:55 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:23:55 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:23:55 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:23:55 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:23:55 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:23:55 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:24:01 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:24:01 [[32minfo[39m]: Redis connected
+2025-09-17 09:24:01 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:24:01 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:24:01 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:24:01 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:24:01 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:24:01 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:24:01 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:24:05 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:24:05 [[32minfo[39m]: Redis connected
+2025-09-17 09:24:05 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:24:05 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:24:05 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:24:05 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:24:05 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:24:05 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:24:05 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:24:27 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:24:27 [[32minfo[39m]: Redis connected
+2025-09-17 09:24:27 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:24:27 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:24:27 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:24:27 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:24:27 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:24:27 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:24:27 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:24:31 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:24:31 [[32minfo[39m]: Redis connected
+2025-09-17 09:24:31 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:24:31 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:24:31 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:24:31 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:24:31 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:24:31 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:24:31 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:24:45 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:24:45 [[32minfo[39m]: Redis connected
+2025-09-17 09:24:45 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:24:45 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:24:45 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:24:45 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:24:45 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:24:45 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:24:46 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:25:24 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:25:24 [[32minfo[39m]: Redis connected
+2025-09-17 09:25:24 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:25:24 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:25:24 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:25:24 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:25:24 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:25:24 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:25:24 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:25:28 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:25:28 [[32minfo[39m]: Redis connected
+2025-09-17 09:25:28 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:25:28 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:25:28 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:25:28 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:25:28 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:25:28 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:25:28 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:25:32 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:25:32 [[32minfo[39m]: Redis connected
+2025-09-17 09:25:32 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:25:32 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:25:32 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:25:32 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:25:32 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:25:32 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:25:32 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:25:37 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:25:37 [[32minfo[39m]: Redis connected
+2025-09-17 09:25:37 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:25:37 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:25:37 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:25:37 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:25:37 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:25:37 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:25:37 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:25:44 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:25:44 [[32minfo[39m]: Redis connected
+2025-09-17 09:25:44 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:25:44 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:25:44 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:25:44 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:25:44 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:25:44 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:25:44 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:25:57 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:25:57 [[32minfo[39m]: Redis connected
+2025-09-17 09:25:57 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:25:57 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:25:57 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:25:57 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:25:57 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:25:57 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:25:57 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:26:02 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:26:02 [[32minfo[39m]: Redis connected
+2025-09-17 09:26:02 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:26:02 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:26:02 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:26:02 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:26:02 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:26:02 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:26:02 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:26:06 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:26:06 [[32minfo[39m]: Redis connected
+2025-09-17 09:26:06 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:26:06 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:26:06 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:26:06 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:26:06 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:26:06 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:26:06 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:26:17 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:26:17 [[32minfo[39m]: Redis connected
+2025-09-17 09:26:17 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:26:17 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:26:17 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:26:17 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:26:17 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:26:17 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:26:18 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:26:25 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:26:25 [[32minfo[39m]: Redis connected
+2025-09-17 09:26:25 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:26:25 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:26:25 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:26:25 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:26:25 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:26:25 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:26:25 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:26:35 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:26:35 [[32minfo[39m]: Redis connected
+2025-09-17 09:26:35 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:26:35 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:26:35 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:26:35 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:26:35 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:26:35 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:26:35 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:26:48 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:26:48 [[32minfo[39m]: Redis connected
+2025-09-17 09:26:48 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:26:48 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:26:48 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:26:48 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:26:48 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:26:48 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:26:48 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:26:53 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:26:53 [[32minfo[39m]: Redis connected
+2025-09-17 09:26:53 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:26:53 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:26:53 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:26:53 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:26:53 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:26:53 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:26:53 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:27:00 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:27:00 [[32minfo[39m]: Redis connected
+2025-09-17 09:27:00 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:27:00 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:27:00 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:27:00 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:27:00 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:27:00 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:27:00 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:28:16 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:28:16 [[32minfo[39m]: Redis connected
+2025-09-17 09:28:16 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:28:16 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:28:16 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:28:16 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:28:16 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:28:16 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:28:16 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:28:19 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:28:19 [[32minfo[39m]: Redis connected
+2025-09-17 09:28:19 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:28:19 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:28:19 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:28:19 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:28:19 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:28:19 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:28:19 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:29:31 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:29:31 [[32minfo[39m]: Redis connected
+2025-09-17 09:29:31 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:29:31 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:29:31 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:29:31 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:29:31 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:29:31 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:29:31 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:29:36 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:29:36 [[32minfo[39m]: Redis connected
+2025-09-17 09:29:36 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:29:36 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:29:36 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:29:36 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:29:36 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:29:36 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:29:36 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:30:26 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:30:26 [[32minfo[39m]: Redis connected
+2025-09-17 09:30:26 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:30:26 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:30:26 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:30:26 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:30:26 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:30:26 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:30:26 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:30:32 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:30:32 [[32minfo[39m]: Redis connected
+2025-09-17 09:30:32 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:30:32 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:30:32 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:30:32 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:30:32 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:30:32 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:30:32 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:32:21 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:32:21 [[32minfo[39m]: Redis connected
+2025-09-17 09:32:21 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:32:21 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:32:21 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:32:21 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:32:21 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:32:21 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:32:21 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:32:26 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:32:26 [[32minfo[39m]: Redis connected
+2025-09-17 09:32:26 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:32:26 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:32:26 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:32:26 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:32:26 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:32:26 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:32:26 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:34:36 [[31merror[39m]: Error: You are not authorized
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:45:13
+2025-09-17 09:35:03 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:35:03 [[32minfo[39m]: Redis connected
+2025-09-17 09:35:03 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:35:03 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:35:03 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:35:03 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:35:03 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:35:03 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:35:03 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:35:09 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:35:09 [[32minfo[39m]: Redis connected
+2025-09-17 09:35:09 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:35:09 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:35:09 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:35:09 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:35:09 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:35:09 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:35:09 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:35:10 [[31merror[39m]: ZodError: [
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/^\\d{4}-\\d{2}-\\d{2}$/",
+    "path": [
+      "startTime"
+    ],
+    "message": "Date must be in YYYY-MM-DD format"
+  },
+  {
+    "origin": "string",
+    "code": "invalid_format",
+    "format": "regex",
+    "pattern": "/^\\d{4}-\\d{2}-\\d{2}$/",
+    "path": [
+      "endTime"
+    ],
+    "message": "Date must be in YYYY-MM-DD format"
+  }
+]
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\validateRequest.ts:7:18
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:50:5
+2025-09-17 09:35:35 [[31merror[39m]: TypeError: payload.startTime.toISOString is not a function
+    at Object.createSchedule (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:14:81)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.controller.ts:8:20
+2025-09-17 09:36:10 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:36:10 [[32minfo[39m]: Redis connected
+2025-09-17 09:36:10 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:36:10 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:36:10 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:36:10 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:36:10 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:36:10 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:36:10 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:37:32 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:37:32 [[32minfo[39m]: Redis connected
+2025-09-17 09:37:32 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:37:33 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:37:33 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:37:33 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:37:33 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:37:33 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:37:33 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:37:39 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-17 09:37:39 [[32minfo[39m]: Redis connected
+2025-09-17 09:37:39 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-17 09:37:39 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-17 09:37:39 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-17 09:37:39 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-17 09:37:39 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-17 09:37:39 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-17 09:37:39 [[32minfo[39m]: Server is running on port 5000
+2025-09-17 09:37:51 [[31merror[39m]: Error: Schedule already exists in bloom filter: _JOSMod1gpmVBfi0Lz1AX:K3oF1aJEt1BWtKuYeXse2:2025-10-22T00:00:00.000Z
+    at Object.createSchedule (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:22:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.controller.ts:8:20
