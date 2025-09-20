@@ -38,12 +38,12 @@ export enum AppointmentStatus {
   BOOKED = "BOOKED",
   CANCELLED = "CANCELLED",
   COMPLETED = "COMPLETED",
+  PENDING = "PENDING",
 }
 export enum ScheduleType {
-  COMPLETE = "COMPLETE",
-  PENDING = "PENDING",
-  CANCELLED = "CANCELLED",
-  RESCHEDULED = "RESCHEDULED",
+  AVAILABLE = "AVAILABLE",
+  BOOKED = "BOOKED",
+  BLOCKED = "BLOCKED",
 }
 
 export enum DayOfWeek {

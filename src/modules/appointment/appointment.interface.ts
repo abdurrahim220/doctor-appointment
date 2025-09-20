@@ -2,19 +2,17 @@ import { AppointmentStatus, ScheduleType } from "../../types/schema.types";
 
 export type IAppointment = {
   id: string;
-  date: Date;
+  date: string;
   status: AppointmentStatus;
   notes?: string;
   patientId: string;
   doctorId: string;
   scheduleId: string;
-  clinicId?: string;
-  medicalRecord:IMedicalRecord[],
-  schedule: ScheduleType,
+  clinicId: string;
+  scheduleType: ScheduleType;
   createdAt: Date;
   updatedAt: Date;
 };
-
 
 export type IMedicalRecord = {
   id: string;

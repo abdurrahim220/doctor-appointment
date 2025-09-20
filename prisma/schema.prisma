@@ -48,14 +48,13 @@ enum AppointmentStatus {
   BOOKED
   CANCELLED
   COMPLETED
+  PENDING
 }
 
 enum ScheduleType {
-  COMPLETE
-  PENDING
-  CANCELLED
-  RESCHEDULED
+  AVAILABLE
   BOOKED
+  BLOCKED
 }
 
 enum DayOfWeek {
@@ -91,7 +90,7 @@ model User {
 model PatientProfile {
   id             String          @id @default(uuid())
   userId         String          @unique
-  user           User            @relation(fields: [userId], references: [id])
+  user           User            @relation(fields: [userId], references: [id], onDelete: Cascade)
   medicalRecords MedicalRecord[]
   appointments   Appointment[]   @relation("AppointmentPatient")
   reviews        Review[]        @relation("ReviewPatient")
@@ -102,7 +101,7 @@ model PatientProfile {
 model DoctorProfile {
   id            String         @id @default(uuid())
   userId        String         @unique
-  user          User           @relation(fields: [userId], references: [id])
+  user          User           @relation(fields: [userId], references: [id], onDelete: Cascade)
   specialty     Specialty
   licenseNumber String         @unique
   schedules     Schedule[]
@@ -114,7 +113,7 @@ model DoctorProfile {
 model NurseProfile {
   id            String        @id @default(uuid())
   userId        String        @unique
-  user          User          @relation(fields: [userId], references: [id])
+  user          User          @relation(fields: [userId], references: [id], onDelete: Cascade)
   licenseNumber String        @unique
   status        ProfileStatus @default(ACTIVE)
   clinics       ClinicNurse[] @relation("ClinicNurse")
@@ -123,7 +122,7 @@ model NurseProfile {
 model Schedule {
   id           String        @id @default(uuid())
   doctorId     String
-  doctor       DoctorProfile @relation(fields: [doctorId], references: [id])
+  doctor       DoctorProfile @relation(fields: [doctorId], references: [id], onDelete: Cascade)
   date         DateTime      @default(now())
   startTime    DateTime
   endTime      DateTime
@@ -132,7 +131,7 @@ model Schedule {
   isAvailable  Boolean       @default(true)
   appointments Appointment[]
   clinicId     String
-  Clinic       Clinic        @relation("ClinicSchedules", fields: [clinicId], references: [id])
+  clinic       Clinic        @relation("ClinicSchedules", fields: [clinicId], references: [id], onDelete: Cascade)
   dayOfWeek    DayOfWeek[]   @default([])
   timezone     String?       @default("Asia/Dhaka")
   createdAt    DateTime      @default(now())
@@ -145,7 +144,7 @@ model Post {
   content   String?
   published Boolean @default(false)
   authorId  String?
-  author    User?   @relation(fields: [authorId], references: [id])
+  author    User?   @relation(fields: [authorId], references: [id], onDelete: Cascade)
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
@@ -154,24 +153,24 @@ model Post {
 model Appointment {
   id     String            @id @default(uuid())
   date   DateTime
-  status AppointmentStatus
+  status AppointmentStatus @default(PENDING)
   notes  String?
 
   patientId String
-  patient   PatientProfile @relation("AppointmentPatient", fields: [patientId], references: [id])
+  patient   PatientProfile @relation("AppointmentPatient", fields: [patientId], references: [id], onDelete: Cascade)
 
   doctorId String
-  doctor   DoctorProfile @relation("AppointmentDoctor", fields: [doctorId], references: [id])
+  doctor   DoctorProfile @relation("AppointmentDoctor", fields: [doctorId], references: [id], onDelete: Cascade)
 
   scheduleId String
-  schedule   Schedule @relation(fields: [scheduleId], references: [id])
+  schedule   Schedule @relation(fields: [scheduleId], references: [id], onDelete: Cascade)
 
   clinicId String?
-  clinic   Clinic? @relation(fields: [clinicId], references: [id])
+  clinic   Clinic? @relation("ClinicAppointment", fields: [clinicId], references: [id], onDelete: SetNull)
 
   medicalRecords MedicalRecord[]
 
-  scheduleType ScheduleType
+  scheduleType ScheduleType @default(AVAILABLE)
   createdAt    DateTime     @default(now())
   updatedAt    DateTime     @updatedAt
 }
@@ -179,9 +178,9 @@ model Appointment {
 model MedicalRecord {
   id            String         @id @default(uuid())
   patientId     String
-  patient       PatientProfile @relation(fields: [patientId], references: [id])
+  patient       PatientProfile @relation(fields: [patientId], references: [id], onDelete: Cascade)
   appointmentId String?
-  appointment   Appointment?   @relation(fields: [appointmentId], references: [id])
+  appointment   Appointment?   @relation(fields: [appointmentId], references: [id], onDelete: Cascade)
   diagnosis     String?
   notes         String?
   createdAt     DateTime       @default(now())
@@ -191,7 +190,7 @@ model MedicalRecord {
 model Review {
   id        String         @id @default(uuid())
   patientId String
-  patient   PatientProfile @relation("ReviewPatient", fields: [patientId], references: [id])
+  patient   PatientProfile @relation("ReviewPatient", fields: [patientId], references: [id], onDelete: Cascade)
   doctorId  String
   rating    Int
   comment   String?
@@ -204,7 +203,7 @@ model Clinic {
   name         String
   address      String?
   doctors      ClinicDoctor[] @relation("ClinicDoctor")
-  appointments Appointment[]
+  appointments Appointment[]  @relation("ClinicAppointment")
   nurses       ClinicNurse[]  @relation("ClinicNurse")
   schedules    Schedule[]     @relation("ClinicSchedules")
   createdAt    DateTime       @default(now())
@@ -217,8 +216,8 @@ model ClinicDoctor {
   id       String        @id @default(uuid())
   clinicId String
   doctorId String
-  clinic   Clinic        @relation("ClinicDoctor", fields: [clinicId], references: [id])
-  doctor   DoctorProfile @relation("ClinicDoctor", fields: [doctorId], references: [id])
+  clinic   Clinic        @relation("ClinicDoctor", fields: [clinicId], references: [id], onDelete: Cascade)
+  doctor   DoctorProfile @relation("ClinicDoctor", fields: [doctorId], references: [id], onDelete: Cascade)
 
   @@unique([clinicId, doctorId])
 }
@@ -227,8 +226,8 @@ model ClinicNurse {
   id       String       @id @default(uuid())
   clinicId String
   nurseId  String
-  clinic   Clinic       @relation("ClinicNurse", fields: [clinicId], references: [id])
-  nurse    NurseProfile @relation("ClinicNurse", fields: [nurseId], references: [id])
+  clinic   Clinic       @relation("ClinicNurse", fields: [clinicId], references: [id], onDelete: Cascade)
+  nurse    NurseProfile @relation("ClinicNurse", fields: [nurseId], references: [id], onDelete: Cascade)
 
   @@unique([clinicId, nurseId])
 }
