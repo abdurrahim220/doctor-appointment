@@ -8,21 +8,21 @@ import { reviews } from "./seedData/reviews";
 import logger from "../utils/logger";
 import prisma from "./client";
 import { doctorProfiles, nurseProfiles, patientProfiles } from "./seedData/allProfiles";
-import { DayOfWeek } from "../types/schema.types";
 
 async function main() {
   logger.info("🌱 Starting seed process...");
 
   // Clean up existing data (be careful with this in production!)
-  await prisma.medicalRecord.deleteMany();
+ await prisma.medicalRecord.deleteMany();
   await prisma.review.deleteMany();
   await prisma.appointment.deleteMany();
   await prisma.schedule.deleteMany();
   await prisma.clinicDoctor.deleteMany();
-  await prisma.clinic.deleteMany();
-  await prisma.patientProfile.deleteMany();
-  await prisma.doctorProfile.deleteMany();
+  await prisma.clinicNurse.deleteMany(); // Add this line to delete ClinicNurse first
   await prisma.nurseProfile.deleteMany();
+  await prisma.doctorProfile.deleteMany();
+  await prisma.patientProfile.deleteMany();
+  await prisma.clinic.deleteMany();
   await prisma.post.deleteMany();
   await prisma.user.deleteMany();
 

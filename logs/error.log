@@ -1751,3 +1751,389 @@ Invalid value for argument `startTime`: input contains invalid characters. Expec
     at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
     at async a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
     at async main (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:96:5)
+2025-09-18 21:38:45 [[31merror[39m]: SyntaxError: Unexpected non-whitespace character after JSON at position 145 (line 7 column 4)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\body-parser\lib\types\json.js:77:19)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\body-parser\lib\read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)
+    at invokeCallback (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:518:28)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at processTicksAndRejections (node:internal/process/task_queues:90:21)
+2025-09-18 21:48:02 [[31merror[39m]: TokenExpiredError: jwt expired
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:97:14)
+    at Object.module.exports [as verify] (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:8:25)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:21:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+2025-09-18 21:48:02 [[31merror[39m]: Error: Invalid or expired token
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:12:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:21:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:295:15
+    at processParams (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:582:12)
+2025-09-18 21:50:34 [[31merror[39m]: TokenExpiredError: jwt expired
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:97:14)
+    at Object.module.exports [as verify] (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:8:25)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:21:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+2025-09-18 21:50:34 [[31merror[39m]: Error: Invalid or expired token
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:12:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:21:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:295:15
+    at processParams (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:582:12)
+2025-09-18 21:52:50 [[31merror[39m]: Error: Clinic not found
+    at Object.assignDoctorToClinic (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.service.ts:68:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.controller.ts:20:18
+2025-09-18 21:53:10 [[31merror[39m]: Error: Doctor not found
+    at Object.assignDoctorToClinic (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.service.ts:76:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.controller.ts:20:18
+2025-09-18 21:53:30 [[31merror[39m]: Error: Doctor already assigned to this clinic (redis)
+    at Object.assignDoctorToClinic (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.service.ts:62:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.controller.ts:20:18
+2025-09-18 21:53:36 [[31merror[39m]: Error: Doctor already assigned to this clinic (redis)
+    at Object.assignDoctorToClinic (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.service.ts:62:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.controller.ts:20:18
+2025-09-18 21:54:07 [[31merror[39m]: Error: Clinic not found
+    at Object.assignNurseToClinic (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.service.ts:120:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.controller.ts:30:18
+2025-09-18 21:54:24 [[31merror[39m]: Error: Clinic not found
+    at Object.assignNurseToClinic (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.service.ts:120:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.controller.ts:30:18
+2025-09-18 21:54:26 [[31merror[39m]: Error: Clinic not found
+    at Object.assignNurseToClinic (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.service.ts:120:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\clinic\clinic.controller.ts:30:18
+2025-09-18 21:57:34 [[31merror[39m]: TokenExpiredError: jwt expired
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:97:14)
+    at Object.module.exports [as verify] (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:8:25)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:21:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+2025-09-18 21:57:34 [[31merror[39m]: Error: Invalid or expired token
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:12:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:21:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:295:15
+    at processParams (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:582:12)
+2025-09-18 21:57:45 [[31merror[39m]: ZodError: [
+  {
+    "expected": "array",
+    "code": "invalid_type",
+    "path": [
+      "dayOfWeek"
+    ],
+    "message": "Invalid input: expected array, received undefined"
+  }
+]
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\validateRequest.ts:7:18
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:50:5
+2025-09-18 22:00:08 [[31merror[39m]: ZodError: [
+  {
+    "expected": "array",
+    "code": "invalid_type",
+    "path": [
+      "dayOfWeek"
+    ],
+    "message": "Invalid input: expected array, received undefined"
+  }
+]
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\validateRequest.ts:7:18
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:50:5
+2025-09-18 22:00:33 [[31merror[39m]: ZodError: [
+  {
+    "expected": "array",
+    "code": "invalid_type",
+    "path": [
+      "dayOfWeek"
+    ],
+    "message": "Invalid input: expected array, received undefined"
+  }
+]
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\validateRequest.ts:7:18
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:50:5
+2025-09-18 22:01:04 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.schedule.create()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:37:40
+
+  34   throw new AppError("Doctor is not associated with this clinic", status.FORBIDDEN);
+  35 }
+  36 
+→ 37 const result = await prisma.schedule.create({
+       data: {
+         id: "XuQAxNG-Ani9UBL3fgrBQ",
+         doctorId: "1M6FQkwj65yWYAZ1bsgIE",
+         clinicId: "9pJkXcXcJoljbzpixW_bh",
+         date: "2025-10-22",
+               ~~~~~~~~~~~~
+         startTime: new Date("2025-10-22T10:00:00.000Z"),
+         endTime: new Date("2025-10-22T16:00:00.000Z"),
+         dayOfWeek: [
+           "SATURDAY",
+           "MONDAY",
+           "WEDNESDAY"
+         ]
+       }
+     })
+
+Invalid value for argument `date`: premature end of input. Expected ISO-8601 DateTime.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.createSchedule (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:37:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.controller.ts:8:20
+2025-09-18 22:01:26 [[31merror[39m]: Error: Doctor is not associated with this clinic
+    at Object.createSchedule (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:34:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.controller.ts:8:20
+2025-09-18 22:01:41 [[31merror[39m]: PrismaClientValidationError: 
+Invalid `prisma.schedule.create()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:37:40
+
+  34   throw new AppError("Doctor is not associated with this clinic", status.FORBIDDEN);
+  35 }
+  36 
+→ 37 const result = await prisma.schedule.create({
+       data: {
+         id: "WJqCXuOUWv-mhMhu2PbVj",
+         doctorId: "1M6FQkwj65yWYAZ1bsgIE",
+         clinicId: "9pJkXcXcJoljbzpixW_bh",
+         date: "2025-10-22",
+               ~~~~~~~~~~~~
+         startTime: new Date("2025-10-22T10:00:00.000Z"),
+         endTime: new Date("2025-10-22T16:00:00.000Z"),
+         dayOfWeek: [
+           "SATURDAY",
+           "MONDAY",
+           "WEDNESDAY"
+         ]
+       }
+     })
+
+Invalid value for argument `date`: premature end of input. Expected ISO-8601 DateTime.
+    at throwValidationException (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\core\errorRendering\throwValidationException.ts:45:9)
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:202:7)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at Object.createSchedule (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:37:18)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.controller.ts:8:20
+2025-09-18 22:02:38 [[31merror[39m]: Error: Schedule already exists in bloom filter: 1M6FQkwj65yWYAZ1bsgIE:9pJkXcXcJoljbzpixW_bh:2025-10-22T10:00:00.000Z
+    at Object.createSchedule (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:23:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.controller.ts:8:20
+2025-09-19 09:11:18 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `prisma.clinic.deleteMany()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:21:23
+
+  18 await prisma.appointment.deleteMany();
+  19 await prisma.schedule.deleteMany();
+  20 await prisma.clinicDoctor.deleteMany();
+→ 21 await prisma.clinic.deleteMany(
+Foreign key constraint violated on the constraint: `ClinicNurse_clinicId_fkey`
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:228:13)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async main (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:21:3)
+2025-09-19 09:12:08 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `prisma.clinic.deleteMany()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:21:23
+
+  18 await prisma.appointment.deleteMany();
+  19 await prisma.schedule.deleteMany();
+  20 await prisma.clinicDoctor.deleteMany();
+→ 21 await prisma.clinic.deleteMany(
+Foreign key constraint violated on the constraint: `ClinicNurse_clinicId_fkey`
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:228:13)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async main (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:21:3)
+2025-09-19 09:14:03 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `prisma.nurseProfile.deleteMany()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:23:29
+
+  20 await prisma.clinicDoctor.deleteMany();
+  21 await prisma.patientProfile.deleteMany();
+  22 await prisma.doctorProfile.deleteMany();
+→ 23 await prisma.nurseProfile.deleteMany(
+Foreign key constraint violated on the constraint: `ClinicNurse_nurseId_fkey`
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:228:13)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async main (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:23:3)
+2025-09-19 09:14:44 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `prisma.nurseProfile.deleteMany()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:21:29
+
+  18 await prisma.appointment.deleteMany();
+  19 await prisma.schedule.deleteMany();
+  20 await prisma.clinicDoctor.deleteMany();
+→ 21 await prisma.nurseProfile.deleteMany(
+Foreign key constraint violated on the constraint: `ClinicNurse_nurseId_fkey`
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:228:13)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async main (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:21:3)
+2025-09-19 09:16:28 [[31merror[39m]: PrismaClientKnownRequestError: 
+Invalid `prisma.nurseProfile.deleteMany()` invocation in
+C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:21:29
+
+  18 await prisma.appointment.deleteMany();
+  19 await prisma.schedule.deleteMany();
+  20 await prisma.clinicDoctor.deleteMany();
+→ 21 await prisma.nurseProfile.deleteMany(
+Foreign key constraint violated on the constraint: `ClinicNurse_nurseId_fkey`
+    at ei.handleRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:228:13)
+    at ei.handleAndLogRequestError (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:174:12)
+    at ei.request (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\RequestHandler.ts:143:12)
+    at async a (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\@prisma\client\src\runtime\getPrismaClient.ts:833:24)
+    at async main (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\prisma\seed.ts:21:3)
+2025-09-19 09:34:36 [[31merror[39m]: SyntaxError: Unexpected token 'm', "myapp:sche"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:133:52
+    at Array.map (<anonymous>)
+    at Object.getAllSchedules (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:133:29)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.controller.ts:33:20
+2025-09-19 09:34:40 [[31merror[39m]: SyntaxError: Unexpected token 'm', "myapp:sche"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:133:52
+    at Array.map (<anonymous>)
+    at Object.getAllSchedules (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:133:29)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.controller.ts:33:20
+2025-09-19 09:37:04 [[31merror[39m]: SyntaxError: Unexpected token 'm', "myapp:sche"... is not valid JSON
+    at JSON.parse (<anonymous>)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:133:52
+    at Array.map (<anonymous>)
+    at Object.getAllSchedules (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:133:29)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.controller.ts:33:20
+2025-09-20 06:03:26 [[31merror[39m]: TokenExpiredError: jwt expired
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:97:14)
+    at Object.module.exports [as verify] (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:8:25)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:21:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+2025-09-20 06:03:26 [[31merror[39m]: Error: Invalid or expired token
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:12:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:21:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:295:15
+    at processParams (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:582:12)
+2025-09-20 06:06:16 [[31merror[39m]: Error: You are not authorized
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:45:13
+2025-09-20 06:13:52 [[31merror[39m]: ReferenceError: data is not defined
+    at Object.updateSchedule (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:201:52)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.controller.ts:44:16
+2025-09-20 06:13:54 [[31merror[39m]: ReferenceError: data is not defined
+    at Object.updateSchedule (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:201:52)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.controller.ts:44:16
+2025-09-20 06:21:17 [[31merror[39m]: TypeError: Cannot read properties of undefined (reading 'startTime')
+    at Object.updateSchedule (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:202:29)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.controller.ts:44:16
+2025-09-20 06:21:53 [[31merror[39m]: TypeError: Cannot read properties of undefined (reading 'startTime')
+    at Object.updateSchedule (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:202:29)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.controller.ts:44:16
+2025-09-20 06:23:02 [[31merror[39m]: TokenExpiredError: jwt expired
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:190:21
+    at getSecret (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:97:14)
+    at Object.module.exports [as verify] (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\jsonwebtoken\verify.js:101:10)
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:8:25)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:21:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+2025-09-20 06:23:02 [[31merror[39m]: Error: Invalid or expired token
+    at verifyToken (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\verifyToken.ts:12:11)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\middleware\isAuth.ts:21:32
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\utils\asyncHandler.ts:5:21
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at next (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\route.js:117:3)
+    at handle (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\lib\layer.js:152:17)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:295:15
+    at param (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\node_modules\router\index.js:600:14)
+2025-09-20 06:23:15 [[31merror[39m]: Error: Day of week does not match the date
+    at Object.updateSchedule (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:215:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.controller.ts:44:16
+2025-09-20 06:26:05 [[31merror[39m]: RangeError: Invalid time value
+    at Date.toISOString (<anonymous>)
+    at Object.updateSchedule (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:211:53)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.controller.ts:44:16
+2025-09-20 09:10:51 [[31merror[39m]: Error: End time must be after start time
+    at Object.updateSchedule (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:221:11)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.controller.ts:44:16
+2025-09-20 09:12:36 [[31merror[39m]: Error: Day of week does not match the date
+    at Object.updateSchedule (C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.service.ts:224:13)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at C:\Users\masuma\Desktop\APP\Projects\unfinished projects\sql_learning\prisma_tutorial\src\modules\schedule\schedule.controller.ts:44:16

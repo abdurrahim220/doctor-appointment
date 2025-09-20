@@ -1,9 +1,9 @@
-import { ClinicDoctor, ClinicNurse } from "@prisma/client";
+
 import { Gender, ProfileStatus, Role, Specialty } from "../../types/schema.types";
 import { IPost } from "../post/post.interface";
 
 export interface IUser {
-  id?: string;
+  id: string;
   name: string;
   email: string;
   password: string;
@@ -16,8 +16,8 @@ export interface IUser {
   nurseProfile?: INurseProfile;
   isActive?: boolean;
   isDeleted?: boolean;
-  createdAt?: Date;
-  updatedAt?: Date;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 export type IPatientProfile = {
@@ -33,9 +33,7 @@ export type IDoctorProfile = {
   specialty: Specialty;
   licenseNumber: string;
   status?: ProfileStatus;
-  // schedules?: Schedule[];
-  // appointments?: Appointment[];
-  // clinic?: ClinicDoctor[];
+  
 };
 
 export type INurseProfile = {
@@ -43,6 +41,5 @@ export type INurseProfile = {
   userId: string;
   licenseNumber: string;
   status: ProfileStatus;
-  // clinic?: ClinicNurse[];
 };
 

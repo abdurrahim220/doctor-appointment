@@ -127,6 +127,8 @@ model Schedule {
   date         DateTime      @default(now())
   startTime    DateTime
   endTime      DateTime
+  maxPatients  Int           @default(0)
+  slotDuration Int           @default(30)
   isAvailable  Boolean       @default(true)
   appointments Appointment[]
   clinicId     String

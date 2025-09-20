@@ -1,8 +1,9 @@
 import initializeRedisClient from "../config/redis.client";
+import { IUser } from "../modules/user/user.interface";
 import { allUsersZSet, userKeyById } from "./keys";
 
 // ✅ Add or update a user in cache
-export const addOrUpdateUserInCache = async (user: any) => {
+export const addOrUpdateUserInCache = async (user: IUser) => {
   const redisClient = await initializeRedisClient();
 
   // Update single user cache

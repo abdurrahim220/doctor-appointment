@@ -1,4 +1,3 @@
-import { IDoctorProfile, INurseProfile } from "../user/user.interface";
 
 export type IClinic = {
   id: string;

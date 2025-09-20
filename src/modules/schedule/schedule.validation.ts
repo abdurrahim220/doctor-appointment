@@ -18,6 +18,15 @@ const scheduleZodSchema = z.object({
   endTime: z.string().regex(/^([01]\d|2[0-3]):([0-5]\d)$/, {
     message: "End time must be in HH:mm format (24-hour)",
   }),
+  maxPatients: z.number().int().default(0),
+  slotDuration: z
+    .number()
+    .int()
+    .positive({
+      message: "Slot duration must be a positive integer",
+    })
+    .max(30)
+    .default(10),
   dayOfWeek: zodEnumFromTS(DayOfWeek).array(),
   timezone: z.string().default("Asia/Dhaka"),
   isAvailable: z.boolean().default(true),
