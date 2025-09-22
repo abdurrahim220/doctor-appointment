@@ -8207,3 +8207,12 @@ Foreign key constraint violated on the constraint: `ClinicNurse_nurseId_fkey`
 2025-09-20 18:23:00 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
 2025-09-20 18:23:00 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
 2025-09-20 18:23:00 [[32minfo[39m]: Server is running on port 5000
+2025-09-22 07:33:47 [[32minfo[39m]: ✅ Database connected successfully!
+2025-09-22 07:33:47 [[32minfo[39m]: Redis connected
+2025-09-22 07:33:47 [[32minfo[39m]: Bloom filter already exists: users_bloom
+2025-09-22 07:33:47 [[32minfo[39m]: Bloom filter already exists: clinics_bloom
+2025-09-22 07:33:47 [[32minfo[39m]: Bloom filter already exists: doctors_bloom
+2025-09-22 07:33:47 [[32minfo[39m]: Bloom filter already exists: nurses_bloom
+2025-09-22 07:33:47 [[32minfo[39m]: Bloom filter already exists: schedules_bloom
+2025-09-22 07:33:47 [[32minfo[39m]: Bloom filter already exists: appointments_bloom
+2025-09-22 07:33:47 [[32minfo[39m]: Server is running on port 5000

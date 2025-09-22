@@ -56,3 +56,10 @@ export const scheduleKeyById = (id: string): string => {
 export const allScheduleZSet = (): string => {
   return `${REDIS_PREFIX}schedule:zset`;
 };
+
+export const appointmentKeyById = (id: string): string => {
+  return `${REDIS_PREFIX}appointment:${id}`;
+};
+export const allAppointmentZSet = (): string => {
+  return `${REDIS_PREFIX}appointment:zset`;
+};
